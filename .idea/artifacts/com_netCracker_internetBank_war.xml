@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.netCracker.internetBank:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="internetbank.war">
+      <element id="artifact" artifact-name="com.netCracker.internetBank:war exploded" />
+    </root>
+  </artifact>
+</component>
