@@ -12,7 +12,7 @@ import java.util.List;
 
 public class TestApp {
 
-    public  void main(String[] args) throws SQLException{
+    public static void main(String[] args) throws SQLException{
         IServiceCustomer service;
         IServiceEmployed serviceEmpl;
 
