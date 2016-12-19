@@ -8,7 +8,9 @@ import java.util.Random;
 
 import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
-import main.bll.modeldto.CreditDTO;
+import main.bll.api.IServiceEmployed;
+import main.bll.service.util.*;
+
 
 public class ServiceEmployed implements IServiceEmployed {
 
