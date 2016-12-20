@@ -2,10 +2,10 @@ package main.console;
 
 
 import main.bll.api.*;
-import main.bll.service.imp.*;
-import main.dal.contextdb.MySQLContext;
+import main.configuration.IoCConfiguration;
 import main.dal.entinties.*;
-import main.dal.imp.ContextUnitOfWork;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -13,17 +13,19 @@ import java.util.List;
 public class TestApp {
 
     public static void main(String[] args) throws SQLException{
-        IServiceCustomer service;
-        IServiceEmployed serviceEmpl;
 
-        service = new ServiceCustomer(new ContextUnitOfWork(new MySQLContext()));
+        ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
 
-        serviceEmpl = new ServiceEmployed(new ContextUnitOfWork(new MySQLContext()));
-        for(int i =0; i<10; i++) {
+        IServiceCustomer service = context.getBean(IServiceCustomer.class);
 
-            serviceEmpl.addCard(1);
-        }
-
+        List<Invoice> listinvoice = service.seeInvoises(3);
+//
+//        serviceEmpl = new ServiceEmployed(new ContextUnitOfWork(new MySQLContext()));
+//        for(int i =0; i<10; i++) {
+//
+//            serviceEmpl.addCard(1);
+//        }
+//
         List<Invoice> invoises = service.seeInvoises(3);
 
 
