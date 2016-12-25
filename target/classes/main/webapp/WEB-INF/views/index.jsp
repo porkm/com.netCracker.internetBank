@@ -6,23 +6,27 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+
+
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Index Page</title>
+    <meta charset="UTF-8">
+    <title>Simple Web Application</title>
 </head>
 
 <body>
-<spring:form method="post"  modelAttribute="userJSP" action="check-user">
 
-    Name: <spring:input path="login"/>   <br/>
-    Password: <spring:input path="passw"/>   <br/>
-    <spring:button>Next Page</spring:button>
+<h2>Internet BANK. net cracker</h2>
 
-</spring:form>
+<ul>
+    <li><a href="index">Home</a></li>
+    <li><a href="login">Login</a></li>
+    <li><a href="Customer">for Customer</a>
+    <li><a href="for Customer">for Employed</a>
+</ul>
 
 </body>
-
 </html>

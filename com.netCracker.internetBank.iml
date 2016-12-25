@@ -16,6 +16,7 @@
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml</file>
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/configuration/IoCConfiguration.java</file>
         </fileset>
       </configuration>
     </facet>

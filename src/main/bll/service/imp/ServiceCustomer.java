@@ -20,10 +20,17 @@ public class ServiceCustomer implements IServiceCustomer {
     }
 
     @Override
-    public List<Invoice> seeInvoises(int customerId) throws SQLException {
+    public List<Invoice> seeInvoises(int customerId) {
 
         //todo cath exeption and validate model
-        return  unit.customers().get(customerId).getInvoices();
+        List<Invoice> list = null;
+        try {
+            list = unit.customers().get(customerId).getInvoices();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
     }
 
     @Override
