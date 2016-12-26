@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f04d9b-cccd-4b13-91ae-df9dc1b43718" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/89b0946b-7c41-4a92-858c-ee2db1010701.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/89b0946b-7c41-4a92-858c-ee2db1010701/storage.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/controllers/EmployedController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employed.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/com_netCracker_internetBank_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/com_netCracker_internetBank_war_exploded.xml" />
@@ -23,7 +26,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/internetbank/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/views/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/views/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Customer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Customer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#931#932#0" expanded="true" />
@@ -159,7 +162,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actionCustomer.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="actionCustomer.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -1286,12 +1289,12 @@
       <workItem from="1482663577563" duration="4780000" />
       <workItem from="1482757566456" duration="2575000" />
       <workItem from="1482780847489" duration="845000" />
-      <workItem from="1482782604763" duration="5959000" />
+      <workItem from="1482782604763" duration="6051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36801000" />
+    <option name="totallyTimeSpent" value="36893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1284" height="991" extended-state="1" />
@@ -1881,18 +1884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#931#932#0" expanded="true" />
@@ -1900,6 +1895,14 @@
             <element signature="e#1030#1031#0" expanded="true" />
             <element signature="e#1063#1064#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
