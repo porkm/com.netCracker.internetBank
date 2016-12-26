@@ -19,6 +19,12 @@ public class MySQLContext implements IContext {
     public MySQLContext(){
 
         try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
             connection = DriverManager.getConnection(URLFIXED, USERNAME, PASSWORD);
         }
         catch (SQLException e) {

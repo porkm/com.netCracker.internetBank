@@ -25,23 +25,23 @@ import java.util.List;
 @Controller
 public class MainController {
 
-//    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-//
-//    IServiceCustomer service = context.getBean(IServiceCustomer.class);
+    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
+
+    IServiceCustomer service = context.getBean(IServiceCustomer.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
 
 
-//        List<Invoice> listInvoice = new ArrayList<>();
-//        try {
-//            listInvoice = service.seeInvoises(3);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        if (listInvoice.get(0) == null) {
-//            return "index";
-//        }
+        List<Invoice> listInvoice = new ArrayList<>();
+        try {
+            listInvoice = service.seeInvoises(3);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        if (listInvoice.get(0) == null) {
+            return "index";
+        }
 
         double invoice = 5;//listInvoice.get(0).getBalance();
         model.addAttribute("listInvoice", invoice);
