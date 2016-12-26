@@ -1,18 +1,12 @@
 package main.controllers;
 
-import main.bll.api.IServiceCustomer;
-import main.bll.service.imp.ServiceCustomer;
+import main.bll.api.IServiceEmployed;
 import main.configuration.IoCConfiguration;
-import main.dal.api.IUnitOfWork;
 import main.dal.entinties.Customer;
-import main.dal.entinties.Invoice;
-import main.dal.imp.ContextUnitOfWork;
-import main.dal.imp.contextdb.MySQLContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,26 +20,39 @@ import java.util.List;
 public class MainController {
 
     ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-
-    IServiceCustomer service = context.getBean(IServiceCustomer.class);
+    IServiceEmployed service = context.getBean(IServiceEmployed.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(Model model) {
+    public String index() {
+        return "index";
+    }
 
+    @RequestMapping("/customer")
+    public String listCustomer() {
+        return "customer";
+    }
 
-        List<Invoice> listInvoice = new ArrayList<>();
+    @RequestMapping("/actionCustomer")
+    public ModelAndView actionForCustomer() {
+        List<Customer> customerList;
+
         try {
-            listInvoice = service.seeInvoises(3);
+            customerList = service.getAll();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
-        if (listInvoice.get(0) == null) {
-            return "index";
+            customerList = new ArrayList<>();
         }
 
-        double invoice = 5;//listInvoice.get(0).getBalance();
-        model.addAttribute("listInvoice", invoice);
-        return "index";
+        return new ModelAndView("actionCustomer", "action", customerList);
+    }
+
+    @RequestMapping("/addCard")
+    public ModelAndView addCardForCustomer(Model model){
+
+        
+        return new ModelAndView("actionCustomer");
+
+
     }
 
 }

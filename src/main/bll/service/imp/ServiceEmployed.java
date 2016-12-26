@@ -35,6 +35,13 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
+    public List<Customer> getAll() throws SQLException {
+
+
+        return unit.customers().getAll();
+    }
+
+    @Override
     public void createInvoice(Invoice invoice, Customer customer) {
 
 

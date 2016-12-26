@@ -12,5 +12,7 @@ public interface IServiceEmployed {
     void addCredit(Credit credit, Customer customer);
     List<Request> chekRequest() throws SQLException;
 
+    List<Customer> getAll() throws SQLException;
+
 
 }
