@@ -50,7 +50,7 @@ public class ServiceEmployed implements IServiceEmployed {
 
     @Override
     public void addCard(int invoicesId) throws SQLException {
-        Card newCard = new Card();
+       // Card newCard = new Card();
         List<Card> cards = unit.cards().getAll();
         CardInfo cardInfo = new CardInfo();
 
@@ -66,7 +66,7 @@ public class ServiceEmployed implements IServiceEmployed {
 
 
 
-        unit.cards().create(new Card(newNumberCard,cardInfo.setValidOfCard(1),invoicesId));
+        unit.cards().create(new Card(newNumberCard,cardInfo.setValidOfCard(2000),invoicesId));
 
     }
 

@@ -60,7 +60,7 @@ public class CustomerRepo implements IRepository<Customer> {
     @Override
     public void create(Customer item) throws SQLException {
         PreparedStatement statement = connection.prepareStatement("INSERT INTO" +
-                " cusromer (name, login, passw) VALUES(?,?,?)");
+                " customer (name, login, passw) VALUES(?,?,?)");
         statement.setString(1, item.getName());
         statement.setString(2, item.getLogin());
         statement.setString(3, item.getPassw());

@@ -23,8 +23,8 @@
 <h2>Internet BANK. net cracker</h2>
 
 <ul>
-    <li><a href="<c:url value="/customer"/>">for Customer</a></li>
-    <li><a href="<c:url value="#"/>">for Employed</a>
+    <li><a href="<c:url value="/employed"/>">for Employed</a></li>
+    <li><a href="<c:url value="#"/>">for Customer</a>
 </ul>
 
 </body>

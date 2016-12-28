@@ -11,7 +11,7 @@
 <body>
 <ul>
     <li><a href="<c:url value="/"/>">Home</a></li>
-    <li><a href="<c:url value="/customer.html"/>">Add new customer</a></li>
+    <li><a href="<c:url value="/addCustomer"/>">Add new customer</a></li>
 </ul>
 
 <table>
@@ -27,15 +27,15 @@
 
     </tr>
     </thead>
-    <c:forEach items="${action}" var="actionCustomer">
+    <c:forEach items="${action}" var="actionEmployed">
     <tr>
-        <td>${actionCustomer.id}</td>
-        <td>${actionCustomer.name}</td>
-        <td>${actionCustomer.login}</td>
-        <td>${actionCustomer.passw}</td>
+        <td>${actionEmployed.id}</td>
+        <td>${actionEmployed.name}</td>
+        <td>${actionEmployed.login}</td>
+        <td>${actionEmployed.passw}</td>
 
-        <td><a href="<c:url value="/addCard?id=${actionCustomer.id}"/>">Add new card</a></td>
-        <td><a href="<c:url value="#"/>">See all credit</a></td>
+        <td><a href="<c:url value="/addCard/${actionEmployed.id}"/>">Add new card</a></td>
+        <td><a href="<c:url value="/addCredit?id=${actionEmployed.id}"/>">Add one credit</a></td>
         <td><a href="<c:url value="#"/>">See all request</a></td>
 
         </tr>

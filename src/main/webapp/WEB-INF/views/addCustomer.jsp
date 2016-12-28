@@ -1,42 +1,42 @@
+<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: porkm
-  Date: 27.12.2016
-  Time: 1:40
+  Date: 29.12.2016
+  Time: 0:51
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<f:form method="POST" commandName="payment" action="payments">
+<h1>Add new Customer</h1>
+<f:form method="POST" commandName="addCustomer" action="addCustomer">
     <table>
         <tr>
             <td>
-                <i>Amount:</i>
+                <i>Name:</i>
             </td>
             <td>
-                <f:input path="amount"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i>Payer ID:</i>
-            </td>
-            <td>
-                <f:input path="payerId"/>
+                <f:input path="name"/>
             </td>
         </tr>
         <tr>
             <td>
-                <i>Recipient ID:</i>
+                <i>Login:</i>
             </td>
             <td>
-                <f:input path="recipientId"/>
+                <f:input path="login"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i>Password:</i>
+            </td>
+            <td>
+                <f:input path="passw"/>
             </td>
         </tr>
         <tr>
@@ -44,6 +44,5 @@
         </tr>
     </table>
 </f:form>
-
 </body>
 </html>
