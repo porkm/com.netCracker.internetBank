@@ -6,44 +6,32 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<f:form method="POST" commandName="payment" action="payments">
+
+<h1>Add new Card</h1>
+<f:form method="POST" commandName="addCard" action="addCard">
     <table>
         <tr>
             <td>
-                <i>Amount:</i>
+                <i>Name:</i>
             </td>
             <td>
-                <f:input path="amount"/>
+                <f:input path="validOf"/>
             </td>
         </tr>
-        <tr>
-            <td>
-                <i>Payer ID:</i>
-            </td>
-            <td>
-                <f:input path="payerId"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i>Recipient ID:</i>
-            </td>
-            <td>
-                <f:input path="recipientId"/>
-            </td>
-        </tr>
+
         <tr>
             <td><input type="submit"/></td>
         </tr>
     </table>
 </f:form>
+
 
 </body>
 </html>

@@ -4,6 +4,7 @@ import main.bll.api.IServiceEmployed;
 import main.configuration.IoCConfiguration;
 import main.dal.entinties.Card;
 import main.dal.entinties.Customer;
+import main.dal.entinties.Invoice;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -48,6 +49,8 @@ public class MainController {
         return new ModelAndView("actionEmployed", "action", customerList);
     }
 
+    /*Регистрация новых клиентов*/
+
     @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
     public String addCustomer() {
         return "addCustomer";
@@ -64,18 +67,43 @@ public class MainController {
 
 
 
+    /*Регистрация новых карт*/
 
+    //показать список счетов
     @RequestMapping(value = "/addCard/{id}", method = RequestMethod.GET)
-    public String getPayment(@PathVariable("id") int id, Model model) {
+    public ModelAndView getListInvoices(@PathVariable("id") int id, Model model) {
+       //получить все счета выбранного клиента - id
+        List<Invoice> listInvoices;
 
         try {
-            service.addCard(1);
+            listInvoices = service.seeInvoises(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            listInvoices = new ArrayList<>();
+        }
+        return new ModelAndView("listInvoices", "action", listInvoices );
+    }
+
+
+    @ModelAttribute("addCard")
+    public Card newCard() {
+        return new Card();
+    }
+    @RequestMapping(value = "/addNewCard", method = RequestMethod.POST)
+    public String addPayment(@ModelAttribute("addCard") Card addCard) {
+        try {
+            service.addCard(2);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        return "index";
+        return "actionEmployed";
     }
+
+
+    /*Выдача кредитов*/
+
+
+
 
 }
 

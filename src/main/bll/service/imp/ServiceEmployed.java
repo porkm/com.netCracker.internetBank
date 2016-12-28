@@ -35,6 +35,18 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
+    public List<Invoice> seeInvoises(int customerId) throws SQLException {
+        List<Invoice> list = null;
+        try {
+            list = unit.customers().get(customerId).getInvoices();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
+    @Override
     public List<Customer> getAll() throws SQLException {
 
 
