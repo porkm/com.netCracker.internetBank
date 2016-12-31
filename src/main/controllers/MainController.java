@@ -55,10 +55,12 @@ public class MainController {
     public String addCustomer() {
         return "addCustomer";
     }
+
     @ModelAttribute("addCustomer")
     public Customer newCustomer() {
         return new Customer();
     }
+
     @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
     public String addPayment(@ModelAttribute("addCustomer") Customer addCustomer) {
         service.registerCustomer(addCustomer);
@@ -89,15 +91,17 @@ public class MainController {
     public Card newCard() {
         return new Card();
     }
-    @RequestMapping(value = "/addNewCard", method = RequestMethod.POST)
-    public String addPayment(@ModelAttribute("addCard") Card addCard) {
+    @RequestMapping(value = "/addNewCard/{id}", method = RequestMethod.POST)
+    public String addPayment(@PathVariable("id") int id) {
         try {
-            service.addCard(2);
+            service.addCard(id);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return "actionEmployed";
+        return "addNewCard";
     }
+
+
 
 
     /*Выдача кредитов*/

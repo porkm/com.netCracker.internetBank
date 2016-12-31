@@ -266,7 +266,7 @@
     <foreign-key id="68" parent="12" name="fk1">
       <ColNames>id_customer</ColNames>
       <RefSchemaName>ibank</RefSchemaName>
-      <RefTableName>employed</RefTableName>
+      <RefTableName>customer</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>update</OnUpdate>
       <OnDelete>no-action</OnDelete>
