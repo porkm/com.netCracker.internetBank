@@ -8,6 +8,7 @@ public interface IServiceEmployed {
 
     void registerCustomer(Customer newCustomer);
     List<Invoice> seeInvoises(int customerId) throws SQLException;
+    List<Card> seeCards(int invoicesId) throws SQLException;
     void createInvoice(Invoice invoice, Customer customer);
     void addCard(int invoicesId) throws SQLException;
     void addCredit(Credit credit, Customer customer);

@@ -2,9 +2,7 @@ package main.bll.service.imp;
 
 
 import java.sql.SQLException;
-import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
@@ -39,6 +37,18 @@ public class ServiceEmployed implements IServiceEmployed {
         List<Invoice> list = null;
         try {
             list = unit.customers().get(customerId).getInvoices();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
+    @Override
+    public List<Card> seeCards(int invoicesId) throws SQLException {
+        List<Card> list = null;
+        try {
+            list = unit.cards().getForById(invoicesId);
         } catch (SQLException e) {
             e.printStackTrace();
         }

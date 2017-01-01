@@ -9,6 +9,6 @@ public interface IRepository<T>  {
     void create(T item) throws SQLException; //создать модель
     void update(T item) throws SQLException; //изменить модель
     void delete(int id) throws SQLException; //удалить модель
-    List<T> getForCustomerById(int customerId) throws SQLException; //Получить список для конкретного Клиента
+    List<T> getForById(int id) throws SQLException; //Получить список для конкретного Клиента
 
 }

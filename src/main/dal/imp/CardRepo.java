@@ -78,8 +78,15 @@ public class CardRepo implements IRepository<Card> {
     }
 
     @Override
-    public List<Card> getForCustomerById(int customerId) throws SQLException {
-        return null;
+    public List<Card> getForById(int invoicesId) throws SQLException {
+        List<Card> cards = new ArrayList<Card>();
+        PreparedStatement statement = connection.prepareStatement("select * from card inner join invoice on card.id_invoice=invoice.id where id_invoice=?");
+        statement.setInt(1, invoicesId);
+        ResultSet res = statement.executeQuery();
+        while (res.next()) {
+            cards.add(new Card(res.getInt("number"), res.getDate("valid_Of"), res.getInt("id_invoice")));
+        }
+        return cards;
     }
 }
 

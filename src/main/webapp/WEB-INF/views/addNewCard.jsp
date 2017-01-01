@@ -15,19 +15,22 @@
 <body>
 
 <h1>Add new Card</h1>
-<f:form method="POST" commandName="addCard" action="addCard">
+<f:form method="POST" commandName="addCard" action="addNewCard">
     <table>
+
         <tr>
             <td>
-                <i>Name:</i>
+                <i>Valid_of:</i>
             </td>
+
             <td>
                 <f:input path="validOf"/>
             </td>
         </tr>
-
         <tr>
-            <td><input type="submit"/></td>
+             <td>
+                <input type="submit"/>
+            </td>
         </tr>
     </table>
 </f:form>

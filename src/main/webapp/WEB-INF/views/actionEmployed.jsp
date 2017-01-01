@@ -27,16 +27,16 @@
 
     </tr>
     </thead>
-    <c:forEach items="${action}" var="actionEmployed">
+    <c:forEach items="${action}" var="actionCustomer">
     <tr>
-        <td>${actionEmployed.id}</td>
-        <td>${actionEmployed.name}</td>
-        <td>${actionEmployed.login}</td>
-        <td>${actionEmployed.passw}</td>
+        <td>${actionCustomer.id}</td>
+        <td>${actionCustomer.name}</td>
+        <td>${actionCustomer.login}</td>
+        <td>${actionCustomer.passw}</td>
 
-        <td><a href="<c:url value="/addCard/${actionEmployed.id}"/>">Add new card</a></td>
-        <td><a href="<c:url value="/addCredit?id=${actionEmployed.id}"/>">Add one credit</a></td>
-        <td><a href="<c:url value="#"/>">See all request</a></td>
+        <td><a href="<c:url value="/seeInvoices/${actionCustomer.id}"/>">See all Invoices</a></td>
+        <td><a href="<c:url value="/addCredit?id=${actionCustomer.id}"/>">Add one credit</a></td>
+        <td><a href="<c:url value="/seeRequest?id=${actionCustomer.id}"/>">See all request</a></td>
 
         </tr>
     </c:forEach>

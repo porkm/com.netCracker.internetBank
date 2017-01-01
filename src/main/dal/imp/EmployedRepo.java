@@ -20,7 +20,7 @@ public class EmployedRepo implements IRepository<Employed> {
     //private
 
     @Override
-    public List<Employed> getForCustomerById(int customerId) throws SQLException {
+    public List<Employed> getForById(int id) throws SQLException {
         return null;
     }
 

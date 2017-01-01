@@ -29,13 +29,13 @@ public class CreditRepo implements IRepository<Credit> {
         return credits;
     }
     //Для получения списка кредитов
-    public List<Credit> getForCustomerById(int customerId) throws SQLException {
+    public List<Credit> getForById(int id) throws SQLException {
         List<Credit> credits = new ArrayList<Credit>();
         PreparedStatement statement = connection.prepareStatement("select * from credit " +
                 " inner join customer" +
                 " on id_customer=customer.id" +
                 " where id_customer=?");
-        statement.setInt(1, customerId);
+        statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         while (res.next()) {
             credits.add(new Credit(res.getInt("id"), res.getDouble("sum_credit"), res.getDouble("percent_rate"),

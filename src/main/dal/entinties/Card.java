@@ -18,6 +18,7 @@ public class Card {
 
     }
 
+
     public int getNumber() {
         return number;
     }

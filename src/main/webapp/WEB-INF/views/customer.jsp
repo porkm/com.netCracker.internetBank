@@ -3,12 +3,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Page to Employed</title>
+    <title>Page to Customer</title>
 </head>
 <body>
 <ul>
     <li><a href="<c:url value="/"/>">Home</a></li>
-    <li><a href="<c:url value="/actionEmployed"/>">Get All list Customer</a></li>
 </ul>
+<a href="<c:url value="/personal/${actionEmployed.id}"/>">Personal Area</a>
 </body>
 </html>

@@ -28,13 +28,13 @@ public class RequestRepo implements IRepository<Request> {
         return requests;
     }
 
-    public List<Request> getForCustomerById(int customerId) throws SQLException {
+    public List<Request> getForById(int id) throws SQLException {
         List<Request> credits = new ArrayList<Request>();
         PreparedStatement statement = connection.prepareStatement("select * from request " +
                 " inner join customer" +
                 " on id_customer=customer.id" +
                 " where id_customer=?");
-        statement.setInt(1, customerId);
+        statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         while (res.next()) {
             credits.add(new Request(res.getInt("id"), res.getString("frend"), res.getInt("id_customer")));

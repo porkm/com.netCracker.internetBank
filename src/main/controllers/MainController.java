@@ -23,8 +23,7 @@ import java.util.List;
 @Controller
 public class MainController {
 
-    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-    IServiceEmployed service = context.getBean(IServiceEmployed.class);
+
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
@@ -36,75 +35,14 @@ public class MainController {
         return "employed";
     }
 
-    @RequestMapping("/actionEmployed")
-    public ModelAndView actionForEmployed() {
-        List<Customer> customerList;
-
-        try {
-            customerList = service.getAll();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            customerList = new ArrayList<>();
-        }
-        return new ModelAndView("actionEmployed", "action", customerList);
-    }
-
-    /*Регистрация новых клиентов*/
-
-    @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
-    public String addCustomer() {
-        return "addCustomer";
-    }
-
-    @ModelAttribute("addCustomer")
-    public Customer newCustomer() {
-        return new Customer();
-    }
-
-    @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
-    public String addPayment(@ModelAttribute("addCustomer") Customer addCustomer) {
-        service.registerCustomer(addCustomer);
-        return "actionEmployed";
-    }
-
-
-
-    /*Регистрация новых карт*/
-
-    //показать список счетов
-    @RequestMapping(value = "/addCard/{id}", method = RequestMethod.GET)
-    public ModelAndView getListInvoices(@PathVariable("id") int id, Model model) {
-       //получить все счета выбранного клиента - id
-        List<Invoice> listInvoices;
-
-        try {
-            listInvoices = service.seeInvoises(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            listInvoices = new ArrayList<>();
-        }
-        return new ModelAndView("listInvoices", "action", listInvoices );
-    }
-
-
-    @ModelAttribute("addCard")
-    public Card newCard() {
-        return new Card();
-    }
-    @RequestMapping(value = "/addNewCard/{id}", method = RequestMethod.POST)
-    public String addPayment(@PathVariable("id") int id) {
-        try {
-            service.addCard(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return "addNewCard";
+    @RequestMapping("/customer")
+    public String listEmpoloyed() {
+        return "customer";
     }
 
 
 
 
-    /*Выдача кредитов*/
 
 
 

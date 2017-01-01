@@ -25,16 +25,16 @@ public class CustomerRepo implements IRepository<Customer> {
             Customer c = new Customer(res.getInt("id"), res.getString("name"),
                     res.getString("login"), res.getString("passw"));
 
-            c.setInvoices(new InvoiceRepo(context).getForCustomerById(c.getId()));
-            c.setCredits(new CreditRepo(context).getForCustomerById(c.getId()));
-            c.setRequests(new RequestRepo(context).getForCustomerById(c.getId()));
+            c.setInvoices(new InvoiceRepo(context).getForById(c.getId()));
+            c.setCredits(new CreditRepo(context).getForById(c.getId()));
+            c.setRequests(new RequestRepo(context).getForById(c.getId()));
             customers.add(c);
         }
         return customers;
     }
 
     @Override
-    public List<Customer> getForCustomerById(int customerId) throws SQLException {
+    public List<Customer> getForById(int id) throws SQLException {
         return null;
     }
 
@@ -48,9 +48,9 @@ public class CustomerRepo implements IRepository<Customer> {
         if (res.next()) {
             customer = new Customer(res.getInt("id"), res.getString("name"),
                     res.getString("login"), res.getString("passw"));
-            customer.setInvoices(new InvoiceRepo(context).getForCustomerById(id));
-            customer.setCredits(new CreditRepo(context).getForCustomerById(id));
-            customer.setRequests(new RequestRepo(context).getForCustomerById(id));
+            customer.setInvoices(new InvoiceRepo(context).getForById(id));
+            customer.setCredits(new CreditRepo(context).getForById(id));
+            customer.setRequests(new RequestRepo(context).getForById(id));
         } else {
             customer = null;
         }

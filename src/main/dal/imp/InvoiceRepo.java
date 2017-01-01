@@ -29,13 +29,13 @@ public class InvoiceRepo implements IRepository<Invoice> {
     }
     //Для получения списка счетов
 
-    public List<Invoice> getForCustomerById(int customerId) throws SQLException  {
+    public List<Invoice> getForById(int id) throws SQLException  {
         List<Invoice> invoices = new ArrayList<Invoice>();
         PreparedStatement statement = connection.prepareStatement("select * from invoice " +
                 " inner join customer" +
                 " on customer_id=customer.id" +
                 " where customer_id=?");
-        statement.setInt(1, customerId);
+        statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         while (res.next()) {
             invoices.add(new Invoice(res.getInt("id"), res.getDouble("balance"), res.getInt("customer_id")));
