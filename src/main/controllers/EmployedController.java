@@ -50,7 +50,7 @@ public class EmployedController {
     @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
     public String addCustomer(@ModelAttribute("addCustomer") Customer addCustomer) {
         service.registerCustomer(addCustomer);
-        return "actionEmployed";
+        return "redirect:/actionEmployed";
     }
 
 
@@ -85,33 +85,45 @@ public class EmployedController {
         return new ModelAndView("seeCard", "action", listCards );
     }
 
-
-
-
-
-
-    @RequestMapping(value = "/addNewCard/{id}", method = RequestMethod.GET)
-    public String addCard(@PathVariable("id")  int id) {
-        return "addNewCard";
+    //Добавить карту
+    @RequestMapping(value = "/addCard/{id}", method = RequestMethod.GET)
+    public ModelAndView addCard(@PathVariable("id") int id) {
+      int myId = id;//// TODO: 02.01.2017 delete myId Test
+        return new ModelAndView("addCard", "id", myId );
     }
 
     @ModelAttribute("addCard")
     public Card newCard() {
         return new Card();
     }
+
+    @RequestMapping(value = "/addCard", method = RequestMethod.POST)
+    public String addCard(@ModelAttribute("addCard") Card addCard) {
+
+        try {
+            service.addCard(addCard.getInvoceId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return "seeCard";
+    }
+
+
+//    @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
+//    public String addCustomer() {
+//        return "addCustomer";
+//    }
 //
-//    @RequestMapping(value = "/addNewCard", method = RequestMethod.POST)
-//    public String addCard(@ModelAttribute("addCard") Card addCard) {
-//        try {
-//            service.addCard(addCard.getInvoceId());
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+//    @ModelAttribute("addCustomer")
+//    public Customer newCustomer() {
+//        return new Customer();
+//    }
+//
+//    @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
+//    public String addCustomer(@ModelAttribute("addCustomer") Customer addCustomer) {
+//        service.registerCustomer(addCustomer);
 //        return "actionEmployed";
 //    }
-
-
-
 
 
 

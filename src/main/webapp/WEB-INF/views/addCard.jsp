@@ -15,9 +15,14 @@
 <body>
 
 <h1>Add new Card</h1>
-<f:form method="POST" commandName="addCard" action="addNewCard">
+<f:form method="POST" commandName="addCard" action="/addCard">
     <table>
+        <tr>
+            <td>
+                <f:input path="invoceId" type="hidden" value="${id}"/>
+            </td>
 
+        </tr>
         <tr>
             <td>
                 <i>Valid_of:</i>

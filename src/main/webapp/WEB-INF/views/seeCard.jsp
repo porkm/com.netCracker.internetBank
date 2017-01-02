@@ -15,7 +15,8 @@
     <title>list Invoices</title>
 </head>
 <body>
-<a href="<c:url value="/addNewCard/${customer.id}"/>">Add new card</a>
+
+<a href="<c:url value="/addCard/${action.get(0).invoceId}"/>">Add new card</a>
 <table>
     <thead>
     <tr>
@@ -30,11 +31,8 @@
             <td>${customer.number}</td>
             <td>${customer.validOf}</td>
             <td>${customer.invoceId}</td>
-
-
-
-
         </tr>
+
     </c:forEach>
 </table>
 
