@@ -102,11 +102,13 @@ public class ServiceEmployed implements IServiceEmployed {
 
 
     @Override
-    public void addCredit(Credit credit, Customer customer) {
+    public void addCredit(Credit credit) {
+        credit.setPercentRate(10);
 
         CreditCalculate creditCalculate = new CreditCalculate(credit);
         credit.setPay(creditCalculate.getPay());
         credit.setOverPay(creditCalculate.getOverPay());
+
 
         try {
             unit.credits().create(credit);

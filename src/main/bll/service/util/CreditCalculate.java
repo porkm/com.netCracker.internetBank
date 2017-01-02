@@ -16,7 +16,7 @@ public class CreditCalculate {
     }
 
     public double getOverPay() {
-        return getPay()*credit.getCreditTerm()*12;
+        return credit.getSumCredit()-getPay()*credit.getCreditTerm()*12;
     }
 
 }

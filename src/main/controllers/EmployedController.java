@@ -8,15 +8,18 @@ import main.dal.entinties.Card;
 import main.dal.entinties.Credit;
 import main.dal.entinties.Customer;
 import main.dal.entinties.Invoice;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -143,6 +146,33 @@ public class EmployedController {
         return new ModelAndView("seeCredit", "listCredit", listCredit );
     }
 
+
+    //endregion
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder)
+    {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(
+                dateFormat, true));
+    }
+
+    //region Добавить Кредит
+    @RequestMapping(value = "/addCredit/{id}", method = RequestMethod.GET)
+    public ModelAndView addCredit(@PathVariable("id") int id) {
+        Credit credit = new Credit();
+        credit.setCustomerId(id);
+        return new ModelAndView("addCredit", "credit", credit );
+    }
+
+    @RequestMapping(value = "/addCredit", method = RequestMethod.POST)
+    public String addCredit(@ModelAttribute("credit") Credit addCredit) {
+
+        service.addCredit(addCredit);
+
+        return "redirect:/seeCredit/"+addCredit.getCustomerId();
+    }
 
     //endregion
 
