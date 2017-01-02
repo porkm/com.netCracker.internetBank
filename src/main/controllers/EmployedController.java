@@ -2,8 +2,10 @@ package main.controllers;
 
 
 import main.bll.api.IServiceEmployed;
+import main.bll.modeldto.CreditDTO;
 import main.configuration.IoCConfiguration;
 import main.dal.entinties.Card;
+import main.dal.entinties.Credit;
 import main.dal.entinties.Customer;
 import main.dal.entinties.Invoice;
 import org.springframework.context.ApplicationContext;
@@ -122,6 +124,26 @@ public class EmployedController {
         }
         return "redirect:/seeCard/"+addCard.getInvoceId();
     }
+    //endregion
+
+    //region Показать список кредитов
+    @RequestMapping(value = "/seeCredit/{id}", method = RequestMethod.GET)
+    public ModelAndView getListCredit(@PathVariable("id") int id, Model model) {
+        model.addAttribute("id", id);
+        //получить все кредиты выбранного клиента - id
+        List<Credit> listCredit;
+        try {
+            listCredit = service.seeCredit(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            listCredit = new ArrayList<>();
+        }
+
+
+        return new ModelAndView("seeCredit", "listCredit", listCredit );
+    }
+
+
     //endregion
 
 

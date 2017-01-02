@@ -14,10 +14,7 @@ public class Credit {
     private int creditTerm;
     private int customerId;
 
-    public Credit(int id, double sum_credit, double percent_rate, java.sql.Date day_of_pay, double pay, double over_pay, double credit_left, java.sql.Date credit_start, int id_customer) {
-    }
-
-    public Credit(int id, double sumCredit, double percentRate, Date dayOfPay, double pay, double overPay, Date creditStart, int creditTerm, int customerId) {
+    public Credit(int id, double sumCredit, double percentRate, java.sql.Date dayOfPay, double pay, double overPay, int creditLeft, java.sql.Date creditStart, int customerId) {
         this.id = id;
         this.sumCredit = sumCredit;
         this.percentRate = percentRate;
@@ -25,8 +22,12 @@ public class Credit {
         this.pay = pay;
         this.overPay = overPay;
         this.creditStart = creditStart;
-        this.creditTerm = creditTerm;
+        this.creditTerm = creditLeft;
         this.customerId = customerId;
+    }
+
+    public Credit() {
+
     }
 
     public int getId() {

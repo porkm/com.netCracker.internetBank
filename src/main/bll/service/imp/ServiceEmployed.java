@@ -70,10 +70,12 @@ public class ServiceEmployed implements IServiceEmployed {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
 
+    @Override
+    public List<Credit> seeCredit(int customerId) throws SQLException {
+        return  unit.customers().get(customerId).getCredits();
+    }
 
     @Override
     public void addCard(int invoicesId) throws SQLException {

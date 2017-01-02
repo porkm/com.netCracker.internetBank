@@ -35,8 +35,8 @@
         <td>${actionCustomer.passw}</td>
 
         <td><a href="<c:url value="/seeInvoices/${actionCustomer.id}"/>">See all Invoices</a></td>
-        <td><a href="<c:url value="/addCredit?id=${actionCustomer.id}"/>">Add one credit</a></td>
-        <td><a href="<c:url value="/seeRequest?id=${actionCustomer.id}"/>">See all request</a></td>
+        <td><a href="<c:url value="/seeCredit/${actionCustomer.id}"/>">See all credit</a></td>
+        <td><a href="<c:url value="/seeRequest/${actionCustomer.id}"/>">See all request</a></td>
 
         </tr>
     </c:forEach>

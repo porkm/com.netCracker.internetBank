@@ -24,7 +24,7 @@ public class CreditRepo implements IRepository<Credit> {
         while (res.next()) {
             credits.add(new Credit(res.getInt("id"), res.getDouble("sum_credit"), res.getDouble("percent_rate"),
                     res.getDate("day_of_pay"), res.getDouble("pay"), res.getDouble("over_pay"),
-                    res.getDouble("credit_left"), res.getDate("credit_start"), res.getInt("id_customer")));
+                    res.getInt("credit_left"), res.getDate("credit_start"), res.getInt("id_customer")));
         }
         return credits;
     }
@@ -40,7 +40,7 @@ public class CreditRepo implements IRepository<Credit> {
         while (res.next()) {
             credits.add(new Credit(res.getInt("id"), res.getDouble("sum_credit"), res.getDouble("percent_rate"),
                     res.getDate("day_of_pay"), res.getDouble("pay"), res.getDouble("over_pay"),
-                    res.getDouble("credit_left"), res.getDate("credit_start"), res.getInt("id_customer")));
+                    res.getInt("credit_left"), res.getDate("credit_start"), res.getInt("id_customer")));
         }
         return credits;
     }
@@ -55,7 +55,7 @@ public class CreditRepo implements IRepository<Credit> {
         if (res.next()) {
             credit = new Credit(res.getInt("id"), res.getDouble("sum_credit"), res.getDouble("percent_rate"),
                     res.getDate("day_of_pay"), res.getDouble("pay"), res.getDouble("over_pay"),
-                    res.getDouble("credit_left"), res.getDate("credit_start"), res.getInt("id_customer"));
+                    res.getInt("credit_left"), res.getDate("credit_start"), res.getInt("id_customer"));
         } else {
             credit = null;
         }
