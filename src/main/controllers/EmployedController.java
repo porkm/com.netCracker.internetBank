@@ -10,6 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -35,8 +36,6 @@ public class EmployedController {
         return new ModelAndView("actionEmployed", "action", customerList);
     }
 
- /*Регистрация новых клиентов*/
-
     @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
     public String addCustomer() {
         return "addCustomer";
@@ -52,6 +51,8 @@ public class EmployedController {
         service.registerCustomer(addCustomer);
         return "redirect:/actionEmployed";
     }
+//region hidethis
+ /*Регистрация новых клиентов*/
 
 
 
@@ -85,6 +86,7 @@ public class EmployedController {
         return new ModelAndView("seeCard", "action", listCards );
     }
 
+//endregion
     //Добавить карту
     @RequestMapping(value = "/addCard/{id}", method = RequestMethod.GET)
     public ModelAndView addCard(@PathVariable("id") int id) {
@@ -96,17 +98,26 @@ public class EmployedController {
     public Card newCard() {
         return new Card();
     }
-
     @RequestMapping(value = "/addCard", method = RequestMethod.POST)
     public String addCard(@ModelAttribute("addCard") Card addCard) {
-
         try {
             service.addCard(addCard.getInvoceId());
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return "seeCard";
+        return "redirect:/addCard/"+addCard.getInvoceId();
     }
+
+
+//    @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
+//    public String addStudent(@ModelAttribute("SpringWeb")Student student,
+//                             ModelMap model) {
+//        model.addAttribute("name", student.getName());
+//        model.addAttribute("age", student.getAge());
+//        model.addAttribute("id", student.getId());
+//
+//        return "result";
+//    }
 
 
 //    @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)

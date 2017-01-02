@@ -29,11 +29,12 @@
             </td>
 
             <td>
-                <f:input path="validOf"/>
+                    <%--<f:input path="validOf"/>--%>
+                <%-- todo it's wrong. --%>
             </td>
         </tr>
         <tr>
-             <td>
+            <td>
                 <input type="submit"/>
             </td>
         </tr>
