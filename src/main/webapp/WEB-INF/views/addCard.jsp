@@ -15,11 +15,11 @@
 <body>
 
 <h1>Add new Card</h1>
-<f:form method="POST" commandName="addCard" action="/addCard">
+<f:form method="POST" modelAttribute="card" action="/addCard">
     <table>
         <tr>
             <td>
-                <f:input path="invoceId" type="hidden" value="${id}"/>
+                <f:hidden path="invoceId"/>
             </td>
 
         </tr>
@@ -30,7 +30,7 @@
 
             <td>
                     <%--<f:input path="validOf"/>--%>
-                <%-- todo it's wrong. --%>
+
             </td>
         </tr>
         <tr>

@@ -16,21 +16,21 @@
 </head>
 <body>
 
-<a href="<c:url value="/addCard/${action.get(0).invoceId}"/>">Add new card</a>
+<a href="<c:url value="/addCard/${id}"/>">Add new card</a>
 <table>
     <thead>
     <tr>
         <td>number</td>
-        <td>valisOf</td>
+        <td>validOf</td>
         <td>IdInvoices</td>
 
     </tr>
     </thead>
-    <c:forEach items="${action}" var="customer">
+    <c:forEach items="${listCards}" var="card">
         <tr>
-            <td>${customer.number}</td>
-            <td>${customer.validOf}</td>
-            <td>${customer.invoceId}</td>
+            <td>${card.number}</td>
+            <td>${card.validOf}</td>
+            <td>${card.invoceId}</td>
         </tr>
 
     </c:forEach>

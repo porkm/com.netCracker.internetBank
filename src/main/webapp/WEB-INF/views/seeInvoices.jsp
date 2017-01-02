@@ -15,7 +15,7 @@
     <title>list Invoices</title>
 </head>
 <body>
-<a href="<c:url value="/addNewInvoice/${customer.id}"/>">Add new Invoice</a>
+<a href="<c:url value="/addInvoice/${id}"/>">Add new Invoice</a>
 <table>
     <thead>
     <tr>
@@ -25,7 +25,7 @@
         <td>Get list Card<</td>
     </tr>
     </thead>
-    <c:forEach items="${action}" var="customer">
+    <c:forEach items="${listInvoices}" var="customer">
         <tr>
             <td>${customer.id}</td>
             <td>${customer.balance}</td>

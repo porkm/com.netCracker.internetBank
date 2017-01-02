@@ -27,7 +27,7 @@
 
     </tr>
     </thead>
-    <c:forEach items="${action}" var="actionCustomer">
+    <c:forEach items="${customerList}" var="actionCustomer">
     <tr>
         <td>${actionCustomer.id}</td>
         <td>${actionCustomer.name}</td>

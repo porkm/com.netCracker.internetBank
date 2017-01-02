@@ -64,7 +64,12 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
-    public void createInvoice(Invoice invoice, Customer customer) {
+    public void createInvoice(Invoice invoice) {
+        try {
+            unit.invoices().create(invoice);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
 
     }
@@ -73,17 +78,18 @@ public class ServiceEmployed implements IServiceEmployed {
     @Override
     public void addCard(int invoicesId) throws SQLException {
        // Card newCard = new Card();
+        //todo add chek Date()
         List<Card> cards = unit.cards().getAll();
         CardInfo cardInfo = new CardInfo();
 
         //-------------Процедура получения уникального номера карты--------------------------
         int newNumberCard = cardInfo.generateNumberCard();
-        for (Card card : cards) {
-            if (card.getNumber() != newNumberCard) {
-                break;
-            }
-            else newNumberCard=cardInfo.generateNumberCard();
-        }
+//        for (Card card : cards) {
+//            if (card.getNumber() != newNumberCard) {
+//                break;
+//            }
+//            newNumberCard=cardInfo.generateNumberCard();
+//        }
         //--------------------------------------------------------------------------------------
 
 

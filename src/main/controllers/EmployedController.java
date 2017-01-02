@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -33,9 +34,9 @@ public class EmployedController {
             e.printStackTrace();
             customerList = new ArrayList<>();
         }
-        return new ModelAndView("actionEmployed", "action", customerList);
+        return new ModelAndView("actionEmployed", "customerList", customerList);
     }
-
+    //region Добавить клиента
     @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
     public String addCustomer() {
         return "addCustomer";
@@ -51,29 +52,46 @@ public class EmployedController {
         service.registerCustomer(addCustomer);
         return "redirect:/actionEmployed";
     }
-//region hidethis
- /*Регистрация новых клиентов*/
 
 
+    //endregion
 
-    //показать список счетов
+    //region Показать список счетов
     @RequestMapping(value = "/seeInvoices/{id}", method = RequestMethod.GET)
-    public ModelAndView getListInvoices(@PathVariable("id") int id) {
+    public ModelAndView getListInvoices(@PathVariable("id") int id, Model model) {
+        model.addAttribute("id", id);
         //получить все счета выбранного клиента - id
         List<Invoice> listInvoices;
-
         try {
             listInvoices = service.seeInvoises(id);
         } catch (SQLException e) {
             e.printStackTrace();
             listInvoices = new ArrayList<>();
         }
-        return new ModelAndView("seeInvoices", "action", listInvoices );
+        return new ModelAndView("seeInvoices", "listInvoices", listInvoices );
+    }
+    //endregion
+
+    //region Добавить счет
+    @RequestMapping(value = "/addInvoice/{id}", method = RequestMethod.GET)
+    public ModelAndView addInvoice(@PathVariable("id") int id) {
+        Invoice invoice = new Invoice(0,0,id);
+        return new ModelAndView("addInvoice", "invoice", invoice );
     }
 
-    //показать список карт
+    @RequestMapping(value = "/addInvoice", method = RequestMethod.POST)
+    public String addInvoice(@ModelAttribute("invoice") Invoice addInvoice) {
+
+        service.createInvoice(addInvoice);
+
+        return "redirect:/seeInvoices/"+addInvoice.getCustomerId();
+    }
+    //endregion
+
+    //region Показать список карт
     @RequestMapping(value = "/seeCard/{id}", method = RequestMethod.GET)
-    public ModelAndView getListCard(@PathVariable("id") int id) {
+    public ModelAndView getListCard(@PathVariable("id") int id, Model model) {
+        model.addAttribute("id", id);
         //получить все карты выбранного клиента - id
         List<Card> listCards;
 
@@ -83,61 +101,28 @@ public class EmployedController {
             e.printStackTrace();
             listCards = new ArrayList<>();
         }
-        return new ModelAndView("seeCard", "action", listCards );
+        return new ModelAndView("seeCard", "listCards", listCards );
     }
+    //endregion
 
-//endregion
-    //Добавить карту
+    //region Добавить карту
     @RequestMapping(value = "/addCard/{id}", method = RequestMethod.GET)
     public ModelAndView addCard(@PathVariable("id") int id) {
-      int myId = id;//// TODO: 02.01.2017 delete myId Test
-        return new ModelAndView("addCard", "id", myId );
+        Card card = new Card();
+        card.setInvoceId(id);
+        return new ModelAndView("addCard", "card", card );
     }
 
-    @ModelAttribute("addCard")
-    public Card newCard() {
-        return new Card();
-    }
     @RequestMapping(value = "/addCard", method = RequestMethod.POST)
-    public String addCard(@ModelAttribute("addCard") Card addCard) {
+    public String addCard(@ModelAttribute("card") Card addCard) {
         try {
             service.addCard(addCard.getInvoceId());
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return "redirect:/addCard/"+addCard.getInvoceId();
+        return "redirect:/seeCard/"+addCard.getInvoceId();
     }
+    //endregion
 
 
-//    @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
-//    public String addStudent(@ModelAttribute("SpringWeb")Student student,
-//                             ModelMap model) {
-//        model.addAttribute("name", student.getName());
-//        model.addAttribute("age", student.getAge());
-//        model.addAttribute("id", student.getId());
-//
-//        return "result";
-//    }
-
-
-//    @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
-//    public String addCustomer() {
-//        return "addCustomer";
-//    }
-//
-//    @ModelAttribute("addCustomer")
-//    public Customer newCustomer() {
-//        return new Customer();
-//    }
-//
-//    @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
-//    public String addCustomer(@ModelAttribute("addCustomer") Customer addCustomer) {
-//        service.registerCustomer(addCustomer);
-//        return "actionEmployed";
-//    }
-
-
-
-
-    /*Выдача кредитов*/
 }

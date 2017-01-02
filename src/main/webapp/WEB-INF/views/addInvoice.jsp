@@ -13,30 +13,20 @@
 </head>
 <body>
 <h1>Add new Customer</h1>
-<f:form method="POST" commandName="addCustomer" action="addCustomer">
+<f:form method="POST" modelAttribute="invoice" action="/addInvoice">
     <table>
         <tr>
             <td>
-                <i>Name:</i>
+                <i>Balance:</i>
             </td>
             <td>
-                <f:input path="name"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i>Login:</i>
-            </td>
-            <td>
-                <f:input path="login"/>
+                <f:input path="balance"/>
             </td>
         </tr>
         <tr>
+
             <td>
-                <i>Password:</i>
-            </td>
-            <td>
-                <f:password path="passw"/>
+                <f:hidden path="customerId"/>
             </td>
         </tr>
         <tr>
