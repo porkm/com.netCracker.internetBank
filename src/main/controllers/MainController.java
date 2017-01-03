@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,8 +37,11 @@ public class MainController {
     }
 
     @RequestMapping("/customer")
-    public String listEmpoloyed() {
-        return "redirect:/login";
+    public String listEmpoloyed(HttpSession session) {
+        if (session.getAttribute("userId")==null){
+            return "redirect:/login";
+        }
+        return "actionCustomer";
     }
 
 

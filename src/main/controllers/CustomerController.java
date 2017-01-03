@@ -49,6 +49,9 @@ public class CustomerController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        if (session.getAttribute("userId")==null){
+            return "redirect:/login";
+        }
 
 
         return "redirect:/seeInvoices/"+session.getAttribute("userId");

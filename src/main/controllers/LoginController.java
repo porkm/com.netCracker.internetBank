@@ -35,7 +35,7 @@ public class LoginController {
                 int id =service.getIdByLogin(loginBean.getLogin());
                 model.addAttribute("userId", id);
 
-                session.setMaxInactiveInterval(540);
+                session.setMaxInactiveInterval(60);
                 session.setAttribute("userId", id);
 
                 return "actionCustomer";
