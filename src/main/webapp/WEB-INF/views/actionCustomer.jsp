@@ -16,16 +16,16 @@
 
 <ul>
     <li>
-        <a href="<c:url value="/seeInvoices/${actionEmployed.id}"/>">See Invoices</a>
+        <a href="<c:url value="/seeInvoices/${user}"/>">See Invoices</a>
     </li>
     <li>
-        <a href="<c:url value="/getTranfer/${actionEmployed.id}"/>">Make Transfer</a>
+        <a href="<c:url value="/getTranfer/${user}"/>">Make Transfer</a>
     </li>
     <li>
-        <a href="<c:url value="/seeCredit/${actionEmployed.id}"/>">See Invoices</a>
+        <a href="<c:url value="/seeCredit/${user}"/>">See Credit</a>
     </li>
     <li>
-        <a href="<c:url value="/addFriend/${actionEmployed.id}"/>">See Invoices</a>
+        <a href="<c:url value="/addFriend/${user}"/>">Add friend</a>
     </li>
 </ul>
 

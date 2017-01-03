@@ -52,6 +52,24 @@ public class ServiceCustomer implements IServiceCustomer {
     }
 
     @Override
+    public int getIdByLogin(String login) {
+        int id;
+
+        try {
+            id=unit.customers().getAll().stream()
+                    .filter(x->x.getLogin().equals(login))
+                    .findFirst()
+                    .get()
+                    .getId();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            id=0;
+        }
+
+        return id;
+    }
+
+    @Override
     public void transferMoney(Customer me, Customer you, double money) {
 
         Transfer transfer = new Transfer();

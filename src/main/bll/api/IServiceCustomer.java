@@ -13,5 +13,6 @@ public interface IServiceCustomer {
     void transferMoney(Customer me, Customer you, double money)throws SQLException;
     List<CreditDTO>  seeCredit(int customerId) throws SQLException;
     void inviteFriend(int customerId, String friend) throws SQLException;
-    boolean checkLoginPassw(Customer chekedCustomer);
+    boolean checkLoginPassw(Customer checkedCustomer);
+    int getIdByLogin(String login);
 }

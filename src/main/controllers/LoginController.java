@@ -27,13 +27,12 @@ public class LoginController {
     public String submit(Model model, @ModelAttribute("loginBean") Customer loginBean) {
         if (loginBean != null && loginBean.getLogin() != null & loginBean.getPassw() != null) {
 
-            //todo add equals from DB
             //todo add session
 
             if (service.checkLoginPassw(loginBean)) {
-            //if (loginBean.getLogin().equals("chandra") && loginBean.getPassw().equals("chandra123")) {
-
-                model.addAttribute("user", loginBean.getLogin());
+                //get id user
+                int id =service.getIdByLogin(loginBean.getLogin());
+                model.addAttribute("user", id);
                 return "actionCustomer";
             } else {
                 model.addAttribute("error", "Invalid Details");
