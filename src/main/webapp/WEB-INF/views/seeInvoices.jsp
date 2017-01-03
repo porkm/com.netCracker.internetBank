@@ -23,15 +23,18 @@
         <td>Balance</td>
         <td>CustomerId</td>
         <td>Get list Card<</td>
+        <td>Make Transfer<</td>
     </tr>
     </thead>
-    <c:forEach items="${listInvoices}" var="customer">
+    <c:forEach items="${listInvoices}" var="invoice">
         <tr>
-            <td>${customer.id}</td>
-            <td>${customer.balance}</td>
-            <td>${customer.customerId}</td>
+            <td>${invoice.id}</td>
+            <td>${invoice.balance}</td>
+            <td>${invoice.customerId}</td>
 
-            <td><a href="<c:url value="/seeCard/${customer.id}"/>">See list card</a></td>
+            <td><a href="<c:url value="/seeCard/${invoice.id}"/>">See list card</a></td>
+
+            <td><a href="<c:url value="/makeTransfer/${invoice.id}"/>">Make Transfer</a></td>
 
 
         </tr>

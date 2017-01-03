@@ -32,7 +32,7 @@ public class LoginController {
             if (service.checkLoginPassw(loginBean)) {
                 //get id user
                 int id =service.getIdByLogin(loginBean.getLogin());
-                model.addAttribute("user", id);
+                model.addAttribute("userId", id);
                 return "actionCustomer";
             } else {
                 model.addAttribute("error", "Invalid Details");

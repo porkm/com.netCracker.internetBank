@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import main.bll.modeldto.TransferDTO;
 import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
 import main.bll.api.IServiceCustomer;
@@ -70,9 +71,33 @@ public class ServiceCustomer implements IServiceCustomer {
     }
 
     @Override
-    public void transferMoney(Customer me, Customer you, double money) {
+    public void transferMoney(TransferDTO transferDTO) {
 
-        Transfer transfer = new Transfer();
+        Invoice fromInvoice = null;
+        try {
+            fromInvoice = unit.invoices().get(transferDTO.getFromInvoiceId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        Invoice toInvoice = null;
+        try {
+            toInvoice = unit.invoices().get(transferDTO.getToInvoiceId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        toInvoice.setBalance(toInvoice.getBalance()+transferDTO.getMoney());
+        fromInvoice.setBalance(fromInvoice.getBalance()-transferDTO.getMoney());
+
+        try {
+            unit.invoices().update(toInvoice);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            unit.invoices().update(fromInvoice);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

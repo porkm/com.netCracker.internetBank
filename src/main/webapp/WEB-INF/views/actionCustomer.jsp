@@ -16,16 +16,13 @@
 
 <ul>
     <li>
-        <a href="<c:url value="/seeInvoices/${user}"/>">See Invoices</a>
+        <a href="<c:url value="/seeInvoices/${userId}"/>">See Invoices</a> <%--and here Make InvoiceUtil --%>
     </li>
     <li>
-        <a href="<c:url value="/getTranfer/${user}"/>">Make Transfer</a>
+        <a href="<c:url value="/seeCredit/${userId}"/>">See Credit</a>
     </li>
     <li>
-        <a href="<c:url value="/seeCredit/${user}"/>">See Credit</a>
-    </li>
-    <li>
-        <a href="<c:url value="/addFriend/${user}"/>">Add friend</a>
+        <a href="<c:url value="/addFriend/${userId}"/>">Add friend</a>
     </li>
 </ul>
 
