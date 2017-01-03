@@ -22,16 +22,8 @@ public class CustomerController {
     IServiceCustomer service = context.getBean(IServiceCustomer.class);
 
     @RequestMapping("/actionCustomer")
-    public ModelAndView actionForCustomer() {
-        List<Customer> customerList = new ArrayList<>();
-//
-//        try {
-//            customerList = service.getAll();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//            customerList = new ArrayList<>();
-//        }
-        return new ModelAndView("actionCustomer", "action", customerList);
+    public String actionForCustomer() {
+        return "login";
     }
 
 

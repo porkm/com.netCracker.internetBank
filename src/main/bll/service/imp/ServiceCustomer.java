@@ -33,14 +33,28 @@ public class ServiceCustomer implements IServiceCustomer {
         return list;
     }
 
+
+    @Override
+    public boolean checkLoginPassw(Customer checkedCustomer) {
+        boolean check = false;
+        try {
+            check = unit.customers().getAll().stream().anyMatch(
+                    x->
+                            x.getLogin().equals(checkedCustomer.getLogin())
+                            &&
+                            x.getPassw().equals(checkedCustomer.getPassw())
+            );
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
+
     @Override
     public void transferMoney(Customer me, Customer you, double money) {
 
         Transfer transfer = new Transfer();
-
-
-
-
     }
 
     @Override

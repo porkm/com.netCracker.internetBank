@@ -11,6 +11,7 @@ import main.bll.modeldto.CreditDTO;
 public interface IServiceCustomer {
     List<Invoice> seeInvoises(int customerId) throws SQLException;
     void transferMoney(Customer me, Customer you, double money)throws SQLException;
-    List<CreditDTO>  seeCredit(int customerId) throws SQLException;;
+    List<CreditDTO>  seeCredit(int customerId) throws SQLException;
     void inviteFriend(int customerId, String friend) throws SQLException;
+    boolean checkLoginPassw(Customer chekedCustomer);
 }

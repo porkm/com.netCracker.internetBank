@@ -19,7 +19,7 @@
         <a href="<c:url value="/seeInvoices/${actionEmployed.id}"/>">See Invoices</a>
     </li>
     <li>
-        <a href="<c:url value="/getTranfer/${actionEmployed.id}"/>">See Invoices</a>
+        <a href="<c:url value="/getTranfer/${actionEmployed.id}"/>">Make Transfer</a>
     </li>
     <li>
         <a href="<c:url value="/seeCredit/${actionEmployed.id}"/>">See Invoices</a>

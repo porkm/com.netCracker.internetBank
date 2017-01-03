@@ -37,7 +37,7 @@ public class MainController {
 
     @RequestMapping("/customer")
     public String listEmpoloyed() {
-        return "customer";
+        return "redirect:/login";
     }
 
 
