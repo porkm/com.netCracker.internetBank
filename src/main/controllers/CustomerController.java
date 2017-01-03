@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,7 @@ public class CustomerController {
     }
 
     @RequestMapping(value = "/makeTransfer", method = RequestMethod.POST)
-    public String addInvoice(@ModelAttribute("transferDTO") TransferDTO transferDTO) {
+    public String addInvoice(HttpSession session, @ModelAttribute("transferDTO") TransferDTO transferDTO) {
 
         try {
             service.transferMoney(transferDTO);
@@ -49,7 +50,8 @@ public class CustomerController {
             e.printStackTrace();
         }
 
-        return "index";
+
+        return "redirect:/seeInvoices/"+session.getAttribute("userId");
     }
 
 

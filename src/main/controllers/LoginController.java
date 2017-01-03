@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpSession;
+
 @Controller
 public class LoginController {
 
@@ -24,15 +26,18 @@ public class LoginController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String submit(Model model, @ModelAttribute("loginBean") Customer loginBean) {
-        if (loginBean != null && loginBean.getLogin() != null & loginBean.getPassw() != null) {
+    public String submit(HttpSession session, Model model, @ModelAttribute("loginBean") Customer loginBean) {
 
-            //todo add session
+        if (loginBean != null && loginBean.getLogin() != null & loginBean.getPassw() != null) {
 
             if (service.checkLoginPassw(loginBean)) {
                 //get id user
                 int id =service.getIdByLogin(loginBean.getLogin());
                 model.addAttribute("userId", id);
+
+                session.setMaxInactiveInterval(540);
+                session.setAttribute("userId", id);
+
                 return "actionCustomer";
             } else {
                 model.addAttribute("error", "Invalid Details");
