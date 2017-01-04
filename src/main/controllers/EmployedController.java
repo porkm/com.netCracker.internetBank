@@ -2,7 +2,6 @@ package main.controllers;
 
 
 import main.bll.api.IServiceEmployed;
-import main.bll.modeldto.CreditDTO;
 import main.configuration.IoCConfiguration;
 import main.dal.entinties.Card;
 import main.dal.entinties.Credit;
@@ -13,7 +12,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -73,6 +71,11 @@ public class EmployedController {
             e.printStackTrace();
             listInvoices = new ArrayList<>();
         }
+        //todo check for add bonus
+
+        //
+
+        
         return new ModelAndView("seeInvoices", "listInvoices", listInvoices );
     }
     //endregion
@@ -87,7 +90,7 @@ public class EmployedController {
     @RequestMapping(value = "/addInvoice", method = RequestMethod.POST)
     public String addInvoice(@ModelAttribute("invoice") Invoice addInvoice) {
 
-        service.createInvoice(addInvoice);
+        service.addInvoice(addInvoice);
 
         return "redirect:/seeInvoices/"+addInvoice.getCustomerId();
     }

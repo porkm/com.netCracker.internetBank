@@ -64,7 +64,7 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
-    public void createInvoice(Invoice invoice) {
+    public void addInvoice(Invoice invoice) {
         try {
             unit.invoices().create(invoice);
         } catch (SQLException e) {
@@ -100,6 +100,10 @@ public class ServiceEmployed implements IServiceEmployed {
 
     }
 
+    @Override
+    public void checkForBonus() throws SQLException {
+
+    }
 
     @Override
     public void addCredit(Credit credit) {

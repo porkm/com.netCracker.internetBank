@@ -7,9 +7,6 @@ import main.bll.modeldto.TransferDTO;
 import main.dal.entinties.*;
 import main.bll.modeldto.CreditDTO;
 
-/**
- * Created by Mihalych on 11.12.2016.
- */
 public interface IServiceCustomer {
     List<Invoice> seeInvoises(int customerId) throws SQLException;
     void transferMoney(TransferDTO transferDTO)throws SQLException;

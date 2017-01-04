@@ -73,31 +73,9 @@ public class ServiceCustomer implements IServiceCustomer {
     @Override
     public void transferMoney(TransferDTO transferDTO) {
 
-        Invoice fromInvoice = null;
-        try {
-            fromInvoice = unit.invoices().get(transferDTO.getFromInvoiceId());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        Invoice toInvoice = null;
-        try {
-            toInvoice = unit.invoices().get(transferDTO.getToInvoiceId());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        toInvoice.setBalance(toInvoice.getBalance()+transferDTO.getMoney());
-        fromInvoice.setBalance(fromInvoice.getBalance()-transferDTO.getMoney());
+        InvoiceUtil invoiceUtil = new InvoiceUtil(transferDTO, unit);
 
-        try {
-            unit.invoices().update(toInvoice);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            unit.invoices().update(fromInvoice);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        invoiceUtil.makeTransfer();
     }
 
     @Override

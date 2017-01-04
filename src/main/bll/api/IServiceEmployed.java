@@ -10,10 +10,15 @@ public interface IServiceEmployed {
     List<Invoice> seeInvoises(int customerId) throws SQLException;
     List<Card> seeCards(int invoicesId) throws SQLException;
     List<Credit> seeCredit(int customerId) throws SQLException;
-    void createInvoice(Invoice invoice);
+    void addInvoice(Invoice invoice);
     void addCard(int invoicesId) throws SQLException;
     void addCredit(Credit credit);
     List<Request> chekRequest() throws SQLException;
+
+    void checkForBonus() throws SQLException;
+
+
+
 
     List<Customer> getAll() throws SQLException;
 

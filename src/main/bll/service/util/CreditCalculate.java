@@ -12,11 +12,20 @@ public class CreditCalculate {
 
 
     public double getPay(){
-        return (credit.getSumCredit()+((credit.getSumCredit()*credit.getPercentRate())/100)*credit.getCreditTerm());
+        double sumCredit = credit.getSumCredit();
+        double termCredit = credit.getCreditTerm();
+        double percentRate = credit.getPercentRate()/100;
+
+        double result = (sumCredit*(percentRate/12))/
+                (1-(1/Math.pow(1+percentRate/12,termCredit*12)));
+
+        //return (credit.getSumCredit()+((credit.getSumCredit()*credit.getPercentRate())/100)*credit.getCreditTerm());
+        return result;
     }
 
     public double getOverPay() {
-        return credit.getSumCredit()-getPay()*credit.getCreditTerm()*12;
+        return  getPay()*credit.getCreditTerm()*12-credit.getSumCredit();
+        //return credit.getSumCredit()-getPay()*credit.getCreditTerm()*12;
     }
 
 }
