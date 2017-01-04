@@ -2,6 +2,10 @@ package main.controllers;
 
 
 import main.bll.api.IServiceEmployed;
+import main.bll.modeldto.CardDTO;
+import main.bll.service.util.CardCurrency;
+import main.bll.service.util.CardInfo;
+import main.bll.service.util.stock.BringFriend;
 import main.configuration.IoCConfiguration;
 import main.dal.entinties.Card;
 import main.dal.entinties.Credit;
@@ -27,6 +31,15 @@ public class EmployedController {
     ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
     IServiceEmployed service = context.getBean(IServiceEmployed.class);
 
+    @InitBinder
+    public void initBinder(WebDataBinder binder)
+    {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(
+                dateFormat, true));
+    }
+
     @RequestMapping("/actionEmployed")
     public ModelAndView actionForEmployed() {
         List<Customer> customerList;
@@ -39,6 +52,7 @@ public class EmployedController {
         }
         return new ModelAndView("actionEmployed", "customerList", customerList);
     }
+
     //region Добавить клиента
     @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)
     public String addCustomer() {
@@ -75,7 +89,7 @@ public class EmployedController {
 
         //
 
-        
+
         return new ModelAndView("seeInvoices", "listInvoices", listInvoices );
     }
     //endregion
@@ -115,16 +129,18 @@ public class EmployedController {
 
     //region Добавить карту
     @RequestMapping(value = "/addCard/{id}", method = RequestMethod.GET)
-    public ModelAndView addCard(@PathVariable("id") int id) {
-        Card card = new Card();
+    public ModelAndView addCard(@PathVariable("id") int id, Model model) {
+        CardDTO card = new CardDTO();
         card.setInvoceId(id);
+        model.addAttribute("curr", CardCurrency.values());
         return new ModelAndView("addCard", "card", card );
     }
 
     @RequestMapping(value = "/addCard", method = RequestMethod.POST)
-    public String addCard(@ModelAttribute("card") Card addCard) {
+    public String addCard(@ModelAttribute("card") CardDTO addCard) {
+
         try {
-            service.addCard(addCard.getInvoceId());
+            service.addCard(addCard);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -152,15 +168,6 @@ public class EmployedController {
 
     //endregion
 
-    @InitBinder
-    public void initBinder(WebDataBinder binder)
-    {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        dateFormat.setLenient(false);
-        binder.registerCustomEditor(Date.class, new CustomDateEditor(
-                dateFormat, true));
-    }
-
     //region Добавить Кредит
     @RequestMapping(value = "/addCredit/{id}", method = RequestMethod.GET)
     public ModelAndView addCredit(@PathVariable("id") int id) {
@@ -176,6 +183,27 @@ public class EmployedController {
 
         return "redirect:/seeCredit/"+addCredit.getCustomerId();
     }
+    //endregion
+
+    //region Зарегистрировать клиента
+    @RequestMapping(value = "/seeRequest/{id}", method = RequestMethod.GET)
+    public ModelAndView seeRequest(@PathVariable("id") int id) {
+        Credit credit = new Credit();
+        credit.setCustomerId(id);
+        return new ModelAndView("seeRequest", "credit", credit );
+    }
+
+    @RequestMapping(value = "/seeRequest", method = RequestMethod.POST)
+    public String seeRequestSubmit(@ModelAttribute("customer") Customer customer) {
+
+        service.registerCustomer(customer);
+        BringFriend action = new BringFriend();
+        action.addBonus(customer.getInvoices().get(0));  //денги капают по умолчанию на первый счет
+
+        return "redirect:/seeRequest/"+customer.getId();
+    }
+
+
     //endregion
 
 

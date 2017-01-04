@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
@@ -29,7 +30,22 @@
             </td>
 
             <td>
-                    <%--<f:input path="validOf"/>--%>
+                <f:input path="validOf"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i>Currency:</i>
+            </td>
+
+            <td>
+                <f:select path="currency">
+                    <c:forEach var="item" items="${curr}">
+                        <option>
+                            <c:out value="${item}" />
+                        </option>
+                    </c:forEach>
+                </f:select>
 
             </td>
         </tr>

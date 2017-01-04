@@ -23,7 +23,8 @@ public class CardRepo implements IRepository<Card> {
         Statement statement = connection.createStatement();
         ResultSet res = statement.executeQuery("Select * from card");
         while (res.next()) {
-            cards.add(new Card(res.getInt("number"), res.getDate("valid_of"), res.getInt("id_invoice")));
+            cards.add(new Card(res.getInt("number"), res.getDate("valid_of"), res.getInt("id_invoice"),
+                    res.getString("currency"), res.getDouble("balance")));
         }
         return cards;
     }
@@ -36,7 +37,8 @@ public class CardRepo implements IRepository<Card> {
         statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         if (res.next()) {
-            cards = new Card(res.getInt("number"), res.getDate("valid_of"), res.getInt("id_invoice"));
+            cards = new Card(res.getInt("number"), res.getDate("valid_of"), res.getInt("id_invoice"),
+                    res.getString("currency"), res.getDouble("balance"));
         } else {
             cards = null;
         }
@@ -46,10 +48,12 @@ public class CardRepo implements IRepository<Card> {
     @Override
     public void create(Card item) throws SQLException {
         PreparedStatement statement = connection.prepareStatement("INSERT INTO" +
-                " card (number, valid_of, id_invoice) VALUES(?,?,?)");
+                " card (number, valid_of, id_invoice, balance, currency) VALUES(?,?,?,?,?)");
         statement.setInt(1, item.getNumber());
-        statement.setDate(2, (Date) item.getValidOf());
+        statement.setDate(2, new java.sql.Date(item.getValidOf().getTime()));
         statement.setInt(3, item.getInvoceId());
+        statement.setDouble(4, item.getBalance());
+        statement.setString(5, item.getCurrency());
 
         statement.execute();
 
@@ -58,11 +62,13 @@ public class CardRepo implements IRepository<Card> {
     @Override
     public void update(Card item) throws SQLException {
         PreparedStatement statement = connection.prepareStatement(" UPDATE card SET " +
-                " number=?, valid_of=?, id_invioce=? WHERE number=?");
+                " number=?, valid_of=?, id_invioce=?, balance=?, currency=? WHERE number=?");
         statement.setInt(1, item.getNumber());
-        statement.setDate(2, (Date) item.getValidOf());
+        statement.setDate(2, new java.sql.Date(item.getValidOf().getTime()));
         statement.setInt(3, item.getInvoceId());
-        statement.setInt(4, item.getNumber());
+        statement.setDouble(4, item.getBalance());
+        statement.setString(5, item.getCurrency());
+        statement.setInt(6, item.getNumber());
         statement.execute();
 
 
@@ -84,7 +90,8 @@ public class CardRepo implements IRepository<Card> {
         statement.setInt(1, invoicesId);
         ResultSet res = statement.executeQuery();
         while (res.next()) {
-            cards.add(new Card(res.getInt("number"), res.getDate("valid_Of"), res.getInt("id_invoice")));
+            cards.add(new Card(res.getInt("number"), res.getDate("valid_Of"), res.getInt("id_invoice"),
+                    res.getString("currency"), res.getDouble("balance")));
         }
         return cards;
     }

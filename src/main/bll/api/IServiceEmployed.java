@@ -1,6 +1,8 @@
 package main.bll.api;
 
 import java.sql.SQLException;
+
+import main.bll.modeldto.CardDTO;
 import main.dal.entinties.*;
 import java.util.List;
 
@@ -11,7 +13,7 @@ public interface IServiceEmployed {
     List<Card> seeCards(int invoicesId) throws SQLException;
     List<Credit> seeCredit(int customerId) throws SQLException;
     void addInvoice(Invoice invoice);
-    void addCard(int invoicesId) throws SQLException;
+    void addCard(CardDTO card) throws SQLException;
     void addCredit(Credit credit);
     List<Request> chekRequest() throws SQLException;
 

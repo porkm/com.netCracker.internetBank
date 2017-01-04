@@ -22,6 +22,8 @@
     <tr>
         <td>number</td>
         <td>validOf</td>
+        <td>Currency</td>
+        <td>Balance</td>
         <td>IdInvoices</td>
 
     </tr>
@@ -30,7 +32,10 @@
         <tr>
             <td>${card.number}</td>
             <td>${card.validOf}</td>
+            <td>${card.currency}</td>
+            <td>${card.balance}</td>
             <td>${card.invoceId}</td>
+
         </tr>
 
     </c:forEach>

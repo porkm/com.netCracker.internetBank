@@ -42,6 +42,10 @@ public class InvoiceUtil {
         return invoice;
     }
 
+    private boolean checkBalance(){
+        return false;
+    }
+
 
     private void updateInvoice(Invoice invoice) {
 

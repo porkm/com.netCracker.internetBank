@@ -89,11 +89,11 @@ public class CreditRepo implements IRepository<Credit> {
                 " pay=?, over_pay=?, id_customer=?, credit_start=?, credit_left=?  WHERE id=?");
         statement.setDouble(1, item.getSumCredit());
         statement.setDouble(2, item.getPercentRate());
-        statement.setDate(3, (Date) item.getDayOfPay());
+        statement.setDate(3, new java.sql.Date (item.getDayOfPay().getTime()));
         statement.setDouble(4, item.getPay());
         statement.setDouble(5, item.getOverPay());
         statement.setInt(6, item.getCustomerId());
-        statement.setDate(7, (Date) item.getCreditStart());
+        statement.setDate(7, new java.sql.Date (item.getCreditStart().getTime()));
         statement.setInt(8,  item.getCreditTerm());
         statement.setInt(9, item.getId());
 

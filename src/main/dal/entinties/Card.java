@@ -7,17 +7,19 @@ public class Card {
     private int number;
     private Date validOf;
     private int invoceId;
+    private String currency;
+    private double balance;
 
-    public Card(int number, Date validOf, int invoceId) {
+    public Card() {
+    }
+
+    public Card(int number, Date validOf, int invoceId, String currency, double balance) {
         this.number = number;
         this.validOf = validOf;
         this.invoceId = invoceId;
+        this.currency = currency;
+        this.balance = balance;
     }
-
-    public Card() {
-
-    }
-
 
     public int getNumber() {
         return number;
@@ -41,6 +43,22 @@ public class Card {
 
     public void setInvoceId(int invoceId) {
         this.invoceId = invoceId;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 }
 

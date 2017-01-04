@@ -2,8 +2,10 @@ package main.bll.service.imp;
 
 
 import java.sql.SQLException;
+import java.util.Currency;
 import java.util.List;
 
+import main.bll.modeldto.CardDTO;
 import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
 import main.bll.api.IServiceEmployed;
@@ -78,26 +80,28 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
-    public void addCard(int invoicesId) throws SQLException {
-       // Card newCard = new Card();
-        //todo add chek Date()
-        List<Card> cards = unit.cards().getAll();
-        CardInfo cardInfo = new CardInfo();
+    public void addCard(CardDTO card) throws SQLException {
 
-        //-------------Процедура получения уникального номера карты--------------------------
+        CardInfo cardInfo = new CardInfo();
+        Card addCard = new Card();
+
+        //-------------Проверка уникального номера карты--------------------------
         int newNumberCard = cardInfo.generateNumberCard();
-//        for (Card card : cards) {
-//            if (card.getNumber() != newNumberCard) {
-//                break;
-//            }
+//        while (unit.cards().getAll().stream().filter(x->x.getNumber()==newNumberCard).count()==0){
 //            newNumberCard=cardInfo.generateNumberCard();
 //        }
         //--------------------------------------------------------------------------------------
+        addCard.setValidOf(cardInfo.setValidOfCard(card.getValidOf()));
+        addCard.setNumber(newNumberCard);
+        addCard.setInvoceId(card.getInvoceId());
+        addCard.setCurrency(card.getCurrency().toString());
+
+        //
+        double balance = unit.invoices().get(card.getInvoceId()).getBalance();
+        addCard.setBalance(cardInfo.getBalance(balance, card.getCurrency()));
 
 
-
-        unit.cards().create(new Card(newNumberCard,cardInfo.setValidOfCard(2000),invoicesId));
-
+        unit.cards().create(addCard);
     }
 
     @Override
