@@ -18,14 +18,11 @@ public class CreditCalculate {
 
         double result = (sumCredit*(percentRate/12))/
                 (1-(1/Math.pow(1+percentRate/12,termCredit*12)));
-
-        //return (credit.getSumCredit()+((credit.getSumCredit()*credit.getPercentRate())/100)*credit.getCreditTerm());
         return result;
     }
 
     public double getOverPay() {
         return  getPay()*credit.getCreditTerm()*12-credit.getSumCredit();
-        //return credit.getSumCredit()-getPay()*credit.getCreditTerm()*12;
     }
 
 }

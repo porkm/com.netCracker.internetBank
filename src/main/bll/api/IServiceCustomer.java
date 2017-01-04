@@ -9,7 +9,7 @@ import main.bll.modeldto.CreditDTO;
 
 public interface IServiceCustomer {
     List<Invoice> seeInvoises(int customerId) throws SQLException;
-    void transferMoney(TransferDTO transferDTO)throws SQLException;
+    boolean transferMoney(TransferDTO transferDTO)throws SQLException;
     List<CreditDTO>  seeCredit(int customerId) throws SQLException;
     void inviteFriend(int customerId, String friend) throws SQLException;
     boolean checkLoginPassw(Customer checkedCustomer);

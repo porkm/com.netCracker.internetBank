@@ -17,7 +17,6 @@ public class ServiceEmployed implements IServiceEmployed {
     private IUnitOfWork unit;
 
 
-
     public ServiceEmployed(IUnitOfWork unit) {
         this.unit = unit;
     }

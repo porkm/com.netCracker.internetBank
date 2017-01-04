@@ -1,4 +1,5 @@
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%--
   Created by IntelliJ IDEA.
   User: porkm
@@ -41,6 +42,7 @@
             <td><input type="submit"/></td>
         </tr>
     </table>
+    <div style="color: red">${errorTransfer}</div>
 </f:form>
 </body>
 </html>

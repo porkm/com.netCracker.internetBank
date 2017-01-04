@@ -20,16 +20,27 @@ public class InvoiceUtil {
         this.unit = unit;
     }
 
-    public void makeTransfer() {
+    public boolean makeTransfer() {
 
         fromInvoice = getInvoiceById(transferDTO.getFromInvoiceId());
         toInvoice = getInvoiceById(transferDTO.getToInvoiceId());
 
-        toInvoice.setBalance(toInvoice.getBalance() + transferDTO.getMoney());
-        fromInvoice.setBalance(fromInvoice.getBalance() - transferDTO.getMoney());
+        if (fromInvoice.getBalance()<transferDTO.getMoney()){
+            return false;
+            //todo MyExeption
+        }
+        else
+        {
+            toInvoice.setBalance(toInvoice.getBalance() + transferDTO.getMoney());
+            fromInvoice.setBalance(fromInvoice.getBalance() - transferDTO.getMoney());
 
-        updateInvoice(toInvoice);
-        updateInvoice(fromInvoice);
+            updateInvoice(toInvoice);
+            updateInvoice(fromInvoice);
+        }
+
+        return true;
+
+
     }
 
     private Invoice getInvoiceById(int invoiceId) {
@@ -42,9 +53,6 @@ public class InvoiceUtil {
         return invoice;
     }
 
-    private boolean checkBalance(){
-        return false;
-    }
 
 
     private void updateInvoice(Invoice invoice) {

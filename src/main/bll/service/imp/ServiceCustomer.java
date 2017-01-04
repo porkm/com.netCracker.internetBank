@@ -71,11 +71,12 @@ public class ServiceCustomer implements IServiceCustomer {
     }
 
     @Override
-    public void transferMoney(TransferDTO transferDTO) {
+    public boolean transferMoney(TransferDTO transferDTO) {
 
         InvoiceUtil invoiceUtil = new InvoiceUtil(transferDTO, unit);
 
-        invoiceUtil.makeTransfer();
+        boolean result =invoiceUtil.makeTransfer();
+        return result;
     }
 
     @Override

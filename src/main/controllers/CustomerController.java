@@ -42,19 +42,30 @@ public class CustomerController {
     }
 
     @RequestMapping(value = "/makeTransfer", method = RequestMethod.POST)
-    public String addInvoice(HttpSession session, @ModelAttribute("transferDTO") TransferDTO transferDTO) {
+    public String addInvoice(HttpSession session, @ModelAttribute("transferDTO") TransferDTO transferDTO, Model model) {
+        boolean result =false;
 
         try {
-            service.transferMoney(transferDTO);
+            result =service.transferMoney(transferDTO);
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+
         if (session.getAttribute("userId")==null){
             return "redirect:/login";
         }
 
+        if (!result){
+            model.addAttribute("errorTransfer", "Insufficient funds");
+            return "makeTransfer";
 
-        return "redirect:/seeInvoices/"+session.getAttribute("userId");
+        }
+        else{
+            return "redirect:/seeInvoices/"+session.getAttribute("userId");
+        }
+
+
     }
 
 
