@@ -10,6 +10,7 @@ public class Card {
     private String currency;
     private double balance;
 
+    
     public Card() {
     }
 

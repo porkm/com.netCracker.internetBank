@@ -70,8 +70,10 @@ public class InvoiceRepo implements IRepository<Invoice> {
 
     @Override
     public void update(Invoice item) throws SQLException {
+
         PreparedStatement statement = connection.prepareStatement(" UPDATE invoice SET " +
                 " balance=? WHERE id=?");
+
         statement.setDouble(1, item.getBalance());
         statement.setInt(2, item.getId());
         statement.execute();

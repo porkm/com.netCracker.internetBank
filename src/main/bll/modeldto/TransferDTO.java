@@ -9,9 +9,9 @@ public class TransferDTO {
     public TransferDTO() {
     }
 
-    public TransferDTO(int toCustomerId, int fromCustomerId, double money) {
-        this.toInvoiceId = toCustomerId;
-        this.fromInvoiceId = fromCustomerId;
+    public TransferDTO(int toInvoiceId, int fromInvoiceId, double money) {
+        this.toInvoiceId = toInvoiceId;
+        this.fromInvoiceId = fromInvoiceId;
         this.money = money;
     }
 

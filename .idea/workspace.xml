@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f04d9b-cccd-4b13-91ae-df9dc1b43718" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/com_netCracker_internetBank_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/com_netCracker_internetBank_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" afterPath="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" afterPath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" afterPath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" afterPath="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/util/InvoiceUtil.java" afterPath="$PROJECT_DIR$/src/main/bll/service/util/InvoiceUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.netCracker.internetBank.iml" afterPath="$PROJECT_DIR$/com.netCracker.internetBank.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/modeldto/TransferDTO.java" afterPath="$PROJECT_DIR$/src/main/bll/modeldto/TransferDTO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/entinties/Card.java" afterPath="$PROJECT_DIR$/src/main/dal/entinties/Card.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/internetbank/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,6 +44,30 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ibank@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ibank@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="card" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -38,61 +75,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/CustomerController.java">
+      <file leaf-file-name="actionCustomer.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="244" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makeTransfer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
+            <state relative-caret-position="323">
+              <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IServiceCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -107,8 +114,9 @@
         <option value="Tag Library Descriptor" />
         <option value="jsf" />
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -123,14 +131,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/~customer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listInvoices.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employed.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeListCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/dal/api/IRepository.java" />
@@ -143,16 +145,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCredit.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chooseInvoice.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeInvoices.jsp" />
         <option value="$PROJECT_DIR$/src/main/bll/service/util/Transfer.java" />
-        <option value="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/bll/modeldto/TransferDTO.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/util/stock/BringFriend.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeRequest.jsp" />
         <option value="$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java" />
@@ -161,19 +158,30 @@
         <option value="$PROJECT_DIR$/src/main/bll/service/util/CardCurrency.java" />
         <option value="$PROJECT_DIR$/src/main/bll/modeldto/CardDTO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp" />
-        <option value="$PROJECT_DIR$/src/main/dal/entinties/Card.java" />
-        <option value="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/controllers/EmployedController.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/util/CurrentCurse.java" />
-        <option value="$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/util/InvoiceUtil.java" />
         <option value="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp" />
         <option value="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/bll/modeldto/TransferDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/dal/entinties/Card.java" />
+        <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/structure.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
       </list>
     </option>
   </component>
@@ -208,8 +216,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -329,16 +337,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -361,12 +359,6 @@
               <option name="myItemId" value="internetbank" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internetbank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com.netCracker.internetBank" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -393,8 +385,34 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="internetbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.netCracker.internetBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -420,11 +438,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,28 +457,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internetbank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.netCracker.internetBank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,10 +483,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,6 +558,12 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\!Konstantin\JAVA\com.netcracker.internetbank-2\com.netCracker.internetBank\src\main\webapp\resources\css\css-login" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -590,7 +584,7 @@
       <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -600,7 +594,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -608,7 +602,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -633,7 +631,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -825,6 +827,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -841,27 +844,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -889,6 +871,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -942,12 +930,45 @@
       </MavenSettings>
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -984,34 +1005,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1028,10 +1021,38 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="Console" type="Application" factoryName="Application">
@@ -1126,7 +1147,7 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Console" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
     </list>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -1136,7 +1157,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -1144,11 +1165,7 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1195,51 +1212,52 @@
       <workItem from="1483459122850" duration="13650000" />
       <workItem from="1483477976626" duration="1153000" />
       <workItem from="1483539812045" duration="19769000" />
+      <workItem from="1483628823936" duration="12270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152473000" />
+    <option name="totallyTimeSpent" value="164743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5151515" sideWeight="0.50653595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32634032" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08009709" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19255663" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23529412" sideWeight="0.49346405" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3686636" sideWeight="0.49346405" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32641292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23139158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15916955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="93" y="100" width="1084" height="791" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15916955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1316,7 +1334,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="252" />
+      <option name="time" value="253" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1329,1777 +1347,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IUnitOfWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.customer">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="3447.4891271467613" y="2312.0">java.applet</node>
-            <node x="5761.027488207797" y="1626.0">java.nio</node>
-            <node x="1116.0" y="2824.0">main.webapp</node>
-            <node x="6252.027488207797" y="1626.0">java.time</node>
-            <node x="3373.0" y="2824.0">sun.tools</node>
-            <node x="3964.0" y="2824.0">org.xml</node>
-            <node x="0.0" y="2824.0">org.springframework</node>
-            <node x="7145.027488207797" y="1626.0">sun.audio</node>
-            <node x="2747.0" y="2824.0">oracle.jrockit</node>
-            <node x="1282.0" y="2824.0">META-INF.services</node>
-            <node x="7533.027488207797" y="1626.0">javax.activation</node>
-            <node x="3523.0" y="2824.0">org.omg</node>
-            <node x="662.3829780716137" y="678.0">java.security</node>
-            <node x="3021.279184372989" y="1626.0">sun.java2d</node>
-            <node x="4996.223505906913" y="1626.0">main.configuration</node>
-            <node x="3819.0" y="2824.0">org.w3c</node>
-            <node x="7274.027488207797" y="1626.0">javax.imageio</node>
-            <node x="4317.959678473284" y="1775.0">javafx.concurrent</node>
-            <node x="3061.0" y="2824.0">com.mysql</node>
-            <node x="4009.8208510396557" y="807.0">java.lang</node>
-            <node x="3441.279184372989" y="1626.0">javafx.print</node>
-            <node x="4344.546844539773" y="1934.0">javafx.scene</node>
-            <node x="7822.027488207797" y="1775.0">javax.transaction</node>
-            <node x="2082.968564903962" y="2312.0">junit.framework</node>
-            <node x="2267.0" y="2824.0">javafx.embed</node>
-            <node x="5371.924833340541" y="1626.0">netscape.security</node>
-            <node x="223.3829780716137" y="1626.0">javax.crypto</node>
-            <node x="3888.8208510396557" y="1626.0">javax.xml</node>
-            <node x="1706.4680844545926" y="1626.0">java.sql</node>
-            <node x="2390.8778569393608" y="1775.0">javafx.collections</node>
-            <node x="1768.757317806742" y="309.0">java.util</node>
-            <node x="5877.027488207797" y="1626.0">javafx.event</node>
-            <node x="142.0" y="2898.0">sun.nio</node>
-            <node x="1120.0" y="2898.0">jdk.jfr</node>
-            <node x="949.0" y="2824.0">jdk.nashorn</node>
-            <node x="2568.279184372989" y="1626.0">sun.launcher</node>
-            <node x="775.0" y="2824.0">META-INF.resources</node>
-            <node x="565.0" y="2898.0">org.jcp</node>
-            <node x="1218.4680844545924" y="1626.0">jdk.net</node>
-            <node x="2310.137907140112" y="2750.0">junit.textui</node>
-            <node x="4133.820851039656" y="1626.0">sun.text</node>
-            <node x="6375.027488207797" y="1626.0">java.math</node>
-            <node x="2428.0" y="2824.0">META-INF.maven</node>
-            <node x="2049.718564903962" y="2521.0">junit.extensions</node>
-            <node x="1447.0" y="2824.0">sun.security</node>
-            <node x="3770.779184372989" y="1934.0">sun.awt</node>
-            <node x="1777.0" y="2824.0">sun.plugin2</node>
-            <node x="7685.027488207797" y="1775.0">javax.activity</node>
-            <node x="3013.163531908666" y="2073.0">java.awt</node>
-            <node x="90.3829780716137" y="1626.0">javax.servlet</node>
-            <node x="6005.027488207797" y="1626.0">java.text</node>
-            <node x="3355.9891271467613" y="2750.0">junit.awtui</node>
-            <node x="1904.8159100367059" y="2521.0">sun.applet</node>
-            <node x="2205.718564903962" y="2521.0">junit.runner</node>
-            <node x="1334.4680844545924" y="1626.0">javax.print</node>
-            <node x="1941.0" y="2824.0">jdk.internal</node>
-            <node x="2658.779184372989" y="1775.0">sun.font</node>
-            <node x="5665.660508309846" y="2750.0">sun.swing</node>
-            <node x="2725.279184372989" y="1626.0">javafx.beans</node>
-            <node x="7416.027488207797" y="1626.0">java.rmi</node>
-            <node x="4633.223505906913" y="1626.0">sun.dc</node>
-            <node x="409.0" y="2824.0">org.aopalliance</node>
-            <node x="924.4680844545924" y="1775.0">sun.management</node>
-            <node x="6502.027488207797" y="1626.0">java.beans</node>
-            <node x="1615.4200270179003" y="1775.0">javax.sql</node>
-            <node x="2588.0" y="2824.0">sun.invoke</node>
-            <node x="283.0" y="2898.0">javax.jws</node>
-            <node x="593.0" y="2824.0">javax.annotation</node>
-            <node x="1982.908074681526" y="1626.0">javax.accessibility</node>
-            <node x="518.3829780716137" y="1626.0">java.net</node>
-            <node x="4172.070851039656" y="1775.0">javafx.css</node>
-            <node x="1458.4680844545926" y="1626.0">sun.corba</node>
-            <node x="3672.0" y="2824.0">javax.lang</node>
-            <node x="1094.4680844545924" y="1626.0">sun.misc</node>
-            <node x="4272.976617319629" y="1626.0">main.controllers</node>
-            <node x="5206.223505906913" y="1775.0">javafx.util</node>
-            <node x="3217.0" y="2824.0">com.oracle</node>
-            <node x="3305.279184372989" y="1626.0">sun.tracing</node>
-            <node x="3565.279184372989" y="1626.0">javafx.application</node>
-            <node x="5465.124833340541" y="1934.0">javafx.stage</node>
-            <node x="6772.027488207797" y="1626.0">sun.util</node>
-            <node x="5592.124833340541" y="1934.0">javafx.fxml</node>
-            <node x="705.0" y="2898.0">main.dal</node>
-            <node x="3723.279184372989" y="1626.0">javax.net</node>
-            <node x="1946.21559680542" y="2750.0">sun.plugin</node>
-            <node x="2105.0" y="2824.0">org.apache</node>
-            <node x="1226.9680844545924" y="807.0">jdk.Exported</node>
-            <node x="983.0" y="2898.0">main.bll</node>
-            <node x="4500.223505906913" y="1626.0">sun.reflect</node>
-            <node x="807.4680844545924" y="1775.0">sun.net</node>
-            <node x="356.3829780716137" y="1626.0">javax.smartcardio</node>
-            <node x="4007.8208510396557" y="1626.0">javax.faces</node>
-            <node x="5222.473505906913" y="1934.0">javafx.animation</node>
-            <node x="1612.0" y="2824.0">javax.security</node>
-            <node x="1588.4680844545926" y="1626.0">javax.rmi</node>
-            <node x="6632.027488207797" y="1626.0">javax.naming</node>
-            <node x="0.0" y="2898.0">sun.rmi</node>
-            <node x="2169.6682516726764" y="2750.0">junit.swingui</node>
-            <node x="4871.89017257358" y="1934.0">javafx.geometry</node>
-            <node x="4108.0" y="2824.0">com.sun</node>
-            <node x="5168.223505906913" y="1626.0">sun.instrument</node>
-            <node x="4855.223505906913" y="1626.0">main.console</node>
-            <node x="3155.279184372989" y="1626.0">netscape.javascript</node>
-            <node x="2904.0" y="2824.0">javax.sound</node>
-            <node x="924.4680844545924" y="1626.0">javax.management</node>
-            <node x="6900.027488207797" y="1626.0">javax.tools</node>
-            <node x="4745.223505906913" y="1626.0">sun.io</node>
-            <node x="6124.027488207797" y="1626.0">javax.script</node>
-            <node x="214.0" y="2824.0">jdk.management</node>
-            <node x="6870.509631064941" y="0.0">java.io</node>
-            <node x="893.9255312631026" y="2750.0">sun.print</node>
-            <node x="845.0" y="2898.0">org.gjt</node>
-            <node x="424.0" y="2898.0">org.ietf</node>
-            <node x="7026.027488207797" y="1626.0">javax.jnlp</node>
-            <node x="2855.279184372989" y="1626.0">sun.usagetracker</node>
-            <node x="3316.4891271467613" y="2521.0">javax.swing</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="main.configuration" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5071.723505906913" y="1446.0" />
-              <point x="4075.263328915762" y="1446.0" />
-              <point x="14.442477876106295" y="14.5" />
-            </edge>
-            <edge source="junit.textui" target="java.lang">
-              <point x="36.333333333333485" y="-14.5" />
-              <point x="2400.9712404734455" y="2730.0" />
-              <point x="5705.624833340541" y="2730.0" />
-              <point x="5705.624833340541" y="1336.0" />
-              <point x="4085.192532455585" y="1336.0" />
-              <point x="24.371681415929288" y="14.5" />
-            </edge>
-            <edge source="sun.print" target="java.lang">
-              <point x="11.555555555555657" y="-14.5" />
-              <point x="957.4810868186582" y="2670.0" />
-              <point x="1236.0656211579303" y="2670.0" />
-              <point x="1236.0656211579303" y="2501.0" />
-              <point x="1924.4145826030774" y="2501.0" />
-              <point x="1924.4145826030774" y="2182.0" />
-              <point x="2180.5695791063054" y="2182.0" />
-              <point x="2180.5695791063054" y="1326.0" />
-              <point x="4034.643859889213" y="1326.0" />
-              <point x="-26.176991150442518" y="14.5" />
-            </edge>
-            <edge source="javax.print" target="java.lang">
-              <point x="34.66666666666674" y="-14.5" />
-              <point x="1421.1347511212593" y="1206.0" />
-              <point x="4023.812001482134" y="1206.0" />
-              <point x="-37.0088495575219" y="14.5" />
-            </edge>
-            <edge source="javax.jnlp" target="java.io">
-              <point x="24.75" y="-14.5" />
-              <point x="7100.277488207797" y="149.0" />
-              <point x="6940.438202493512" y="149.0" />
-              <point x="25.42857142857156" y="14.5" />
-            </edge>
-            <edge source="java.math" target="java.io">
-              <point x="35.66666666666697" y="-14.5" />
-              <point x="6464.194154874464" y="1566.0" />
-              <point x="6944.132080044532" y="1566.0" />
-              <point x="6944.132080044532" y="219.0" />
-              <point x="6927.723916779226" y="219.0" />
-              <point x="12.714285714285325" y="14.5" />
-            </edge>
-            <edge source="javafx.application" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="3634.279184372989" y="1566.0" />
-              <point x="4056.3075767033724" y="1566.0" />
-              <point x="-4.5132743362833025" y="14.5" />
-            </edge>
-            <edge source="javax.faces" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="jdk.net" target="java.lang">
-              <point x="32.0" y="-14.5" />
-              <point x="1298.4680844545924" y="1186.0" />
-              <point x="4022.00669174762" y="1186.0" />
-              <point x="-38.81415929203558" y="14.5" />
-            </edge>
-            <edge source="java.security" target="java.io">
-              <point x="-51.42857142857156" y="-14.5" />
-              <point x="671.5411413369197" y="229.0" />
-              <point x="6902.295345350655" y="229.0" />
-              <point x="-12.714285714285325" y="14.5" />
-            </edge>
-            <edge source="java.util" target="java.lang">
-              <point x="14.297872340425556" y="14.5" />
-              <point x="1831.0551901471677" y="518.0" />
-              <point x="4049.892279611084" y="518.0" />
-              <point x="-10.928571428571558" y="-14.5" />
-            </edge>
-            <edge source="sun.applet" target="sun.misc">
-              <point x="-28.0" y="-14.5" />
-              <point x="1932.8159100367059" y="2441.0" />
-              <point x="1293.1460732553624" y="2441.0" />
-              <point x="1293.1460732553624" y="2142.0" />
-              <point x="1146.4680844545924" y="2142.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="java.applet" target="java.awt">
-              <point x="-28.0" y="-14.5" />
-              <point x="3475.4891271467613" y="2232.0" />
-              <point x="3094.8301985753324" y="2232.0" />
-              <point x="32.666666666666515" y="14.5" />
-            </edge>
-            <edge source="javafx.geometry" target="javafx.util">
-              <point x="43.33333333333303" y="-14.5" />
-              <point x="4980.223505906912" y="1874.0" />
-              <point x="5235.023505906913" y="1874.0" />
-              <point x="-19.199999999999818" y="14.5" />
-            </edge>
-            <edge source="javax.tools" target="java.lang">
-              <point x="-26.25" y="-14.5" />
-              <point x="6926.277488207797" y="1116.0" />
-              <point x="4105.050939535231" y="1116.0" />
-              <point x="44.23008849557573" y="14.5" />
-            </edge>
-            <edge source="netscape.security" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5431.924833340541" y="1376.0" />
-              <point x="4081.5819129865586" y="1376.0" />
-              <point x="20.761061946902828" y="14.5" />
-            </edge>
-            <edge source="sun.print" target="java.util">
-              <point x="-34.666666666666515" y="-14.5" />
-              <point x="911.2588645964361" y="2720.0" />
-              <point x="11.0" y="2720.0" />
-              <point x="11.0" y="2132.0" />
-              <point x="796.9680844545924" y="2132.0" />
-              <point x="796.9680844545924" y="558.0" />
-              <point x="1782.033913551423" y="558.0" />
-              <point x="-34.72340425531911" y="14.5" />
-            </edge>
-            <edge source="sun.awt" target="java.beans">
-              <point x="42.0" y="-14.5" />
-              <point x="3861.779184372989" y="1854.0" />
-              <point x="4915.223505906913" y="1854.0" />
-              <point x="4915.223505906913" y="1745.0" />
-              <point x="6515.777488207797" y="1745.0" />
-              <point x="-41.25" y="14.5" />
-            </edge>
-            <edge source="sun.management" target="java.io">
-              <point x="-50.0" y="-14.5" />
-              <point x="949.4680844545924" y="1725.0" />
-              <point x="79.8829780716137" y="1725.0" />
-              <point x="79.8829780716137" y="99.0" />
-              <point x="6878.683100452696" y="99.0" />
-              <point x="-36.326530612244824" y="14.5" />
-            </edge>
-            <edge source="javax.accessibility" target="java.lang">
-              <point x="47.333333333333485" y="-14.5" />
-              <point x="2101.241408014859" y="1276.0" />
-              <point x="4030.13058555293" y="1276.0" />
-              <point x="-30.69026548672582" y="14.5" />
-            </edge>
-            <edge source="javax.accessibility" target="java.util">
-              <point x="-47.33333333333326" y="-14.5" />
-              <point x="2006.5747413481927" y="1046.0" />
-              <point x="2043.690673411373" y="1046.0" />
-              <point x="2043.690673411373" y="548.0" />
-              <point x="1824.9275305726994" y="548.0" />
-              <point x="8.17021276595733" y="14.5" />
-            </edge>
-            <edge source="javax.imageio" target="java.io">
-              <point x="30.5" y="-14.5" />
-              <point x="7365.527488207797" y="129.0" />
-              <point x="6944.070855554736" y="129.0" />
-              <point x="29.061224489795677" y="14.5" />
-            </edge>
-            <edge source="sun.launcher" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="2630.779184372989" y="1436.0" />
-              <point x="4044.573063429036" y="1436.0" />
-              <point x="-16.247787610619525" y="14.5" />
-            </edge>
-            <edge source="javax.crypto" target="java.io">
-              <point x="-48.42857142857156" y="-14.5" />
-              <point x="231.45440664304215" y="1026.0" />
-              <point x="95.97481480630768" y="1026.0" />
-              <point x="95.97481480630768" y="129.0" />
-              <point x="6884.132080044533" y="129.0" />
-              <point x="-30.877551020407736" y="14.5" />
-            </edge>
-            <edge source="javafx.concurrent" target="java.lang">
-              <point x="-51.375" y="-14.5" />
-              <point x="4335.084678473284" y="1755.0" />
-              <point x="4262.476617319629" y="1755.0" />
-              <point x="4262.476617319629" y="1566.0" />
-              <point x="4064.431470508682" y="1566.0" />
-              <point x="3.61061946902646" y="14.5" />
-            </edge>
-            <edge source="java.lang" target="java.security">
-              <point x="-47.35714285714312" y="-14.5" />
-              <point x="4013.4637081825126" y="777.0" />
-              <point x="754.3829780716137" y="777.0" />
-              <point x="32.0" y="14.5" />
-            </edge>
-            <edge source="sun.usagetracker" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="2928.279184372989" y="1486.0" />
-              <point x="4049.0863377653195" y="1486.0" />
-              <point x="-11.734513274336223" y="14.5" />
-            </edge>
-            <edge source="java.io" target="java.lang">
-              <point x="0.0" y="14.5" />
-              <point x="6915.009631064941" y="757.0" />
-              <point x="4086.3208510396557" y="757.0" />
-              <point x="25.5" y="-14.5" />
-            </edge>
-            <edge source="java.security" target="java.util">
-              <point x="34.285714285714334" y="-14.5" />
-              <point x="756.6686923573279" y="518.0" />
-              <point x="1773.8637007854654" y="518.0" />
-              <point x="-42.89361702127667" y="14.5" />
-            </edge>
-            <edge source="sun.plugin" target="java.applet">
-              <point x="45.19999999999982" y="-14.5" />
-              <point x="2047.91559680542" y="2720.0" />
-              <point x="4660.059678473284" y="2720.0" />
-              <point x="4660.059678473284" y="2451.0" />
-              <point x="3540.8224604800944" y="2451.0" />
-              <point x="37.333333333333485" y="14.5" />
-            </edge>
-            <edge source="sun.net" target="java.lang">
-              <point x="40.0" y="-14.5" />
-              <point x="895.4680844545924" y="1745.0" />
-              <point x="2167.7642693717917" y="1745.0" />
-              <point x="2167.7642693717917" y="1296.0" />
-              <point x="4031.935895287443" y="1296.0" />
-              <point x="-28.88495575221259" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="java.beans">
-              <point x="35.35714285714266" y="-14.5" />
-              <point x="3406.8462700039036" y="2481.0" />
-              <point x="6562.527488207797" y="2481.0" />
-              <point x="6562.527488207797" y="1745.0" />
-              <point x="6570.777488207797" y="1745.0" />
-              <point x="13.75" y="14.5" />
-            </edge>
-            <edge source="javafx.animation" target="javafx.util">
-              <point x="-44.33333333333303" y="-14.5" />
-              <point x="5244.64017257358" y="1874.0" />
-              <point x="5254.223505906913" y="1874.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="javax.activation" target="java.lang">
-              <point x="-49.125" y="-14.5" />
-              <point x="7549.402488207797" y="1056.0" />
-              <point x="4110.466868738771" y="1056.0" />
-              <point x="49.646017699114964" y="14.5" />
-            </edge>
-            <edge source="sun.swing" target="java.beans">
-              <point x="24.444444444444343" y="-14.5" />
-              <point x="5745.104952754289" y="2710.0" />
-              <point x="6643.405163777281" y="2710.0" />
-              <point x="6643.405163777281" y="1745.0" />
-              <point x="6598.277488207797" y="1745.0" />
-              <point x="41.25" y="14.5" />
-            </edge>
-            <edge source="sun.awt" target="sun.font">
-              <point x="-28.0" y="-14.5" />
-              <point x="3791.779184372989" y="1894.0" />
-              <point x="2742.945851039656" y="1894.0" />
-              <point x="33.666666666666515" y="14.5" />
-            </edge>
-            <edge source="java.net" target="java.io">
-              <point x="-19.199999999999818" y="-14.5" />
-              <point x="547.1829780716139" y="976.0" />
-              <point x="121.6074678675318" y="976.0" />
-              <point x="121.6074678675318" y="169.0" />
-              <point x="6891.397386166981" y="169.0" />
-              <point x="-23.6122448979595" y="14.5" />
-            </edge>
-            <edge source="javax.management" target="java.util">
-              <point x="-16.66666666666697" y="-14.5" />
-              <point x="982.8014177879254" y="936.0" />
-              <point x="952.2393610503373" y="936.0" />
-              <point x="952.2393610503373" y="598.0" />
-              <point x="1790.2041263173803" y="598.0" />
-              <point x="-26.55319148936178" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="java.awt">
-              <point x="28.0" y="-14.5" />
-              <point x="1988.6159100367058" y="2252.0" />
-              <point x="3018.60797635311" y="2252.0" />
-              <point x="-43.55555555555566" y="14.5" />
-            </edge>
-            <edge source="java.lang" target="java.util">
-              <point x="3.6428571428573377" y="-14.5" />
-              <point x="4064.463708182513" y="498.0" />
-              <point x="1835.1402965301463" y="498.0" />
-              <point x="18.38297872340422" y="14.5" />
-            </edge>
-            <edge source="java.rmi" target="java.io">
-              <point x="36.375" y="-14.5" />
-              <point x="7500.902488207797" y="1606.0" />
-              <point x="7504.525561065451" y="1606.0" />
-              <point x="7504.525561065451" y="109.0" />
-              <point x="6947.703508615961" y="109.0" />
-              <point x="32.693877551020705" y="14.5" />
-            </edge>
-            <edge source="javafx.stage" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5518.624833340541" y="1874.0" />
-              <point x="5513.424833340541" y="1874.0" />
-              <point x="5513.424833340541" y="1356.0" />
-              <point x="4083.387222721072" y="1356.0" />
-              <point x="22.566371681416058" y="14.5" />
-            </edge>
-            <edge source="java.awt" target="javax.accessibility">
-              <point x="-26.133333333333212" y="-14.5" />
-              <point x="3036.0301985753326" y="2023.0" />
-              <point x="2059.408074681526" y="2023.0" />
-              <point x="2059.408074681526" y="1725.0" />
-              <point x="2089.408074681526" y="1725.0" />
-              <point x="35.5" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="java.applet">
-              <point x="50.40000000000009" y="-14.5" />
-              <point x="2011.215910036706" y="2441.0" />
-              <point x="3466.1557938134274" y="2441.0" />
-              <point x="-37.333333333333485" y="14.5" />
-            </edge>
-            <edge source="junit.swingui" target="java.lang">
-              <point x="-48.0" y="-14.5" />
-              <point x="2181.6682516726764" y="2660.0" />
-              <point x="2028.2185649039623" y="2660.0" />
-              <point x="2028.2185649039623" y="2222.0" />
-              <point x="2259.874888840819" y="2222.0" />
-              <point x="2259.874888840819" y="1366.0" />
-              <point x="4038.2544793582397" y="1366.0" />
-              <point x="-22.566371681416058" y="14.5" />
-            </edge>
-            <edge source="javax.sql" target="java.sql">
-              <point x="31.333333333333258" y="-14.5" />
-              <point x="1693.7533603512336" y="1725.0" />
-              <point x="1753.4680844545926" y="1725.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="sun.awt">
-              <point x="19.642857142857338" y="-14.5" />
-              <point x="3391.1319842896182" y="2461.0" />
-              <point x="4055.1575812629108" y="2461.0" />
-              <point x="4055.1575812629108" y="2043.0" />
-              <point x="3844.279184372989" y="2043.0" />
-              <point x="24.5" y="14.5" />
-            </edge>
-            <edge source="java.sql" target="java.lang">
-              <point x="18.799999999999955" y="-14.5" />
-              <point x="1772.2680844545926" y="1246.0" />
-              <point x="4027.4226209511603" y="1246.0" />
-              <point x="-33.39823008849544" y="14.5" />
-            </edge>
-            <edge source="java.net" target="java.security">
-              <point x="0.0" y="-14.5" />
-              <point x="566.3829780716137" y="757.0" />
-              <point x="690.3829780716137" y="757.0" />
-              <point x="-32.0" y="14.5" />
-            </edge>
-            <edge source="sun.net" target="java.util">
-              <point x="8.0" y="-14.5" />
-              <point x="863.4680844545924" y="1755.0" />
-              <point x="860.9680844545924" y="1755.0" />
-              <point x="860.9680844545924" y="578.0" />
-              <point x="1786.1190199344016" y="578.0" />
-              <point x="-30.638297872340445" y="14.5" />
-            </edge>
-            <edge source="java.sql" target="java.security">
-              <point x="-37.59999999999991" y="-14.5" />
-              <point x="1715.8680844545927" y="856.0" />
-              <point x="1410.1745923761441" y="856.0" />
-              <point x="1410.1745923761441" y="787.0" />
-              <point x="746.3829780716137" y="787.0" />
-              <point x="24.0" y="14.5" />
-            </edge>
-            <edge source="java.math" target="java.lang">
-              <point x="-35.66666666666697" y="-14.5" />
-              <point x="6392.8608215411305" y="1196.0" />
-              <point x="4097.829700597178" y="1196.0" />
-              <point x="37.0088495575219" y="14.5" />
-            </edge>
-            <edge source="javax.imageio" target="java.lang">
-              <point x="-30.5" y="-14.5" />
-              <point x="7304.527488207797" y="1086.0" />
-              <point x="4107.758904137001" y="1086.0" />
-              <point x="46.93805309734489" y="14.5" />
-            </edge>
-            <edge source="junit.framework" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="2150.968564903962" y="2232.0" />
-              <point x="2299.576216274447" y="2232.0" />
-              <point x="2299.576216274447" y="1376.0" />
-              <point x="4039.1571342254965" y="1376.0" />
-              <point x="-21.663716814159216" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="java.util">
-              <point x="-16.799999999999955" y="-14.5" />
-              <point x="1944.015910036706" y="2431.0" />
-              <point x="1810.9680844545926" y="2431.0" />
-              <point x="1810.9680844545926" y="648.0" />
-              <point x="1804.5019986578059" y="648.0" />
-              <point x="-12.255319148936223" y="14.5" />
-            </edge>
-            <edge source="javax.management" target="java.io">
-              <point x="-66.66666666666697" y="-14.5" />
-              <point x="932.8014177879254" y="966.0" />
-              <point x="123.42379439814476" y="966.0" />
-              <point x="123.42379439814476" y="179.0" />
-              <point x="6893.213712697594" y="179.0" />
-              <point x="-21.79591836734653" y="14.5" />
-            </edge>
-            <edge source="java.text" target="java.util">
-              <point x="19.800000000000182" y="-14.5" />
-              <point x="6074.327488207798" y="1526.0" />
-              <point x="6091.826440373025" y="1526.0" />
-              <point x="6091.826440373025" y="448.0" />
-              <point x="1845.3530624875932" y="448.0" />
-              <point x="28.595744680851112" y="14.5" />
-            </edge>
-            <edge source="javafx.fxml" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5643.624833340541" y="1346.0" />
-              <point x="4084.289877588328" y="1346.0" />
-              <point x="23.469026548672446" y="14.5" />
-            </edge>
-            <edge source="sun.audio" target="java.lang">
-              <point x="-27.25" y="-14.5" />
-              <point x="7172.277488207797" y="1096.0" />
-              <point x="4106.856249269744" y="1096.0" />
-              <point x="46.035398230088504" y="14.5" />
-            </edge>
-            <edge source="java.sql" target="java.util">
-              <point x="-18.799999999999955" y="-14.5" />
-              <point x="1734.6680844545926" y="1046.0" />
-              <point x="1739.5173498511072" y="1046.0" />
-              <point x="1739.5173498511072" y="658.0" />
-              <point x="1802.4594454663165" y="658.0" />
-              <point x="-14.297872340425556" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="java.lang">
-              <point x="5.599999999999909" y="-14.5" />
-              <point x="1966.6159100367058" y="2192.0" />
-              <point x="2222.570906539934" y="2192.0" />
-              <point x="2222.570906539934" y="1336.0" />
-              <point x="4035.54651475647" y="1336.0" />
-              <point x="-25.274336283185676" y="14.5" />
-            </edge>
-            <edge source="javafx.geometry" target="java.lang">
-              <point x="-43.33333333333303" y="-14.5" />
-              <point x="4893.556839240246" y="1844.0" />
-              <point x="4844.723505906913" y="1844.0" />
-              <point x="4844.723505906913" y="1476.0" />
-              <point x="4072.555364313992" y="1476.0" />
-              <point x="11.734513274336223" y="14.5" />
-            </edge>
-            <edge source="java.text" target="java.lang">
-              <point x="-39.600000000000364" y="-14.5" />
-              <point x="6014.927488207797" y="1256.0" />
-              <point x="4092.413771393638" y="1256.0" />
-              <point x="31.59292035398221" y="14.5" />
-            </edge>
-            <edge source="java.net" target="java.lang">
-              <point x="19.200000000000045" y="-14.5" />
-              <point x="585.5829780716135" y="1096.0" />
-              <point x="4013.8827979423104" y="1096.0" />
-              <point x="-46.938053097345346" y="14.5" />
-            </edge>
-            <edge source="junit.extensions" target="junit.framework">
-              <point x="-33.75" y="-14.5" />
-              <point x="2083.468564903962" y="2421.0" />
-              <point x="2123.768564903962" y="2421.0" />
-              <point x="-27.199999999999818" y="14.5" />
-            </edge>
-            <edge source="sun.swing" target="java.util">
-              <point x="48.88888888888869" y="-14.5" />
-              <point x="5769.549397198734" y="2730.0" />
-              <point x="6889.527488207797" y="2730.0" />
-              <point x="6889.527488207797" y="358.0" />
-              <point x="1863.7360412109974" y="358.0" />
-              <point x="46.978723404255334" y="14.5" />
-            </edge>
-            <edge source="sun.plugin" target="java.io">
-              <point x="-45.20000000000027" y="-14.5" />
-              <point x="1957.5155968054198" y="2660.0" />
-              <point x="74.43399847977662" y="2660.0" />
-              <point x="74.43399847977662" y="69.0" />
-              <point x="6873.234120860859" y="69.0" />
-              <point x="-41.77551020408191" y="14.5" />
-            </edge>
-            <edge source="java.rmi" target="java.lang">
-              <point x="-36.375" y="-14.5" />
-              <point x="7428.152488207797" y="1076.0" />
-              <point x="4108.661559004258" y="1076.0" />
-              <point x="47.84070796460219" y="14.5" />
-            </edge>
-            <edge source="javafx.stage" target="javafx.event">
-              <point x="42.80000000000018" y="-14.5" />
-              <point x="5561.424833340541" y="1904.0" />
-              <point x="5739.527488207797" y="1904.0" />
-              <point x="5739.527488207797" y="1735.0" />
-              <point x="5974.227488207797" y="1735.0" />
-              <point x="43.19999999999982" y="14.5" />
-            </edge>
-            <edge source="javax.management" target="java.security">
-              <point x="-33.333333333333485" y="-14.5" />
-              <point x="966.1347511212589" y="946.0" />
-              <point x="632.8829780716137" y="946.0" />
-              <point x="632.8829780716137" y="777.0" />
-              <point x="706.3829780716137" y="777.0" />
-              <point x="-16.0" y="14.5" />
-            </edge>
-            <edge source="java.io" target="java.security">
-              <point x="-7.265306122449147" y="14.5" />
-              <point x="6907.744324942491" y="259.0" />
-              <point x="722.3829780716137" y="259.0" />
-              <point x="0.0" y="-14.5" />
-            </edge>
-            <edge source="sun.swing" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5720.660508309846" y="2570.0" />
-              <point x="5706.527488207797" y="2570.0" />
-              <point x="5706.527488207797" y="1326.0" />
-              <point x="4086.0951873228414" y="1326.0" />
-              <point x="25.274336283185676" y="14.5" />
-            </edge>
-            <edge source="main.console" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="4915.223505906913" y="1466.0" />
-              <point x="4073.458019181249" y="1466.0" />
-              <point x="12.637168141593065" y="14.5" />
-            </edge>
-            <edge source="javax.xml" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="3938.3208510396557" y="1606.0" />
-              <point x="4059.918196172399" y="1606.0" />
-              <point x="-0.9026548672568424" y="14.5" />
-            </edge>
-            <edge source="sun.dc" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="4679.223505906913" y="1496.0" />
-              <point x="4070.7500545794787" y="1496.0" />
-              <point x="9.929203539822993" y="14.5" />
-            </edge>
-            <edge source="junit.awtui" target="java.awt">
-              <point x="27.0" y="-14.5" />
-              <point x="3436.9891271467613" y="2242.0" />
-              <point x="3083.9413096864437" y="2242.0" />
-              <point x="21.77777777777783" y="14.5" />
-            </edge>
-            <edge source="sun.print" target="java.io">
-              <point x="-46.22222222222217" y="-14.5" />
-              <point x="899.7033090408804" y="2730.0" />
-              <point x="0.0" y="2730.0" />
-              <point x="0.0" y="59.0" />
-              <point x="6871.417794330247" y="59.0" />
-              <point x="-43.59183673469397" y="14.5" />
-            </edge>
-            <edge source="javafx.scene" target="javafx.css">
-              <point x="-27.25" y="-14.5" />
-              <point x="4371.796844539773" y="1824.0" />
-              <point x="4219.570851039656" y="1824.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="netscape.javascript" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="3219.779184372989" y="1526.0" />
-              <point x="4052.696957234346" y="1526.0" />
-              <point x="-8.123893805309763" y="14.5" />
-            </edge>
-            <edge source="javafx.stage" target="javafx.util">
-              <point x="-42.80000000000018" y="-14.5" />
-              <point x="5475.824833340541" y="1854.0" />
-              <point x="5273.423505906912" y="1854.0" />
-              <point x="19.199999999999818" y="14.5" />
-            </edge>
-            <edge source="sun.corba" target="java.lang">
-              <point x="27.25" y="-14.5" />
-              <point x="1540.2180844545926" y="1216.0" />
-              <point x="4024.71465634939" y="1216.0" />
-              <point x="-36.10619469026551" y="14.5" />
-            </edge>
-            <edge source="junit.textui" target="junit.runner">
-              <point x="0.0" y="-14.5" />
-              <point x="2364.637907140112" y="2630.0" />
-              <point x="2276.968564903962" y="2630.0" />
-              <point x="14.25" y="14.5" />
-            </edge>
-            <edge source="jdk.net" target="jdk.Exported">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="java.beans" target="java.lang">
-              <point x="-27.5" y="-14.5" />
-              <point x="6529.527488207797" y="1166.0" />
-              <point x="4100.537665198948" y="1166.0" />
-              <point x="39.71681415929197" y="14.5" />
-            </edge>
-            <edge source="java.nio" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5809.027488207797" y="1296.0" />
-              <point x="4088.8031519246115" y="1296.0" />
-              <point x="27.982300884955748" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="java.io">
-              <point x="51.07142857142844" y="-14.5" />
-              <point x="3422.56055571819" y="2501.0" />
-              <point x="7980.200957595553" y="2501.0" />
-              <point x="7980.200957595553" y="49.0" />
-              <point x="6958.6014677996345" y="49.0" />
-              <point x="43.59183673469397" y="14.5" />
-            </edge>
-            <edge source="javax.crypto" target="java.security">
-              <point x="-16.142857142856883" y="-14.5" />
-              <point x="263.7401209287568" y="1006.0" />
-              <point x="224.3829780716137" y="1006.0" />
-              <point x="224.3829780716137" y="727.0" />
-              <point x="666.3829780716137" y="727.0" />
-              <point x="-56.0" y="14.5" />
-            </edge>
-            <edge source="javafx.fxml" target="javafx.util">
-              <point x="-34.33333333333303" y="-14.5" />
-              <point x="5609.291500007208" y="1844.0" />
-              <point x="5292.623505906912" y="1844.0" />
-              <point x="38.399999999999636" y="14.5" />
-            </edge>
-            <edge source="junit.swingui" target="junit.framework">
-              <point x="-24.0" y="-14.5" />
-              <point x="2205.6682516726764" y="2650.0" />
-              <point x="2039.2185649039623" y="2650.0" />
-              <point x="2039.2185649039623" y="2411.0" />
-              <point x="2096.5685649039624" y="2411.0" />
-              <point x="-54.40000000000009" y="14.5" />
-            </edge>
-            <edge source="java.beans" target="java.applet">
-              <point x="-13.75" y="14.5" />
-              <point x="6543.277488207797" y="1745.0" />
-              <point x="6551.527488207797" y="1745.0" />
-              <point x="6551.527488207797" y="2292.0" />
-              <point x="3531.4891271467613" y="2292.0" />
-              <point x="28.0" y="-14.5" />
-            </edge>
-            <edge source="sun.swing" target="javax.swing">
-              <point x="-48.88888888888869" y="-14.5" />
-              <point x="5671.771619420957" y="2610.0" />
-              <point x="3385.2391271467613" y="2610.0" />
-              <point x="13.75" y="14.5" />
-            </edge>
-            <edge source="java.beans" target="java.util">
-              <point x="9.16666666666697" y="-14.5" />
-              <point x="6566.194154874464" y="1526.0" />
-              <point x="6562.527488207797" y="1526.0" />
-              <point x="6562.527488207797" y="418.0" />
-              <point x="1851.4807220620612" y="418.0" />
-              <point x="34.72340425531911" y="14.5" />
-            </edge>
-            <edge source="sun.management" target="java.lang">
-              <point x="50.0" y="-14.5" />
-              <point x="1049.4680844545924" y="1755.0" />
-              <point x="2168.6669242390485" y="1755.0" />
-              <point x="2168.6669242390485" y="1306.0" />
-              <point x="4032.8385501547" y="1306.0" />
-              <point x="-27.982300884955748" y="14.5" />
-            </edge>
-            <edge source="javafx.concurrent" target="javafx.event">
-              <point x="51.375" y="-14.5" />
-              <point x="4437.834678473284" y="1705.0" />
-              <point x="5909.427488207797" y="1705.0" />
-              <point x="-21.600000000000364" y="14.5" />
-            </edge>
-            <edge source="junit.awtui" target="junit.runner">
-              <point x="-27.0" y="-14.5" />
-              <point x="3382.9891271467613" y="2620.0" />
-              <point x="2305.468564903962" y="2620.0" />
-              <point x="42.75" y="14.5" />
-            </edge>
-            <edge source="sun.tracing" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="3363.279184372989" y="1546.0" />
-              <point x="4054.502266968859" y="1546.0" />
-              <point x="-6.318584070796533" y="14.5" />
-            </edge>
-            <edge source="javafx.util" target="java.io">
-              <point x="36.0" y="-14.5" />
-              <point x="5290.223505906913" y="1755.0" />
-              <point x="7015.527488207797" y="1755.0" />
-              <point x="7015.527488207797" y="159.0" />
-              <point x="6938.6218759629" y="159.0" />
-              <point x="23.6122448979595" y="14.5" />
-            </edge>
-            <edge source="java.lang" target="java.io">
-              <point x="40.07142857142844" y="-14.5" />
-              <point x="4100.892279611084" y="777.0" />
-              <point x="6929.581059636368" y="777.0" />
-              <point x="6929.581059636368" y="269.0" />
-              <point x="6918.642284126165" y="269.0" />
-              <point x="3.6326530612241186" y="14.5" />
-            </edge>
-            <edge source="javax.tools" target="java.io">
-              <point x="26.25" y="-14.5" />
-              <point x="6978.777488207797" y="169.0" />
-              <point x="6936.805549432287" y="169.0" />
-              <point x="21.79591836734653" y="14.5" />
-            </edge>
-            <edge source="javax.servlet" target="java.util">
-              <point x="0.0" y="-14.5" />
-              <point x="146.8829780716137" y="498.0" />
-              <point x="1769.7785944024868" y="498.0" />
-              <point x="-46.978723404255334" y="14.5" />
-            </edge>
-            <edge source="sun.print" target="javax.print">
-              <point x="-23.111111111111313" y="-14.5" />
-              <point x="922.8144201519913" y="2710.0" />
-              <point x="22.0" y="2710.0" />
-              <point x="22.0" y="2471.0" />
-              <point x="310.643764172336" y="2471.0" />
-              <point x="310.643764172336" y="2152.0" />
-              <point x="1380.9680844545924" y="2152.0" />
-              <point x="1380.9680844545924" y="1725.0" />
-              <point x="1360.4680844545924" y="1725.0" />
-              <point x="-26.0" y="14.5" />
-            </edge>
-            <edge source="sun.plugin" target="java.util">
-              <point x="-22.600000000000136" y="-14.5" />
-              <point x="1980.11559680542" y="2650.0" />
-              <point x="1247.0656211579303" y="2650.0" />
-              <point x="1247.0656211579303" y="2471.0" />
-              <point x="667.9540503838844" y="2471.0" />
-              <point x="667.9540503838844" y="2142.0" />
-              <point x="913.9680844545924" y="2142.0" />
-              <point x="913.9680844545924" y="588.0" />
-              <point x="1788.161573125891" y="588.0" />
-              <point x="-28.595744680851112" y="14.5" />
-            </edge>
-            <edge source="javax.smartcardio" target="java.lang">
-              <point x="47.333333333333314" y="-14.5" />
-              <point x="474.7163114049472" y="1086.0" />
-              <point x="4012.980143075054" y="1086.0" />
-              <point x="-47.840707964601734" y="14.5" />
-            </edge>
-            <edge source="java.awt" target="java.io">
-              <point x="45.73333333333312" y="-14.5" />
-              <point x="3107.896865241999" y="2053.0" />
-              <point x="7970.527488207797" y="2053.0" />
-              <point x="7970.527488207797" y="69.0" />
-              <point x="6954.9688147384095" y="69.0" />
-              <point x="39.95918367346894" y="14.5" />
-            </edge>
-            <edge source="sun.misc" target="java.security">
-              <point x="-19.5" y="-14.5" />
-              <point x="1126.9680844545924" y="906.0" />
-              <point x="640.8829780716137" y="906.0" />
-              <point x="640.8829780716137" y="787.0" />
-              <point x="714.3829780716137" y="787.0" />
-              <point x="-8.0" y="14.5" />
-            </edge>
-            <edge source="javafx.scene" target="java.lang">
-              <point x="-9.08333333333303" y="-14.5" />
-              <point x="4389.96351120644" y="1834.0" />
-              <point x="4478.723505906913" y="1834.0" />
-              <point x="4478.723505906913" y="1536.0" />
-              <point x="4067.1394351104523" y="1536.0" />
-              <point x="6.318584070796533" y="14.5" />
-            </edge>
-            <edge source="sun.java2d" target="java.awt">
-              <point x="0.0" y="14.5" />
-              <point x="3077.779184372989" y="1993.0" />
-              <point x="3068.696865241999" y="1993.0" />
-              <point x="6.533333333333303" y="-14.5" />
-            </edge>
-            <edge source="junit.textui" target="junit.framework">
-              <point x="-36.333333333333485" y="-14.5" />
-              <point x="2328.3045738067785" y="2640.0" />
-              <point x="2195.218564903962" y="2640.0" />
-              <point x="2195.218564903962" y="2421.0" />
-              <point x="2178.168564903962" y="2421.0" />
-              <point x="27.199999999999818" y="14.5" />
-            </edge>
-            <edge source="javax.servlet" target="java.lang">
-              <point x="45.19999999999999" y="-14.5" />
-              <point x="192.08297807161352" y="1056.0" />
-              <point x="4010.272178473284" y="1056.0" />
-              <point x="-50.548672566371806" y="14.5" />
-            </edge>
-            <edge source="javax.naming" target="java.io">
-              <point x="51.42857142857156" y="-14.5" />
-              <point x="6743.456059636369" y="1606.0" />
-              <point x="6969.764733105756" y="1606.0" />
-              <point x="6969.764733105756" y="179.0" />
-              <point x="6934.989222901675" y="179.0" />
-              <point x="19.97959183673447" y="14.5" />
-            </edge>
-            <edge source="java.nio" target="java.util">
-              <point x="32.0" y="-14.5" />
-              <point x="5841.027488207797" y="478.0" />
-              <point x="1839.225402913125" y="478.0" />
-              <point x="22.468085106382887" y="14.5" />
-            </edge>
-            <edge source="junit.swingui" target="junit.runner">
-              <point x="0.0" y="-14.5" />
-              <point x="2229.6682516726764" y="2670.0" />
-              <point x="2219.968564903962" y="2670.0" />
-              <point x="-42.75" y="14.5" />
-            </edge>
-            <edge source="sun.plugin" target="java.lang">
-              <point x="22.59999999999968" y="-14.5" />
-              <point x="2025.3155968054198" y="2670.0" />
-              <point x="2027.3159100367059" y="2670.0" />
-              <point x="2027.3159100367059" y="2212.0" />
-              <point x="2258.9722339735627" y="2212.0" />
-              <point x="2258.9722339735627" y="1356.0" />
-              <point x="4037.3518244909833" y="1356.0" />
-              <point x="-23.469026548672446" y="14.5" />
-            </edge>
-            <edge source="sun.text" target="java.lang">
-              <point x="-24.75" y="-14.5" />
-              <point x="4158.570851039656" y="1596.0" />
-              <point x="4061.723505906912" y="1596.0" />
-              <point x="0.9026548672563877" y="14.5" />
-            </edge>
-            <edge source="sun.net" target="java.net">
-              <point x="-24.0" y="-14.5" />
-              <point x="831.4680844545924" y="1745.0" />
-              <point x="590.3829780716137" y="1745.0" />
-              <point x="24.0" y="14.5" />
-            </edge>
-            <edge source="java.awt" target="java.security">
-              <point x="-45.73333333333312" y="-14.5" />
-              <point x="3016.4301985753327" y="2053.0" />
-              <point x="624.8829780716137" y="2053.0" />
-              <point x="624.8829780716137" y="767.0" />
-              <point x="698.3829780716137" y="767.0" />
-              <point x="-24.0" y="14.5" />
-            </edge>
-            <edge source="javax.rmi" target="java.lang">
-              <point x="24.25" y="-14.5" />
-              <point x="1661.2180844545926" y="1226.0" />
-              <point x="4025.617311216647" y="1226.0" />
-              <point x="-35.20353982300867" y="14.5" />
-            </edge>
-            <edge source="sun.print" target="javax.swing">
-              <point x="46.22222222222217" y="-14.5" />
-              <point x="992.1477534853248" y="2700.0" />
-              <point x="3330.2391271467613" y="2700.0" />
-              <point x="-41.25" y="14.5" />
-            </edge>
-            <edge source="sun.audio" target="java.io">
-              <point x="27.25" y="-14.5" />
-              <point x="7226.777488207797" y="139.0" />
-              <point x="6942.254529024124" y="139.0" />
-              <point x="27.244897959183618" y="14.5" />
-            </edge>
-            <edge source="sun.misc" target="java.io">
-              <point x="-45.5" y="-14.5" />
-              <point x="1100.9680844545924" y="926.0" />
-              <point x="202.3829780716137" y="926.0" />
-              <point x="202.3829780716137" y="199.0" />
-              <point x="6896.846365758818" y="199.0" />
-              <point x="-18.163265306122412" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="java.net">
-              <point x="-39.200000000000045" y="-14.5" />
-              <point x="1921.6159100367058" y="2451.0" />
-              <point x="753.8953567985668" y="2451.0" />
-              <point x="753.8953567985668" y="2122.0" />
-              <point x="542.3829780716137" y="2122.0" />
-              <point x="-24.0" y="14.5" />
-            </edge>
-            <edge source="javafx.css" target="javafx.beans">
-              <point x="-23.75" y="-14.5" />
-              <point x="4195.820851039656" y="1725.0" />
-              <point x="2821.529184372989" y="1725.0" />
-              <point x="41.25" y="14.5" />
-            </edge>
-            <edge source="java.time" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="6303.527488207797" y="1206.0" />
-              <point x="4096.927045729921" y="1206.0" />
-              <point x="36.10619469026551" y="14.5" />
-            </edge>
-            <edge source="sun.print" target="java.awt">
-              <point x="23.111111111111313" y="-14.5" />
-              <point x="969.0366423742139" y="2680.0" />
-              <point x="2451.199868138592" y="2680.0" />
-              <point x="2451.199868138592" y="2262.0" />
-              <point x="3029.4968652419993" y="2262.0" />
-              <point x="-32.666666666666515" y="14.5" />
-            </edge>
-            <edge source="sun.instrument" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5236.723505906913" y="1426.0" />
-              <point x="4077.0686386502753" y="1426.0" />
-              <point x="16.247787610619525" y="14.5" />
-            </edge>
-            <edge source="javax.script" target="java.lang">
-              <point x="-27.0" y="-14.5" />
-              <point x="6151.027488207797" y="1226.0" />
-              <point x="4095.121735995408" y="1226.0" />
-              <point x="34.30088495575228" y="14.5" />
-            </edge>
-            <edge source="java.awt" target="java.lang">
-              <point x="-19.59999999999991" y="-14.5" />
-              <point x="3042.563531908666" y="2013.0" />
-              <point x="2557.779184372989" y="2013.0" />
-              <point x="2557.779184372989" y="1426.0" />
-              <point x="4043.67040856178" y="1426.0" />
-              <point x="-17.150442477875913" y="14.5" />
-            </edge>
-            <edge source="sun.font" target="java.lang">
-              <point x="-12.625" y="-14.5" />
-              <point x="2696.654184372989" y="1715.0" />
-              <point x="2703.779184372989" y="1715.0" />
-              <point x="2703.779184372989" y="1446.0" />
-              <point x="4045.475718296293" y="1446.0" />
-              <point x="-15.345132743362683" y="14.5" />
-            </edge>
-            <edge source="javax.activity" target="java.rmi">
-              <point x="0.0" y="-14.5" />
-              <point x="7743.527488207797" y="1755.0" />
-              <point x="7440.277488207797" y="1755.0" />
-              <point x="-24.25" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="java.applet">
-              <point x="11.78571428571422" y="-14.5" />
-              <point x="3383.274841432475" y="2451.0" />
-              <point x="3503.4891271467613" y="2451.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="sun.font" target="java.util">
-              <point x="-37.875" y="-14.5" />
-              <point x="2671.404184372989" y="1695.0" />
-              <point x="2135.408074681526" y="1695.0" />
-              <point x="2135.408074681526" y="538.0" />
-              <point x="1826.970083764189" y="538.0" />
-              <point x="10.21276595744689" y="14.5" />
-            </edge>
-            <edge source="java.awt" target="sun.awt">
-              <point x="26.133333333333212" y="-14.5" />
-              <point x="3088.296865241999" y="2023.0" />
-              <point x="3778.945851039656" y="2023.0" />
-              <point x="-40.833333333333485" y="14.5" />
-            </edge>
-            <edge source="java.awt" target="java.util">
-              <point x="-32.666666666666515" y="-14.5" />
-              <point x="3029.4968652419993" y="2033.0" />
-              <point x="1871.47879868596" y="2033.0" />
-              <point x="1871.47879868596" y="588.0" />
-              <point x="1816.757317806742" y="588.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="javax.accessibility">
-              <point x="-27.5" y="-14.5" />
-              <point x="3343.9891271467613" y="2371.0" />
-              <point x="2353.218564903962" y="2371.0" />
-              <point x="2353.218564903962" y="2162.0" />
-              <point x="2048.408074681526" y="2162.0" />
-              <point x="2048.408074681526" y="1725.0" />
-              <point x="2018.408074681526" y="1725.0" />
-              <point x="-35.5" y="14.5" />
-            </edge>
-            <edge source="sun.awt" target="java.awt">
-              <point x="-24.5" y="14.5" />
-              <point x="3795.279184372989" y="2033.0" />
-              <point x="3094.8301985753324" y="2033.0" />
-              <point x="32.666666666666515" y="-14.5" />
-            </edge>
-            <edge source="javafx.event" target="java.io">
-              <point x="45.0" y="-14.5" />
-              <point x="5976.027488207797" y="1536.0" />
-              <point x="6938.683100452696" y="1536.0" />
-              <point x="6938.683100452696" y="249.0" />
-              <point x="6922.27493718739" y="249.0" />
-              <point x="7.265306122449147" y="14.5" />
-            </edge>
-            <edge source="javax.naming" target="java.lang">
-              <point x="-34.285714285714675" y="-14.5" />
-              <point x="6657.741773922083" y="1146.0" />
-              <point x="4102.342974933461" y="1146.0" />
-              <point x="41.522123893805656" y="14.5" />
-            </edge>
-            <edge source="javax.smartcardio" target="java.security">
-              <point x="0.0" y="-14.5" />
-              <point x="427.3829780716137" y="747.0" />
-              <point x="682.3829780716137" y="747.0" />
-              <point x="-40.0" y="14.5" />
-            </edge>
-            <edge source="javax.servlet" target="java.io">
-              <point x="-22.59999999999991" y="-14.5" />
-              <point x="124.2829780716138" y="1596.0" />
-              <point x="94.15848827569471" y="1596.0" />
-              <point x="94.15848827569471" y="119.0" />
-              <point x="6882.31575351392" y="119.0" />
-              <point x="-32.693877551020705" y="14.5" />
-            </edge>
-            <edge source="java.beans" target="java.io">
-              <point x="27.5" y="-14.5" />
-              <point x="6584.527488207797" y="1576.0" />
-              <point x="6945.948406575144" y="1576.0" />
-              <point x="6945.948406575144" y="209.0" />
-              <point x="6929.540243309839" y="209.0" />
-              <point x="14.530612244898293" y="14.5" />
-            </edge>
-            <edge source="javax.naming" target="java.util">
-              <point x="17.142857142856883" y="-14.5" />
-              <point x="6709.170345350654" y="1526.0" />
-              <point x="6714.662447735012" y="1526.0" />
-              <point x="6714.662447735012" y="398.0" />
-              <point x="1855.5658284450399" y="398.0" />
-              <point x="38.808510638297776" y="14.5" />
-            </edge>
-            <edge source="javafx.scene" target="javafx.util">
-              <point x="27.25" y="-14.5" />
-              <point x="4426.296844539773" y="1864.0" />
-              <point x="5215.823505906913" y="1864.0" />
-              <point x="-38.399999999999636" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="java.awt">
-              <point x="-3.9285714285715585" y="-14.5" />
-              <point x="3367.56055571819" y="2262.0" />
-              <point x="3062.163531908666" y="2262.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="javafx.beans" target="java.lang">
-              <point x="27.5" y="-14.5" />
-              <point x="2807.779184372989" y="1476.0" />
-              <point x="4048.1836828980627" y="1476.0" />
-              <point x="-12.637168141593065" y="14.5" />
-            </edge>
-            <edge source="javafx.collections" target="java.util">
-              <point x="-56.666666666666515" y="-14.5" />
-              <point x="2402.2111902726942" y="1715.0" />
-              <point x="1875.5639050689388" y="1715.0" />
-              <point x="1875.5639050689388" y="568.0" />
-              <point x="1820.8424241897208" y="568.0" />
-              <point x="4.085106382978665" y="14.5" />
-            </edge>
-            <edge source="javafx.css" target="java.lang">
-              <point x="23.75" y="-14.5" />
-              <point x="4243.320851039656" y="1576.0" />
-              <point x="4063.528815641426" y="1576.0" />
-              <point x="2.7079646017700725" y="14.5" />
-            </edge>
-            <edge source="javax.net" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="3771.279184372989" y="1576.0" />
-              <point x="4057.2102315706293" y="1576.0" />
-              <point x="-3.61061946902646" y="14.5" />
-            </edge>
-            <edge source="sun.io" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="4789.723505906913" y="1486.0" />
-              <point x="4071.652709446735" y="1486.0" />
-              <point x="10.83185840707938" y="14.5" />
-            </edge>
-            <edge source="sun.swing" target="java.awt">
-              <point x="-24.444444444444343" y="-14.5" />
-              <point x="5696.2160638654" y="2590.0" />
-              <point x="4066.1575812629108" y="2590.0" />
-              <point x="4066.1575812629108" y="2222.0" />
-              <point x="3105.7190874642215" y="2222.0" />
-              <point x="43.55555555555566" y="14.5" />
-            </edge>
-            <edge source="javax.sql" target="java.util">
-              <point x="0.0" y="-14.5" />
-              <point x="1662.4200270179003" y="1715.0" />
-              <point x="1695.9680844545926" y="1715.0" />
-              <point x="1695.9680844545926" y="648.0" />
-              <point x="1800.4168922748272" y="648.0" />
-              <point x="-16.34042553191489" y="14.5" />
-            </edge>
-            <edge source="javafx.print" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="3493.279184372989" y="1556.0" />
-              <point x="4055.404921836116" y="1556.0" />
-              <point x="-5.41592920353969" y="14.5" />
-            </edge>
-            <edge source="sun.net" target="java.io">
-              <point x="-40.0" y="-14.5" />
-              <point x="815.4680844545924" y="1755.0" />
-              <point x="78.06665154100165" y="1755.0" />
-              <point x="78.06665154100165" y="89.0" />
-              <point x="6876.866773922084" y="89.0" />
-              <point x="-38.14285714285688" y="14.5" />
-            </edge>
-            <edge source="javax.crypto" target="java.util">
-              <point x="16.142857142857338" y="-14.5" />
-              <point x="296.02583521447104" y="1046.0" />
-              <point x="794.925531263103" y="1046.0" />
-              <point x="794.925531263103" y="548.0" />
-              <point x="1779.9913603599337" y="548.0" />
-              <point x="-36.76595744680844" y="14.5" />
-            </edge>
-            <edge source="javafx.collections" target="javafx.beans">
-              <point x="56.666666666666515" y="-14.5" />
-              <point x="2515.5445236060273" y="1735.0" />
-              <point x="2766.529184372989" y="1735.0" />
-              <point x="-13.75" y="14.5" />
-            </edge>
-            <edge source="sun.awt" target="sun.java2d">
-              <point x="0.0" y="-14.5" />
-              <point x="3819.779184372989" y="1874.0" />
-              <point x="3225.279184372989" y="1874.0" />
-              <point x="3225.279184372989" y="1745.0" />
-              <point x="3122.979184372989" y="1745.0" />
-              <point x="45.19999999999982" y="14.5" />
-            </edge>
-            <edge source="sun.font" target="java.awt">
-              <point x="-33.666666666666515" y="14.5" />
-              <point x="2675.612517706323" y="1914.0" />
-              <point x="2629.9666843729897" y="1914.0" />
-              <point x="2629.9666843729897" y="2003.0" />
-              <point x="3049.0968652419992" y="2003.0" />
-              <point x="-13.066666666666606" y="-14.5" />
-            </edge>
-            <edge source="junit.swingui" target="javax.swing">
-              <point x="48.0" y="-14.5" />
-              <point x="2277.6682516726764" y="2710.0" />
-              <point x="3357.7391271467613" y="2710.0" />
-              <point x="-13.75" y="14.5" />
-            </edge>
-            <edge source="javafx.scene" target="javafx.event">
-              <point x="45.41666666666697" y="-14.5" />
-              <point x="4444.46351120644" y="1884.0" />
-              <point x="5717.527488207797" y="1884.0" />
-              <point x="5717.527488207797" y="1715.0" />
-              <point x="5931.027488207797" y="1715.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="sun.awt" target="java.lang">
-              <point x="28.0" y="-14.5" />
-              <point x="3847.779184372989" y="1844.0" />
-              <point x="3878.320851039656" y="1844.0" />
-              <point x="3878.320851039656" y="1596.0" />
-              <point x="4059.0155413051425" y="1596.0" />
-              <point x="-1.80530973451323" y="14.5" />
-            </edge>
-            <edge source="javax.activation" target="java.io">
-              <point x="16.375" y="-14.5" />
-              <point x="7614.902488207797" y="1606.0" />
-              <point x="7625.777488207797" y="1606.0" />
-              <point x="7625.777488207797" y="99.0" />
-              <point x="6949.519835146573" y="99.0" />
-              <point x="34.510204081632764" y="14.5" />
-            </edge>
-            <edge source="java.time" target="java.io">
-              <point x="34.33333333333303" y="-14.5" />
-              <point x="6337.8608215411305" y="1556.0" />
-              <point x="6942.31575351392" y="1556.0" />
-              <point x="6942.31575351392" y="229.0" />
-              <point x="6925.907590248614" y="229.0" />
-              <point x="10.897959183673265" y="14.5" />
-            </edge>
-            <edge source="sun.misc" target="java.util">
-              <point x="-6.5" y="-14.5" />
-              <point x="1140.9680844545924" y="618.0" />
-              <point x="1794.2892327003592" y="618.0" />
-              <point x="-22.468085106382887" y="14.5" />
-            </edge>
-            <edge source="javax.crypto" target="java.lang">
-              <point x="32.28571428571428" y="-14.5" />
-              <point x="312.1686923573279" y="1066.0" />
-              <point x="4011.1748333405408" y="1066.0" />
-              <point x="-49.646017699114964" y="14.5" />
-            </edge>
-            <edge source="sun.util" target="java.lang">
-              <point x="-32.0" y="-14.5" />
-              <point x="6788.027488207797" y="1126.0" />
-              <point x="4104.148284667974" y="1126.0" />
-              <point x="43.32743362831843" y="14.5" />
-            </edge>
-            <edge source="javafx.event" target="java.lang">
-              <point x="-45.0" y="-14.5" />
-              <point x="5886.027488207797" y="1286.0" />
-              <point x="4089.7058067918683" y="1286.0" />
-              <point x="28.88495575221259" y="14.5" />
-            </edge>
-            <edge source="javax.rmi" target="java.security">
-              <point x="-24.25" y="-14.5" />
-              <point x="1612.7180844545926" y="866.0" />
-              <point x="738.3829780716137" y="866.0" />
-              <point x="16.0" y="14.5" />
-            </edge>
-            <edge source="sun.swing" target="sun.awt">
-              <point x="-12.222222222222626" y="-14.5" />
-              <point x="5708.438286087623" y="2580.0" />
-              <point x="4077.1575812629108" y="2580.0" />
-              <point x="4077.1575812629108" y="2033.0" />
-              <point x="3860.612517706323" y="2033.0" />
-              <point x="40.833333333333485" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="java.util">
-              <point x="-35.35714285714266" y="-14.5" />
-              <point x="3336.1319842896182" y="2381.0" />
-              <point x="1839.7249233603682" y="2381.0" />
-              <point x="1839.7249233603682" y="608.0" />
-              <point x="1812.6722114237634" y="608.0" />
-              <point x="-4.085106382978665" y="14.5" />
-            </edge>
-            <edge source="sun.corba" target="java.security">
-              <point x="-27.25" y="-14.5" />
-              <point x="1485.7180844545926" y="876.0" />
-              <point x="730.3829780716137" y="876.0" />
-              <point x="8.0" y="14.5" />
-            </edge>
-            <edge source="javax.transaction" target="java.rmi">
-              <point x="0.0" y="-14.5" />
-              <point x="7891.027488207797" y="1745.0" />
-              <point x="7488.777488207797" y="1745.0" />
-              <point x="24.25" y="14.5" />
-            </edge>
-            <edge source="javafx.collections" target="java.lang">
-              <point x="-11.333333333333485" y="-14.5" />
-              <point x="2447.5445236060273" y="1755.0" />
-              <point x="2453.3778569393608" y="1755.0" />
-              <point x="2453.3778569393608" y="1396.0" />
-              <point x="4040.9624439600098" y="1396.0" />
-              <point x="-19.858407079645986" y="14.5" />
-            </edge>
-            <edge source="sun.awt" target="java.util">
-              <point x="-42.0" y="-14.5" />
-              <point x="3777.779184372989" y="1904.0" />
-              <point x="1873.5213518774494" y="1904.0" />
-              <point x="1873.5213518774494" y="578.0" />
-              <point x="1818.7998709982314" y="578.0" />
-              <point x="2.0425531914893327" y="14.5" />
-            </edge>
-            <edge source="sun.management" target="javax.management">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="sun.util" target="java.util">
-              <point x="32.0" y="-14.5" />
-              <point x="6852.027488207797" y="1526.0" />
-              <point x="6841.527488207797" y="1526.0" />
-              <point x="6841.527488207797" y="378.0" />
-              <point x="1859.6509348280188" y="378.0" />
-              <point x="42.89361702127667" y="14.5" />
-            </edge>
-            <edge source="javafx.util" target="java.lang">
-              <point x="12.0" y="-14.5" />
-              <point x="5266.223505906913" y="1685.0" />
-              <point x="5326.723505906913" y="1685.0" />
-              <point x="5326.723505906913" y="1406.0" />
-              <point x="4078.8739483847885" y="1406.0" />
-              <point x="18.053097345132755" y="14.5" />
-            </edge>
-            <edge source="junit.runner" target="junit.framework">
-              <point x="-28.5" y="-14.5" />
-              <point x="2234.218564903962" y="2421.0" />
-              <point x="2205.3685649039626" y="2421.0" />
-              <point x="54.40000000000009" y="14.5" />
-            </edge>
-            <edge source="javax.script" target="java.util">
-              <point x="27.0" y="-14.5" />
-              <point x="6205.027488207797" y="1526.0" />
-              <point x="6283.155163777281" y="1526.0" />
-              <point x="6283.155163777281" y="438.0" />
-              <point x="1847.3956156790825" y="438.0" />
-              <point x="30.638297872340445" y="14.5" />
-            </edge>
-            <edge source="main.controllers" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="4340.476617319629" y="1556.0" />
-              <point x="4065.334125375939" y="1556.0" />
-              <point x="4.5132743362833025" y="14.5" />
-            </edge>
-            <edge source="javax.swing" target="java.lang">
-              <point x="-19.642857142857338" y="-14.5" />
-              <point x="3351.8462700039036" y="2361.0" />
-              <point x="2537.3778569393608" y="2361.0" />
-              <point x="2537.3778569393608" y="1416.0" />
-              <point x="4042.767753694523" y="1416.0" />
-              <point x="-18.053097345132755" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="sun.awt">
-              <point x="39.200000000000045" y="-14.5" />
-              <point x="2000.015910036706" y="2431.0" />
-              <point x="2473.199868138592" y="2431.0" />
-              <point x="2473.199868138592" y="2282.0" />
-              <point x="3827.9458510396557" y="2282.0" />
-              <point x="8.166666666666515" y="14.5" />
-            </edge>
-            <edge source="javax.print" target="java.io">
-              <point x="-34.66666666666697" y="-14.5" />
-              <point x="1351.8014177879254" y="886.0" />
-              <point x="651.8829780716137" y="886.0" />
-              <point x="651.8829780716137" y="219.0" />
-              <point x="6900.479018820042" y="219.0" />
-              <point x="-14.530612244898293" y="14.5" />
-            </edge>
-            <edge source="javafx.event" target="java.util">
-              <point x="27.0" y="-14.5" />
-              <point x="5958.027488207797" y="1526.0" />
-              <point x="6029.155163777281" y="1526.0" />
-              <point x="6029.155163777281" y="458.0" />
-              <point x="1843.3105092961039" y="458.0" />
-              <point x="26.55319148936178" y="14.5" />
-            </edge>
-            <edge source="sun.java2d" target="java.lang">
-              <point x="-28.25" y="-14.5" />
-              <point x="3049.529184372989" y="1496.0" />
-              <point x="4049.988992632576" y="1496.0" />
-              <point x="-10.831858407079835" y="14.5" />
-            </edge>
-            <edge source="javax.management" target="java.lang">
-              <point x="16.66666666666663" y="-14.5" />
-              <point x="1016.1347511212589" y="1116.0" />
-              <point x="4015.688107676824" y="1116.0" />
-              <point x="-45.13274336283166" y="14.5" />
-            </edge>
-            <edge source="javax.jnlp" target="java.lang">
-              <point x="-24.75" y="-14.5" />
-              <point x="7050.777488207797" y="1106.0" />
-              <point x="4105.953594402488" y="1106.0" />
-              <point x="45.132743362832116" y="14.5" />
-            </edge>
-            <edge source="jdk.net" target="java.security">
-              <point x="-32.0" y="-14.5" />
-              <point x="1234.4680844545924" y="896.0" />
-              <point x="722.3829780716137" y="896.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="junit.runner" target="java.lang">
-              <point x="28.5" y="-14.5" />
-              <point x="2291.218564903962" y="2242.0" />
-              <point x="2380.3778569393608" y="2242.0" />
-              <point x="2380.3778569393608" y="1386.0" />
-              <point x="4040.059789092753" y="1386.0" />
-              <point x="-20.761061946902828" y="14.5" />
-            </edge>
-            <edge source="java.util" target="java.security">
-              <point x="-40.851063829787336" y="14.5" />
-              <point x="1775.9062539769548" y="528.0" />
-              <point x="773.8115495001853" y="528.0" />
-              <point x="51.42857142857156" y="-14.5" />
-            </edge>
-            <edge source="sun.java2d" target="sun.awt">
-              <point x="22.59999999999991" y="14.5" />
-              <point x="3100.3791843729896" y="1755.0" />
-              <point x="3214.279184372989" y="1755.0" />
-              <point x="3214.279184372989" y="1884.0" />
-              <point x="3805.779184372989" y="1884.0" />
-              <point x="-14.0" y="-14.5" />
-            </edge>
-            <edge source="java.security" target="java.lang">
-              <point x="48.0" y="14.5" />
-              <point x="770.3829780716137" y="757.0" />
-              <point x="4028.0351367539415" y="757.0" />
-              <point x="-32.78571428571422" y="-14.5" />
-            </edge>
-            <edge source="javax.smartcardio" target="java.io">
-              <point x="-47.333333333333485" y="-14.5" />
-              <point x="380.0496447382802" y="996.0" />
-              <point x="108.79114133691974" y="996.0" />
-              <point x="108.79114133691974" y="149.0" />
-              <point x="6887.764733105757" y="149.0" />
-              <point x="-27.244897959183618" y="14.5" />
-            </edge>
-            <edge source="javafx.fxml" target="java.io">
-              <point x="34.33333333333303" y="-14.5" />
-              <point x="5677.958166673874" y="1914.0" />
-              <point x="7674.527488207797" y="1914.0" />
-              <point x="7674.527488207797" y="79.0" />
-              <point x="6953.152488207797" y="79.0" />
-              <point x="38.14285714285688" y="14.5" />
-            </edge>
-            <edge source="sun.font" target="sun.java2d">
-              <point x="37.875" y="-14.5" />
-              <point x="2747.154184372989" y="1745.0" />
-              <point x="3032.5791843729894" y="1745.0" />
-              <point x="-45.19999999999982" y="14.5" />
-            </edge>
-            <edge source="sun.plugin" target="sun.applet">
-              <point x="-2.2737367544323206E-13" y="-14.5" />
-              <point x="2002.7155968054199" y="2640.0" />
-              <point x="1960.8159100367059" y="2640.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="sun.applet" target="java.io">
-              <point x="-50.40000000000009" y="-14.5" />
-              <point x="1910.4159100367058" y="2461.0" />
-              <point x="76.25032501038959" y="2461.0" />
-              <point x="76.25032501038959" y="79.0" />
-              <point x="6875.050447391472" y="79.0" />
-              <point x="-39.95918367346894" y="14.5" />
-            </edge>
-            <edge source="sun.misc" target="java.lang">
-              <point x="19.5" y="-14.5" />
-              <point x="1165.9680844545924" y="1156.0" />
-              <point x="4019.2987271458505" y="1156.0" />
-              <point x="-41.5221238938052" y="14.5" />
-            </edge>
-            <edge source="javafx.scene" target="javafx.beans">
-              <point x="-45.41666666666697" y="-14.5" />
-              <point x="4353.630177873106" y="1834.0" />
-              <point x="3867.320851039656" y="1834.0" />
-              <point x="3867.320851039656" y="1735.0" />
-              <point x="2794.029184372989" y="1735.0" />
-              <point x="13.75" y="14.5" />
-            </edge>
-            <edge source="javafx.animation" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="5288.973505906913" y="1864.0" />
-              <point x="5350.424833340541" y="1864.0" />
-              <point x="5350.424833340541" y="1396.0" />
-              <point x="4079.7766032520453" y="1396.0" />
-              <point x="18.955752212389598" y="14.5" />
-            </edge>
-            <edge source="java.text" target="java.io">
-              <point x="39.600000000000364" y="-14.5" />
-              <point x="6094.127488207798" y="1546.0" />
-              <point x="6940.499426983308" y="1546.0" />
-              <point x="6940.499426983308" y="239.0" />
-              <point x="6924.091263718002" y="239.0" />
-              <point x="9.081632653061206" y="14.5" />
-            </edge>
-            <edge source="java.util" target="java.io">
-              <point x="-24.0" y="-14.5" />
-              <point x="1792.757317806742" y="269.0" />
-              <point x="6909.5606514731035" y="269.0" />
-              <point x="-5.448979591837087" y="14.5" />
-            </edge>
-            <edge source="sun.reflect" target="java.lang">
-              <point x="0.0" y="-14.5" />
-              <point x="4556.223505906913" y="1516.0" />
-              <point x="4068.9447448449655" y="1516.0" />
-              <point x="8.123893805309763" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="221.0" y="651.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/main">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>main</OriginalElement>
-          <nodes>
-            <node x="" y="">main.dal.imp.EmployedRepo</node>
-            <node x="" y="">main.dal.api.IUnitOfWork</node>
-            <node x="" y="">main.dal.entinties.Credit</node>
-            <node x="" y="">main.bll.api.IServiceCustomer</node>
-            <node x="" y="">main.bll.service.util.CardInfo</node>
-            <node x="" y="">main.controllers.CustomerController</node>
-            <node x="" y="">main.dal.imp.CustomerRepo</node>
-            <node x="" y="">main.configuration.IoCConfiguration</node>
-            <node x="" y="">main.bll.service.imp.ServiceEmployed</node>
-            <node x="" y="">main.bll.service.util.CreditCalculate</node>
-            <node x="" y="">main.dal.entinties.Invoice</node>
-            <node x="" y="">main.dal.imp.CreditRepo</node>
-            <node x="" y="">main.dal.entinties.Card</node>
-            <node x="" y="">main.bll.modeldto.CreditDTO</node>
-            <node x="" y="">main.bll.service.util.Transfer</node>
-            <node x="" y="">main.dal.imp.contextdb.MySQLContext</node>
-            <node x="" y="">main.dal.imp.contextdb.OracleContext</node>
-            <node x="" y="">main.controllers.EmployedController</node>
-            <node x="" y="">main.bll.service.imp.ServiceCustomer</node>
-            <node x="" y="">main.console.TestApp</node>
-            <node x="" y="">main.controllers.MainController</node>
-            <node x="" y="">main.dal.imp.InvoiceRepo</node>
-            <node x="" y="">main.dal.entinties.Customer</node>
-            <node x="" y="">main.bll.service.util.stock.BringFriend</node>
-            <node x="" y="">main.dal.imp.CardRepo</node>
-            <node x="" y="">main.controllers.LoginController</node>
-            <node x="" y="">main.dal.imp.RequestRepo</node>
-            <node x="" y="">main.bll.modeldto.TransferDTO</node>
-            <node x="" y="">main.bll.api.IServiceEmployed</node>
-            <node x="" y="">main.dal.imp.ContextUnitOfWork</node>
-            <node x="" y="">main.dal.api.IContext</node>
-            <node x="" y="">main.dal.entinties.Request</node>
-            <node x="" y="">main.dal.api.IRepository</node>
-            <node x="" y="">main.dal.entinties.Employed</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.870815074496056" x="907.0" y="1039.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chooseInvoice.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addInvoice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="13" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#516#525#0" expanded="false" />
-            <element signature="e#991#1000#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/modeldto/TransferDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice" />
+    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice" />
+    <entry file="dbDummy://dbtable:/7322ea07/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice" />
     <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/stock/BringFriend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -3107,7 +1369,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCustomer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -3115,7 +1377,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeInvoices.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="33" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <caret line="33" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3123,7 +1385,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCredit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="52" />
+          <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -3131,98 +1393,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/Currency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding>
-            <marker date="1483564642080" expanded="true" signature="692:712" ph="Select * fro... credit" />
-            <marker date="1483564642080" expanded="true" signature="1323:1474" ph="select * fro... credit" />
-            <marker date="1483564642080" expanded="true" signature="2102:2133" ph="Select * fro... credit" />
-            <marker date="1483564642080" expanded="true" signature="2779:2957" ph="INSERT INTO credit... " />
-            <marker date="1483564642080" expanded="true" signature="3612:3792" ph="UPDATE credi... " />
-            <marker date="1483564642080" expanded="true" signature="4483:4535" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CardRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-          <folding>
-            <marker date="1483569063065" expanded="true" signature="617:635" ph="Select * fro... card" />
-            <marker date="1483569063065" expanded="true" signature="1038:1071" ph="Select * fro... card" />
-            <marker date="1483569063065" expanded="true" signature="1579:1684" ph="INSERT INTO card... " />
-            <marker date="1483569063065" expanded="true" signature="2141:2251" ph="UPDATE card " />
-            <marker date="1483569063065" expanded="true" signature="2751:2805" ph="DELETE FROM " />
-            <marker date="1483569063065" expanded="true" signature="3081:3167" ph="select * fro... card" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/Currency.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCredit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="601">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/entinties/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCard.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -3230,23 +1418,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/bll/modeldto/CardDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CurrentCurse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CurrentCurse.java" />
     <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -3254,7 +1435,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeRequest.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -3262,73 +1443,220 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employed.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardCurrency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/modeldto/TransferDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addInvoice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/entinties/Employed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+          <folding>
+            <marker date="1483628608069" expanded="true" signature="692:712" ph="Select * fro... credit" />
+            <marker date="1483628608069" expanded="true" signature="1323:1474" ph="select * fro... credit" />
+            <marker date="1483628608069" expanded="true" signature="2102:2133" ph="Select * fro... credit" />
+            <marker date="1483628608069" expanded="true" signature="2779:2957" ph="INSERT INTO credit... " />
+            <marker date="1483628608069" expanded="true" signature="3612:3792" ph="UPDATE credi... " />
+            <marker date="1483628608069" expanded="true" signature="4483:4535" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="45" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/InvoiceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+          <folding>
+            <marker date="1483630934992" expanded="true" signature="637:658" ph="Select * fro... invoice" />
+            <marker date="1483630934992" expanded="true" signature="1071:1223" ph="select * fro... invoice" />
+            <marker date="1483630934992" expanded="true" signature="1651:1683" ph="Select * fro... invoice" />
+            <marker date="1483630934992" expanded="true" signature="2128:2203" ph="INSERT INTO invoice... " />
+            <marker date="1483630934992" expanded="true" signature="2488:2549" ph="UPDATE invoi... " />
+            <marker date="1483630934992" expanded="true" signature="2818:2871" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CardRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="83" column="5" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding>
+            <marker date="1483630934960" expanded="true" signature="617:635" ph="Select * fro... card" />
+            <marker date="1483630934960" expanded="true" signature="1038:1071" ph="Select * fro... card" />
+            <marker date="1483630934960" expanded="true" signature="1579:1684" ph="INSERT INTO card... " />
+            <marker date="1483630934960" expanded="true" signature="2141:2251" ph="UPDATE card " />
+            <marker date="1483630934960" expanded="true" signature="2751:2805" ph="DELETE FROM " />
+            <marker date="1483630934960" expanded="true" signature="3077:3163" ph="select * fro... card" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c2e798f6/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.card">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardCurrency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/entinties/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1092#1093#0" expanded="false" />
+            <element signature="e#1125#1126#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controllers/EmployedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        <state relative-caret-position="374">
+          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
           <folding>
             <element signature="method#initBinder#0;class#EmployedController#0" expanded="false" />
             <element signature="n#!!doc;n#addCustomer#0;n#EmployedController#0" expanded="false" />
@@ -3342,58 +1670,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/InvoiceUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/css-login/structure.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="85" />
+        <state relative-caret-position="108">
+          <caret line="10" column="85" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/CustomerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="244" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="32" />
           <folding />
         </state>
       </provider>

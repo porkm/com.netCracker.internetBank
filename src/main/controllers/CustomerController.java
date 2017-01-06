@@ -49,6 +49,7 @@ public class CustomerController {
             result =service.transferMoney(transferDTO);
         } catch (SQLException e) {
             e.printStackTrace();
+
         }
 
 
