@@ -1,6 +1,8 @@
 package main.bll.service.imp;
 
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.Currency;
 import java.util.List;
@@ -23,8 +25,20 @@ public class ServiceEmployed implements IServiceEmployed {
 
     @Override
     public void registerCustomer(Customer newCustomer) {
-        // Проверить существование поллбзователя
+        //
 
+        String password = newCustomer.getPassw();
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("SHA-256");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        md.update(password.getBytes());
+
+        byte byteData[] = md.digest();
+        //
+        newCustomer.setPassw(String.format("%064x", new java.math.BigInteger(1, byteData)));
         try {
             unit.customers().create(newCustomer);
         } catch (SQLException e) {
@@ -75,7 +89,7 @@ public class ServiceEmployed implements IServiceEmployed {
 
     @Override
     public List<Credit> seeCredit(int customerId) throws SQLException {
-        return  unit.customers().get(customerId).getCredits();
+        return unit.customers().get(customerId).getCredits();
     }
 
     @Override

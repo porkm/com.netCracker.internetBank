@@ -40,6 +40,7 @@ public class EmployedController {
                 dateFormat, true));
     }
 
+
     @RequestMapping("/actionEmployed")
     public ModelAndView actionForEmployed() {
         List<Customer> customerList;
@@ -52,6 +53,8 @@ public class EmployedController {
         }
         return new ModelAndView("actionEmployed", "customerList", customerList);
     }
+
+
 
     //region Добавить клиента
     @RequestMapping(value = "/addCustomer", method = RequestMethod.GET)

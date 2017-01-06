@@ -24,25 +24,16 @@ import java.util.List;
 @Controller
 public class MainController {
 
-
+    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
+    IServiceEmployed service = context.getBean(IServiceEmployed.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
         return "index";
     }
 
-    @RequestMapping("/employed")
-    public String listCustomer() {
-        return "employed";
-    }
 
-    @RequestMapping("/customer")
-    public String listEmpoloyed(HttpSession session) {
-        if (session.getAttribute("userId")==null){
-            return "redirect:/login";
-        }
-        return "actionCustomer";
-    }
+
 
 
 

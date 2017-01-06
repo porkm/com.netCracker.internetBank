@@ -29,8 +29,13 @@ public class CustomerController {
     IServiceCustomer service = context.getBean(IServiceCustomer.class);
 
     @RequestMapping("/actionCustomer")
-    public String actionForCustomer() {
-        return "login";
+    public String actionForCustomer(HttpSession session) {
+
+        if (session.getAttribute("userId")==null){
+            return "redirect:/login";
+        }
+        return "actionCustomer";
+
     }
 
     @RequestMapping(value = "/makeTransfer/{id}", method = RequestMethod.GET)
@@ -58,7 +63,7 @@ public class CustomerController {
         }
 
         if (!result){
-            model.addAttribute("errorTransfer", "Insufficient funds");
+            model.addAttribute("errorTransfer", "Недостаточно средств");
             return "makeTransfer";
 
         }

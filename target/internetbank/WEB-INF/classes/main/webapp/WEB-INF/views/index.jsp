@@ -1,9 +1,9 @@
-
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,25 +22,50 @@
 </head>
 <body>
 
-<jsp:include page="header.jsp"/>
+
+
+
+
 
 <div class="container">
 
-    <div class="starter-template">
-        <h1>Проект на JAVA. Spring MVC</h1>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Главная</a></li>
+                    <li><a href="/actionCustomer">Клиенты</a></li>
+                    <li><a href="/actionEmployed">Работники</a></li>
+
+                </ul>
+
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sem viverra, mollis turpis in, commodo neque. Curabitur dapibus tristique dolor. Cras eget libero tempus, pulvinar elit eget, hendrerit est. Phasellus a aliquam nibh. Sed velit enim, finibus sit amet lorem vel, mollis finibus nisl. Integer efficitur nunc quam, vel tristique neque auctor tincidunt. Integer dapibus ultrices enim, et interdum ipsum aliquam eu. Sed pretium purus semper ipsum pulvinar, non volutpat sapien sollicitudin. Donec iaculis porttitor urna, ac ultrices velit fermentum nec. Vivamus cursus pulvinar iaculis. Nam elit ligula, scelerisque ut justo id, gravida tempus augue. Etiam sapien lectus, finibus nec ipsum in, iaculis dapibus urna. Phasellus a velit iaculis orci pulvinar mattis ac in enim.
-        </p>
-        <p>
-            Praesent feugiat mollis suscipit. Quisque hendrerit placerat odio, interdum sollicitudin odio fermentum sed. Nullam quis posuere metus, id porta metus. Aliquam erat volutpat. Sed maximus quis ex at ultricies. Donec blandit eros nec nisi tincidunt lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet iaculis accumsan. Proin aliquam sollicitudin leo eget maximus. Sed scelerisque eleifend purus pharetra finibus. Nulla mauris sapien, ornare sit amet erat non, laoreet iaculis lorem.
+            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
     </div>
 
-</div><!-- /.container -->
+</div> <!-- /container -->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
 </body>
 </html>

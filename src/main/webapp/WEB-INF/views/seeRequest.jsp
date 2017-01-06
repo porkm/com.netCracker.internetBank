@@ -1,64 +1,39 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: porkm
-  Date: 29.12.2016
-  Time: 0:51
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <title>Title</title>
+    <link href=<c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
 </head>
 <body>
-<h1>Add new Customer</h1>
-<f:form method="POST" modelAttribute="credit"   action="/addCredit">
-    <table>
-        <tr>
-            <td>
-                <i>SumCredit:</i>
-            </td>
-            <td>
-                <f:input path="sumCredit"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i>dayOfPay</i>
-            </td>
-            <td>
-                    <%--<f:input path="creditStart"/>--%>
-                <input type="date" name="dayOfPay"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i>creditStart</i>
-            </td>
-            <td>
-                    <%--<f:input path="creditStart"/>--%>
-                <input type="date" name="creditStart"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i>CreditTerm:</i>
-            </td>
-            <td>
-                <f:input path="creditTerm"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <f:hidden path="customerId"/>
-            </td>
-        </tr>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Главная</a></li>
 
-        <tr>
-            <td><input type="submit"/></td>
-        </tr>
-    </table>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+<f:form method="POST" modelAttribute="credit"   action="/addCredit">
+
+
 </f:form>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
 </body>
 </html>

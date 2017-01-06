@@ -1,17 +1,18 @@
-
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
-<!DOCTYPE HTML>
-<html>
+<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <title>Simple Login Form</title>
     <meta charset="UTF-8" />
+    <link href=<c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
     <link  href=<c:url value="/resources/css/css-login/structure.css"/> rel="stylesheet">
     <link  href=<c:url value="/resources/css/css-login/reset.css"/> rel="stylesheet">
 </head>
 <body>
-<form:form name="submitForm" method="POST" cssClass="box login">
+<f:form name="submitForm" method="POST" cssClass="box login">
     <fieldset class="boxBody">
         <label>Пожалуйста, авторизуйтесь</label>
         <input type="text" name="login" tabindex="1" placeholder="Имя пользователя" required>
@@ -20,7 +21,10 @@
     <footer>
         <input type="submit" class="btnLogin" value="Войти" tabindex="4">
     </footer>
-</form:form>
+</f:form>
+
+
+<script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
 </body>
 </html>
 
