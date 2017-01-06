@@ -1,5 +1,4 @@
 
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
@@ -9,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Index</title>
 
     <!-- Bootstrap -->
     <link  href=<c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
@@ -42,6 +41,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
 </body>
 </html>

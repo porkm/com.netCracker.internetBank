@@ -13,7 +13,68 @@
 <html>
 <head>
     <title>list Invoices</title>
+
+    <link href= <c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
+
 </head>
+
+<body>
+<div class="container">
+    <h2>Список Кредитов</h2>
+
+    <!--Employees List-->
+    <c:if test="${not empty message}">
+        <div class="alert alert-success">
+                ${message}
+        </div>
+    </c:if>
+
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>#</td>
+            <td>Сумма кредита</td>
+            <td>Процентная ставка</td>
+            <td>День платежа</td>
+            <td>Платеж</td>
+            <td>Переплата</td>
+            <td>Начало кредита</td>
+            <td>Срок кредита</td>
+            <td>#клиент</td>
+        </tr>
+        </thead>
+        <c:forEach items="${listCredit}" var="credit">
+            <tr>
+                <td>${credit.id}</td>
+                <td>${credit.sumCredit}</td>
+                <td>${credit.percentRate}</td>
+                <td>${credit.dayOfPay}</td>
+                <td>${credit.pay}</td>
+                <td>${credit.overPay}</td>
+                <td>${credit.creditStart}</td>
+                <td>${credit.creditTerm}</td>
+                <td>${credit.customerId}</td>
+            </tr>
+
+        </c:forEach>
+    </table>
+
+    <form action ="/addCredit/${id}">
+        <br></br>
+        <button type="submit" class="btn btn-primary  btn-md">Взять кредит</button>
+    </form>
+
+</div>
+<script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
+</body>
+
+</html>
+
+
+<%--
+
+
 <body>
 
 <a href="<c:url value="/addCredit/${id}"/>">Add new credit</a>
@@ -48,4 +109,5 @@
 </table>
 
 </body>
-</html>
+
+--%>

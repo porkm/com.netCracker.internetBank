@@ -11,11 +11,47 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
-    <title>Title</title>
+    <link href= <c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
 </head>
 <body>
 
-<h1>Add new Card</h1>
+<h2>Добавить новую карту</h2>
+
+<div class="container">
+    <f:form method="POST" modelAttribute="card" data-toggle="validator" action="/addCard">
+        <%--<c:if test ="${empty card}">--%>
+        <%--<c:set var="card" value="add"/>--%>
+        <%--</c:if>--%>
+        <input type="hidden" id="invoceId" name="invoceId" value="${card.invoceId}">
+
+        <div class="form-group col-xs-4">
+            <label for="validOf" class="control-label col-xs-4">Срок(год)</label>
+            <input type="text" pattern="^\d{1}" maxlength="1" name="validOf" id="validOf" class="form-control"
+                   required="true"/>
+            <label for="validOf" class="control-label col-xs-4">Валюта</label>
+            <f:select path="currency" cssClass="form-control">
+                <c:forEach var="item" items="${curr}">
+                    <option>
+                        <c:out value="${item}"/>
+                    </option>
+                </c:forEach>
+            </f:select>
+
+            <br></br>
+
+            <button type="submit" class="btn btn-primary  btn-md">Добавить карту</button>
+        </div>
+    </f:form>
+
+</div>
+
+<script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
+</body>
+</html>
+
+
+<%--
+
 <f:form method="POST" modelAttribute="card" action="/addCard">
     <table>
         <tr>
@@ -58,5 +94,4 @@
 </f:form>
 
 
-</body>
-</html>
+--%>
