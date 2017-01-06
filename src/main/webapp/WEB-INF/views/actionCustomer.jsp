@@ -31,7 +31,7 @@
                     <a href="<c:url value="/seeInvoices/${userId}"/>">Счета</a> <%--and here Make InvoiceUtil --%>
                 </li>
                 <li>
-                    <a href="<c:url value="/seeCredit/${userId}"/>">Карты</a>
+                    <a href="<c:url value="/seeCredit/${userId}"/>">Кредиты</a>
                 </li>
                 <li>
                     <a href="<c:url value="/addFriend/${userId}"/>">Друзья</a>

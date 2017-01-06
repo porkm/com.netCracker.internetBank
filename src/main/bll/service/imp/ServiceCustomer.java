@@ -43,7 +43,7 @@ public class ServiceCustomer implements IServiceCustomer {
                     x->
                             x.getLogin().equals(checkedCustomer.getLogin())
                             &&
-                            x.getPassw().equals(checkedCustomer.getPassw())
+                            x.getPassw().equals(PassUtil.getPassSHA(checkedCustomer.getPassw()))
             );
         }
         catch (SQLException e) {

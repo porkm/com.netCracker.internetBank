@@ -28,17 +28,8 @@ public class ServiceEmployed implements IServiceEmployed {
         //
 
         String password = newCustomer.getPassw();
-        MessageDigest md = null;
-        try {
-            md = MessageDigest.getInstance("SHA-256");
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        md.update(password.getBytes());
 
-        byte byteData[] = md.digest();
-        //
-        newCustomer.setPassw(String.format("%064x", new java.math.BigInteger(1, byteData)));
+        newCustomer.setPassw(PassUtil.getPassSHA(password));
         try {
             unit.customers().create(newCustomer);
         } catch (SQLException e) {
