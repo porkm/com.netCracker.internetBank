@@ -34,7 +34,7 @@
                     <a href="<c:url value="/seeCredit/${userId}"/>">Кредиты</a>
                 </li>
                 <li>
-                    <a href="<c:url value="/addFriend/${userId}"/>">Друзья</a>
+                    <a href="<c:url value="/addRequest/${userId}"/>">Друзья</a>
                 </li>
 
             </ul>

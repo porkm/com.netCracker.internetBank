@@ -2,12 +2,12 @@ package main.dal.entinties;
 
 public class Request {
     private int id;
-    private String frend;
+    private String friend;
     private int customerId;
 
-    public Request(int id, String frend, int customerId) {
+    public Request(int id, String friend, int customerId) {
         this.id = id;
-        this.frend = frend;
+        this.friend = friend;
         this.customerId = customerId;
     }
 
@@ -22,12 +22,12 @@ public class Request {
         this.id = id;
     }
 
-    public String getFrend() {
-        return frend;
+    public String getFriend() {
+        return friend;
     }
 
-    public void setFrend(String frend) {
-        this.frend = frend;
+    public void setFriend(String friend) {
+        this.friend = friend;
     }
 
     public int getCustomerId() {

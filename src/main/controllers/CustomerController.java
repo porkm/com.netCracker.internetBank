@@ -3,9 +3,11 @@ package main.controllers;
 import main.bll.api.IServiceCustomer;
 import main.bll.api.IServiceEmployed;
 import main.bll.modeldto.TransferDTO;
+import main.bll.service.util.TransferError;
 import main.configuration.IoCConfiguration;
 import main.dal.entinties.Customer;
 import main.dal.entinties.Invoice;
+import main.dal.entinties.Request;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -47,32 +49,59 @@ public class CustomerController {
     }
 
     @RequestMapping(value = "/makeTransfer", method = RequestMethod.POST)
-    public String addInvoice(HttpSession session, @ModelAttribute("transferDTO") TransferDTO transferDTO, Model model) {
-        boolean result =false;
+    public String makeTransfer(HttpSession session, @ModelAttribute("transferDTO") TransferDTO transferDTO, Model model) {
+        TransferError result;
+
 
         try {
             result =service.transferMoney(transferDTO);
         } catch (SQLException e) {
-            e.printStackTrace();
-
+           // e.printStackTrace();
+            result =TransferError.SQLERROR;
         }
 
+        switch (result){
+            case NOINVOICES:{
 
-        if (session.getAttribute("userId")==null){
-            return "redirect:/login";
+                model.addAttribute("errorTransfer", "Неверный номер счета");
+                return "makeTransfer";
+                //break;
+            }
+            case NOMONEY:{
+                model.addAttribute("errorTransfer", "Недостаточно средств");
+                return "makeTransfer";
+                //break;
+            }
+            case OK:{
+                if (session.getAttribute("userId")==null){
+                    return "redirect:/login";
+                   // break;
+                }
+
+            }
         }
-
-        if (!result){
-            model.addAttribute("errorTransfer", "Недостаточно средств");
-            return "makeTransfer";
-
-        }
-        else{
-            return "redirect:/seeInvoices/"+session.getAttribute("userId");
-        }
-
-
+        return "redirect:/seeInvoices/"+session.getAttribute("userId");
     }
 
+
+    @RequestMapping(value = "/addRequest/{id}", method = RequestMethod.GET)
+    public ModelAndView seeRequest(@PathVariable("id") int id) {
+
+        Request request = new Request();
+        request.setCustomerId(id);
+        return new ModelAndView("addRequest", "request", request );
+    }
+
+    @RequestMapping(value = "/addRequest", method = RequestMethod.POST)
+    public String seeRequest(HttpSession session, @ModelAttribute("request") Request request, Model model) {
+        try {
+            service.inviteFriend(request.getCustomerId(), request.getFriend());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        return "redirect:/actionCustomer";
+    }
 
 }

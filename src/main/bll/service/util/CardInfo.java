@@ -45,7 +45,7 @@ public class CardInfo {
                 break;
             }
             default: {
-                total=-1;
+                total=balance;
                 break;
             }
         }

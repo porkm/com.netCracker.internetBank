@@ -2,6 +2,7 @@ package main.bll.service.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Random;
 
 
 public class PassUtil {
@@ -18,5 +19,16 @@ public class PassUtil {
         byte byteData[] = md.digest();
 
         return  String.format("%064x", new java.math.BigInteger(1, byteData));
+    }
+
+    public static String randomPassw(){
+        Random rnd = new Random(System.currentTimeMillis());
+        int min = 100000000;
+        int max = 900000000;
+        int result=min+rnd.nextInt(max-min+1);
+
+        String password=Integer.toString(result);
+
+        return password;
     }
 }

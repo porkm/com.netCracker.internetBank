@@ -51,10 +51,9 @@
             <td>#</td>
             <td>Имя</td>
             <td>Логин</td>
-            <td>Пароль</td>
-            <td>Добавить карту<</td>
+
+            <td>Добавить карту</td>
             <td>Добавить кредит</td>
-            <td>Смотреть заявки</td>
         </tr>
         </thead>
         <c:forEach items="${customerList}" var="actionCustomer">
@@ -62,11 +61,11 @@
                 <td>${actionCustomer.id}</td>
                 <td>${actionCustomer.name}</td>
                 <td>${actionCustomer.login}</td>
-                <td><a href="<c:url value="/changePassw/${actionCustomer.id}"/>">Изменить</a></td>
+
 
                 <td><a href="<c:url value="/seeInvoices/${actionCustomer.id}"/>">Счета</a></td>
                 <td><a href="<c:url value="/seeCredit/${actionCustomer.id}"/>">Кредиты</a></td>
-                <td><a href="<c:url value="/seeRequest/${actionCustomer.id}"/>">Заявки</a></td>
+
 
             </tr>
         </c:forEach>
@@ -75,6 +74,10 @@
     <form action ="/addCustomer">
         <br></br>
         <button type="submit" class="btn btn-primary  btn-md">Добавить клиента</button>
+    </form>
+    <form action ="/seeRequest">
+        <br></br>
+        <button type="submit" class="btn btn-primary  btn-md">Смотреть заявки</button>
     </form>
 
 </div>

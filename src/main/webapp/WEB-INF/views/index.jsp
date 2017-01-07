@@ -55,11 +55,11 @@
 
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <h1>Lorem ipsum</h1>
         <p>
-            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt libero eget dui aliquet, id viverra ex tempus. Integer porta posuere feugiat. Vestibulum egestas convallis libero. Nulla vitae accumsan ex. Donec vitae ligula ut orci aliquet fringilla. Nam vitae lorem ac est sollicitudin efficitur. Donec tristique quam pharetra, lobortis nisl eget, pellentesque leo. Cras lacinia, ligula at tempus semper, ligula metus sodales diam, ut dictum nisi lectus sed eros. Sed cursus tristique orci, at placerat leo porttitor tincidunt. Nulla eget neque pellentesque, malesuada nisi nec, gravida neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ligula quam. Nunc dignissim metus ut vehicula sollicitudin. Morbi pretium eleifend eros. Proin eu elit sed lacus auctor vestibulum. Donec molestie nec mauris eget pulvinar.
         </p>
+
     </div>
 
 </div> <!-- /container -->

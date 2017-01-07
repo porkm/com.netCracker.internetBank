@@ -62,10 +62,8 @@ public class RequestRepo implements IRepository<Request> {
         PreparedStatement statement = connection.prepareStatement("INSERT INTO" +
                 " request (id_customer, frend) VALUES(?,?)");
         statement.setInt(1, item.getCustomerId());
-        statement.setString(2, item.getFrend());
-
+        statement.setString(2, item.getFriend());
         statement.execute();
-
     }
 
     @Override
@@ -73,10 +71,9 @@ public class RequestRepo implements IRepository<Request> {
         PreparedStatement statement = connection.prepareStatement(" UPDATE request SET " +
                 " id_customer=?, frend=? WHERE id=?");
         statement.setInt(1, item.getCustomerId());
-        statement.setString(2, item.getFrend());
+        statement.setString(2, item.getFriend());
         statement.setInt(3, item.getId());
         statement.execute();
-
     }
 
     @Override
@@ -85,7 +82,6 @@ public class RequestRepo implements IRepository<Request> {
                 " WHERE id = ?");
         statement.setInt(1, id);
         statement.execute();
-
     }
 }
 

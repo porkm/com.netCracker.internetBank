@@ -8,6 +8,7 @@ import java.util.Currency;
 import java.util.List;
 
 import main.bll.modeldto.CardDTO;
+import main.bll.service.util.stock.BringFriend;
 import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
 import main.bll.api.IServiceEmployed;
@@ -109,14 +110,23 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
-    public void checkForBonus() throws SQLException {
-
+    public void getBonus(int idCustomer) throws SQLException {
+        Invoice invoice;
+        try{
+           invoice = unit.customers().get(idCustomer).getInvoices().get(0);
+        }
+        catch (NullPointerException ex)
+        {
+            addInvoice(new Invoice(0,0,idCustomer));
+            invoice = unit.customers().get(idCustomer).getInvoices().get(0);
+        }
+        BringFriend.addBonus(invoice);
+        unit.invoices().update(invoice);
     }
 
     @Override
     public void addCredit(Credit credit) {
         credit.setPercentRate(10);
-
         CreditCalculate creditCalculate = new CreditCalculate(credit);
         credit.setPay(creditCalculate.getPay());
         credit.setOverPay(creditCalculate.getOverPay());
@@ -131,9 +141,33 @@ public class ServiceEmployed implements IServiceEmployed {
     }
 
     @Override
-    public List<Request> chekRequest() throws SQLException {
+    public List<Request> checkRequest() throws SQLException {
 
         return unit.requests().getAll();
     }
 
+
+    @Override
+    public void registerFriend(Request newRequest) {
+        Customer newCustomer = new Customer();
+        newCustomer.setName(newRequest.getFriend());
+        newCustomer.setLogin(newRequest.getFriend());
+        String passw = PassUtil.randomPassw();
+        MailUtil.sendInfo(newCustomer.getPassw());
+        newCustomer.setPassw(PassUtil.getPassSHA(passw));
+        try {
+            unit.customers().create(newCustomer);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        try {
+            unit.requests().delete(newRequest.getId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }

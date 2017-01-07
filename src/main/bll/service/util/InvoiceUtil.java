@@ -20,39 +20,32 @@ public class InvoiceUtil {
         this.unit = unit;
     }
 
-    public boolean makeTransfer() {
+    public TransferError makeTransfer() throws SQLException {
 
-        fromInvoice = getInvoiceById(transferDTO.getFromInvoiceId());
-        toInvoice = getInvoiceById(transferDTO.getToInvoiceId());
+        fromInvoice = unit.invoices().get(transferDTO.getFromInvoiceId());
+        toInvoice = unit.invoices().get(transferDTO.getToInvoiceId());
+        if (toInvoice==null){
+            return TransferError.NOINVOICES;
+        }
+
 
         if (fromInvoice.getBalance()<transferDTO.getMoney()){
-            return false;
+            return TransferError.NOMONEY;
             //todo MyExeption
         }
-        else
-        {
-            toInvoice.setBalance(toInvoice.getBalance() + transferDTO.getMoney());
-            fromInvoice.setBalance(fromInvoice.getBalance() - transferDTO.getMoney());
+            else
+            {
+                toInvoice.setBalance(toInvoice.getBalance() + transferDTO.getMoney());
+                fromInvoice.setBalance(fromInvoice.getBalance() - transferDTO.getMoney());
 
-            updateInvoice(toInvoice);
-            updateInvoice(fromInvoice);
-        }
+                updateInvoice(toInvoice);
+                updateInvoice(fromInvoice);
+            }
 
-        return true;
+        return TransferError.OK;
 
 
     }
-
-    private Invoice getInvoiceById(int invoiceId) {
-        Invoice invoice = null;
-        try {
-            invoice = unit.invoices().get(invoiceId);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return invoice;
-    }
-
 
 
     private void updateInvoice(Invoice invoice) {

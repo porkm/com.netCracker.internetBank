@@ -4,13 +4,10 @@ package main.controllers;
 import main.bll.api.IServiceEmployed;
 import main.bll.modeldto.CardDTO;
 import main.bll.service.util.CardCurrency;
-import main.bll.service.util.CardInfo;
-import main.bll.service.util.stock.BringFriend;
+import main.bll.service.util.MailUtil;
+import main.bll.service.util.PassUtil;
 import main.configuration.IoCConfiguration;
-import main.dal.entinties.Card;
-import main.dal.entinties.Credit;
-import main.dal.entinties.Customer;
-import main.dal.entinties.Invoice;
+import main.dal.entinties.*;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -188,26 +185,51 @@ public class EmployedController {
     }
     //endregion
 
-    //region Зарегистрировать клиента
-    @RequestMapping(value = "/seeRequest/{id}", method = RequestMethod.GET)
-    public ModelAndView seeRequest(@PathVariable("id") int id) {
-        Credit credit = new Credit();
-        credit.setCustomerId(id);
-        return new ModelAndView("seeRequest", "credit", credit );
-    }
 
-    @RequestMapping(value = "/seeRequest", method = RequestMethod.POST)
-    public String seeRequestSubmit(@ModelAttribute("customer") Customer customer) {
 
-        service.registerCustomer(customer);
-        BringFriend action = new BringFriend();
-        action.addBonus(customer.getInvoices().get(0));  //денги капают по умолчанию на первый счет
+    //region Изменить пароль
 
-        return "redirect:/seeRequest/"+customer.getId();
-    }
 
 
     //endregion
 
+    //region Добавить друга
+    @RequestMapping(value = "/seeRequest", method = RequestMethod.GET)
+    public ModelAndView getListRequest() {
+       // model.addAttribute("id", id);
+        List<Request> listRequest;
+        try {
+            listRequest = service.checkRequest();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            listRequest = new ArrayList<>();
+        }
+        return new ModelAndView("seeRequest", "listRequest", listRequest );
+    }
+
+//    @RequestMapping(value = "/addRequest/{id}", method = RequestMethod.GET)
+//    public ModelAndView addRequest(@PathVariable("id") int id) {
+//        Request request = new Request();
+//        request.setCustomerId(id);
+//        return new ModelAndView("addRequest", "request", request );
+//    }
+
+    @RequestMapping(value = "/seeRequest", method = RequestMethod.POST)
+    public String addRequest(@ModelAttribute("request") Request addRequest) {
+
+        service.registerFriend(addRequest);
+        try {
+            service.getBonus(addRequest.getCustomerId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+        return "redirect:/actionEmployed";
+    }
+
+    //endregion
 
 }

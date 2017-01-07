@@ -71,11 +71,11 @@ public class ServiceCustomer implements IServiceCustomer {
     }
 
     @Override
-    public boolean transferMoney(TransferDTO transferDTO) {
+    public TransferError transferMoney(TransferDTO transferDTO) throws SQLException {
 
         InvoiceUtil invoiceUtil = new InvoiceUtil(transferDTO, unit);
 
-        boolean result =invoiceUtil.makeTransfer();
+        TransferError result =invoiceUtil.makeTransfer();
         return result;
     }
 

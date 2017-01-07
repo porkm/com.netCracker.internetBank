@@ -15,13 +15,12 @@ public interface IServiceEmployed {
     void addInvoice(Invoice invoice);
     void addCard(CardDTO card) throws SQLException;
     void addCredit(Credit credit);
-    List<Request> chekRequest() throws SQLException;
 
-    void checkForBonus() throws SQLException;
+    List<Request> checkRequest() throws SQLException;
 
+    void registerFriend(Request newRequest);
 
-
-
+    void getBonus(int idCustomer) throws SQLException;
     List<Customer> getAll() throws SQLException;
 
 
