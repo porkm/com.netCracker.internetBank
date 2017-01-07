@@ -102,27 +102,22 @@ public class CustomerController {
     public ModelAndView makeNextPay(HttpSession session, @PathVariable("id") int id, Model model) {
         model.addAttribute("creditId",id);
         List<Invoice> invoices = null;
+        int userId = (Integer) session.getAttribute("userId");
         try {
-            invoices = service.seeInvoises((Integer) session.getAttribute("userId"));
+            invoices = service.seeInvoises(userId);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         return new ModelAndView("makeNextPay", "invoices", invoices );
     }
 
     @RequestMapping(value = "/makeNextPay", method = RequestMethod.POST)
-    public String makeNextPaySubmit(@ModelAttribute("payCredit") PayCredit payCredit) {
-        Invoice invoice = new Invoice();
-        invoice.setId(payCredit.getInvoiceId());
+    public String makeNextPaySubmit(HttpSession session, @ModelAttribute("payCredit") PayCredit payCredit) {
 
-        Credit credit = new Credit();
-        credit.setId(payCredit.getCreditId());
+        service.makeNextPay(payCredit.getCreditId(), payCredit.getInvoiceId());
+        int userId = (Integer) session.getAttribute("userId");
 
-        service.makeNextPay(credit, invoice);
-
-        return "redirect:/seeCredit/"+payCredit.getCreditId();
+        return "redirect:/seeCredit/"+userId;
     }
 
 }

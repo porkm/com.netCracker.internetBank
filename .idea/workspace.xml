@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f04d9b-cccd-4b13-91ae-df9dc1b43718" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/bll/modeldto/PayCredit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeNextPay.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" afterPath="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java" afterPath="$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" afterPath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" afterPath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java" afterPath="$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" afterPath="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/console/TestApp.java" afterPath="$PROJECT_DIR$/src/main/console/TestApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/EmployedController.java" afterPath="$PROJECT_DIR$/src/main/controllers/EmployedController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionCustomer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCredit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCustomer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCustomer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addInvoice.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addInvoice.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addRequest.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addRequest.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransfer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCard.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCredit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCredit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeInvoices.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeInvoices.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeRequest.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeRequest.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/views/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/views/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,7 +48,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="card" />
+        <option name="myItemId" value="credit" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -83,25 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployedController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/EmployedController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc;n#getListCard#0;n#EmployedController#0" expanded="false" />
-                <element signature="n#!!doc;n#addCard#0;n#EmployedController#0" expanded="false" />
-                <element signature="e#6244#6268#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/controllers/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="115" column="84" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="84" />
+            <state relative-caret-position="261">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
                 <element signature="method#makeTransfer#0;class#CustomerController#0" expanded="false" />
               </folding>
@@ -109,22 +71,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makeNextPay.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeNextPay.jsp">
+      <file leaf-file-name="ServiceEmployed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addCard.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="53" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="-136">
+              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding>
+                <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
+                <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
+                <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
+                <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,24 +89,50 @@
       <file leaf-file-name="ServiceCustomer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+            <state relative-caret-position="159">
+              <caret line="110" column="51" lean-forward="false" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceEmployed.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
+      <file leaf-file-name="CreditRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding>
+                <marker date="1483628608069" expanded="true" signature="692:712" ph="Select * fro... credit" />
+                <marker date="1483628608069" expanded="true" signature="1323:1474" ph="select * fro... credit" />
+                <marker date="1483628608069" expanded="true" signature="2102:2133" ph="Select * fro... credit" />
+                <marker date="1483628608069" expanded="true" signature="2779:2957" ph="INSERT INTO credit... " />
+                <marker date="1483628608069" expanded="true" signature="3612:3792" ph="UPDATE credi... " />
+                <marker date="1483628608069" expanded="true" signature="4483:4535" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreditCalculate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="49" column="24" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="53" selection-end-column="5" />
-              <folding>
-                <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
-                <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
-                <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
-                <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
-              </folding>
+              <caret line="33" column="5" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -221,16 +204,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addRequest.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeRequest.jsp" />
-        <option value="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" />
         <option value="$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seeCredit.jsp" />
         <option value="$PROJECT_DIR$/src/main/bll/modeldto/PayCredit.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/EmployedController.java" />
-        <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeNextPay.jsp" />
+        <option value="$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
       </list>
     </option>
   </component>
@@ -735,36 +718,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modeldto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internetbank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.netCracker.internetBank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1447,12 +1400,12 @@
       <workItem from="1483685715722" duration="3742000" />
       <workItem from="1483690949364" duration="5597000" />
       <workItem from="1483710019343" duration="8884000" />
-      <workItem from="1483721081582" duration="60919000" />
+      <workItem from="1483721081582" duration="64571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244148000" />
+    <option name="totallyTimeSpent" value="247800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1466,12 +1419,12 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1301059" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3671275" sideWeight="0.49346405" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33794162" sideWeight="0.49346405" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32565284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1584,11 +1537,83 @@
           <properties />
           <option name="timeStamp" value="303" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="333" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="335" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/controllers/CustomerController.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="341" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="309" />
+      <option name="time" value="343" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1601,52 +1626,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="532" column="4" lean-forward="false" selection-start-line="532" selection-start-column="4" selection-end-line="532" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CardRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <marker date="1483630934960" expanded="true" signature="617:635" ph="Select * fro... card" />
-            <marker date="1483630934960" expanded="true" signature="1038:1071" ph="Select * fro... card" />
-            <marker date="1483630934960" expanded="true" signature="1579:1684" ph="INSERT INTO card... " />
-            <marker date="1483630934960" expanded="true" signature="2141:2251" ph="UPDATE card " />
-            <marker date="1483630934960" expanded="true" signature="2751:2805" ph="DELETE FROM " />
-            <marker date="1483630934960" expanded="true" signature="3077:3163" ph="select * fro... card" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding>
-            <marker date="1483628608069" expanded="true" signature="692:712" ph="Select * fro... credit" />
-            <marker date="1483628608069" expanded="true" signature="1323:1474" ph="select * fro... credit" />
-            <marker date="1483628608069" expanded="true" signature="2102:2133" ph="Select * fro... credit" />
-            <marker date="1483628608069" expanded="true" signature="2779:2957" ph="INSERT INTO credit... " />
-            <marker date="1483628608069" expanded="true" signature="3612:3792" ph="UPDATE credi... " />
-            <marker date="1483628608069" expanded="true" signature="4483:4535" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employed.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1792,14 +1771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/bll/modeldto/CreditDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-152">
@@ -1895,14 +1866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1916,21 +1879,6 @@
         <state relative-caret-position="205">
           <caret line="73" column="15" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="73" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <marker date="1483630934992" expanded="true" signature="637:658" ph="Select * fro... invoice" />
-            <marker date="1483630934992" expanded="true" signature="1071:1223" ph="select * fro... invoice" />
-            <marker date="1483630934992" expanded="true" signature="1651:1683" ph="Select * fro... invoice" />
-            <marker date="1483630934992" expanded="true" signature="2128:2203" ph="INSERT INTO invoice... " />
-            <marker date="1483630934992" expanded="true" signature="2488:2549" ph="UPDATE invoi... " />
-            <marker date="1483630934992" expanded="true" signature="2818:2871" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1992,47 +1940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="49" column="24" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
-            <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
-            <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
-            <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/EmployedController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#getListCard#0;n#EmployedController#0" expanded="false" />
-            <element signature="n#!!doc;n#addCard#0;n#EmployedController#0" expanded="false" />
-            <element signature="e#6244#6268#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCard.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2051,16 +1958,141 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeNextPay.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="276">
           <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c2e798f6/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.credit">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c2e798f6/89b0946b-7c41-4a92-858c-ee2db1010701/ibank.invoice">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/EmployedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#getListCard#0;n#EmployedController#0" expanded="false" />
+            <element signature="n#!!doc;n#addCard#0;n#EmployedController#0" expanded="false" />
+            <element signature="e#6244#6268#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CardInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+          <folding>
+            <marker date="1483630934992" expanded="true" signature="637:658" ph="Select * fro... invoice" />
+            <marker date="1483630934992" expanded="true" signature="1071:1223" ph="select * fro... invoice" />
+            <marker date="1483630934992" expanded="true" signature="1651:1683" ph="Select * fro... invoice" />
+            <marker date="1483630934992" expanded="true" signature="2128:2203" ph="INSERT INTO invoice... " />
+            <marker date="1483630934992" expanded="true" signature="2488:2549" ph="UPDATE invoi... " />
+            <marker date="1483630934992" expanded="true" signature="2818:2871" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/util/CreditCalculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <marker date="1483628608069" expanded="true" signature="692:712" ph="Select * fro... credit" />
+            <marker date="1483628608069" expanded="true" signature="1323:1474" ph="select * fro... credit" />
+            <marker date="1483628608069" expanded="true" signature="2102:2133" ph="Select * fro... credit" />
+            <marker date="1483628608069" expanded="true" signature="2779:2957" ph="INSERT INTO credit... " />
+            <marker date="1483628608069" expanded="true" signature="3612:3792" ph="UPDATE credi... " />
+            <marker date="1483628608069" expanded="true" signature="4483:4535" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="110" column="51" lean-forward="false" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding>
+            <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
+            <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
+            <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
+            <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controllers/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="115" column="84" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="84" />
+        <state relative-caret-position="261">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="method#makeTransfer#0;class#CustomerController#0" expanded="false" />
           </folding>

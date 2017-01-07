@@ -69,19 +69,38 @@ public class ServiceCustomer implements IServiceCustomer {
     }
 
     @Override
-    public void makeNextPay(Credit credit, Invoice invoice) {
-        credit.setSumCredit(credit.getSumCredit()-credit.getPay());
-        invoice.setBalance(invoice.getBalance()-credit.getPay());
+    public void makeNextPay(int creditId, int invoiceId) {
+        Credit credit;
+        Invoice invoice;
         try {
-            unit.credits().update(credit);
+            credit = unit.credits().get(creditId);
         } catch (SQLException e) {
             e.printStackTrace();
+            credit=null;
         }
         try {
-            unit.invoices().update(invoice);
+            invoice=unit.invoices().get(invoiceId);
         } catch (SQLException e) {
             e.printStackTrace();
+            invoice=null;
         }
+
+
+            credit.setSumCredit(credit.getSumCredit()-credit.getPay());
+            invoice.setBalance(invoice.getBalance()-credit.getPay());
+
+            CreditCalculate creditCalc = new CreditCalculate(credit);
+            credit.setDayOfPay(creditCalc.setNextPay());
+            try {
+                unit.credits().update(credit);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                unit.invoices().update(invoice);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
     }
 
     @Override

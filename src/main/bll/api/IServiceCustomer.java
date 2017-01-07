@@ -16,6 +16,6 @@ public interface IServiceCustomer {
 
     List<Invoice> seeInvoises(int customerId) throws SQLException;
 
-    void makeNextPay(Credit credit, Invoice invoice);
+    void makeNextPay(int creditId, int invoiceId);
     void closedCredit(Credit credit, Invoice invoice);
 }
