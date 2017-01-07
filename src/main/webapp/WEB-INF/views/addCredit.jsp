@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -45,7 +45,7 @@
         <h2>Взять кредит</h2>
         <div class="form-group col-xs-4">
             <label for="sumCredit" class="control-label col-xs-4">Сумма кредита:</label>
-            <input type="text" pattern="\-?\d+(\.\d{0,})?" maxlength="10" name="sumCredit" id="sumCredit" class="form-control"  required="true"/>
+            <input type="text" pattern="\d+(\.\d{0,})?" maxlength="10" name="sumCredit" id="sumCredit" class="form-control"  required="true"/>
 
 
             <label for="creditStart" class="control-label col-xs-4">Начало кредита</label>
@@ -55,7 +55,7 @@
             <input type="date"   name="dayOfPay"  id="dayOfPay" class="form-control"  placeholder="yyyy-MM-dd" required="true"/>
 
             <label for="creditTerm" class="control-label col-xs-4">Срок кредита:</label>
-            <input type="text" pattern="^\d+$" name="creditTerm" id="creditTerm" class="form-control"  required="true"/>
+            <input type="text" pattern="\d+" maxlength="2" name="creditTerm" id="creditTerm" class="form-control"  required="true"/>
 
 
             <br></br>

@@ -32,75 +32,32 @@
         </div><!--/.container-fluid -->
     </nav>
 
-<f:form method="POST" modelAttribute="transferDTO" action="/makeTransfer" data-toggle="validator" >
-        <c:if test="${not empty errorTransfer}">
+    <f:form method="POST" modelAttribute="payCredit"   action="/makeNextPay" >
+
+        <c:if test="${not empty message}">
             <div class="alert alert-success">
-                    ${errorTransfer}
+                    ${message}
             </div>
         </c:if>
 
+        <input type="hidden" id="creditId" name="creditId" value="${creditId}">
 
-    <f:hidden path="fromInvoiceId"/>
-
+        <h2>Выберите счет для оплаты</h2>
         <div class="form-group col-xs-4">
-            <label for="toInvoiceId" class="control-label col-xs-4">Введите номер счета</label>
-            <input type="text"  pattern="\d+" minlength="1" maxlength="10" name="toInvoiceId" id="toInvoiceId" class="form-control"  required="true"/>
-
-
-
-            <label for="money" class="control-label col-xs-4">Сумма для перевода(руб)</label>
-            <input type="text"  pattern="\d+(\.\d{0,})?" minlength="1" maxlength="10" name="money" id="money" class="form-control" required="true"/>
-
-
+            <select name="invoiceId" id="invoiceId" class="form-control" required="true">
+                <c:forEach var="item" items="${invoices}">
+                    <option>
+                        <c:out value="${item.id}"/>
+                    </option>
+                </c:forEach>
+            </select>
             <br></br>
-            <button type="submit" class="btn btn-primary  btn-md">Перевести</button>
+            <button type="submit" class="btn btn-primary  btn-md">Платить</button>
         </div>
-</f:form>
+    </f:form>
 </div>
-
-
-
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
 </body>
 </html>
-
-
-<%--
-
-
-
-<f:form method="POST" modelAttribute="transferDTO" action="/makeTransfer">
-    <table>
-        <tr>
-            <td>
-                <i>to User (login) - toInvoiceId:</i>
-            </td>
-            <td>
-
-<f:input path="toInvoiceId"/>
-</td>
-</tr>
-<tr>
-    <td>
-        <i>Money :</i>
-    </td>
-    <td>
-        <f:input path="money"/>
-    </td>
-</tr>
-<tr>
-    <td>
-        <f:hidden path="fromInvoiceId"/>
-    </td>
-</tr>
-<tr>
-    <td><input type="submit"/></td>
-</tr>
-</table>
-<div style="color: red">${errorTransfer}</div>
-</f:form>
-
-
---%>

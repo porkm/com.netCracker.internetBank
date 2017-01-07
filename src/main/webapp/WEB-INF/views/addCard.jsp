@@ -19,12 +19,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/">Главная</a></li>
-
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -43,7 +42,7 @@
         <h2>Добавить новую карту</h2>
         <div class="form-group col-xs-4">
             <label for="validOf" class="control-label col-xs-4">Срок (лет)</label>
-            <input type="text" name="validOf" id="validOf" class="form-control" required="true"/>
+            <input type="text" pattern="\d+" maxlength="2"  name="validOf" id="validOf" class="form-control" required="true"/>
 
             <label for="currency" class="control-label col-xs-4">Валюта</label>
             <select name="currency" id="currency" class="form-control" required="true">

@@ -3,7 +3,9 @@ package main.bll.service.util;
 import main.bll.modeldto.CardDTO;
 
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class CardInfo {
@@ -24,8 +26,11 @@ public class CardInfo {
     }
 
     public Date setValidOfCard(int longer){
-        //добавить логику увеличения даты на longer (лет) относительно текущей
-        return new Date(longer);
+        GregorianCalendar calendar = new GregorianCalendar();
+        calendar.add(Calendar.YEAR, longer);
+
+        Date date = calendar.getTime();
+        return date;
     }
 
     public double getBalance(double balance, CardCurrency cardCurrency){

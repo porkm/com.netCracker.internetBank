@@ -6,19 +6,22 @@
 <html lang="ru">
 <head>
     <title>Title</title>
-    <link href=<c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
+    <link href=
+          <c:url value="/resources/css/bootstrap.css"/> rel="stylesheet">
 </head>
 <body>
+<div class="container">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="/">Internet Bank</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -35,28 +38,25 @@
         </div>
     </c:if>
 
-    <c:choose>
-        <c:when test="${not empty listRequest}">
-            <table  class="table table-striped">
-                <thead>
-                <tr>
-                    <td>№ п/п</td>
-                    <td>Имя</td>
-                    <td>№ клиента</td>
-                    <td></td>
-
-                </tr>
-                </thead>
-                <c:forEach var="request" items="${listRequest}">
+        <c:choose>
+            <c:when test="${not empty listRequest}">
+                <table class="table table-striped">
+                    <thead>
                     <tr>
-                        <td>${request.id}</td>
-                        <td>${request.friend}</td>
-                        <td>${request.customerId}</td>
-                        <td>
+                        <td>№ п/п</td>
+                        <td>Имя</td>
+                        <td>№ клиента</td>
+                        <td></td>
 
-
-
-                                <f:form method="POST" modelAttribute="request" action="/seeRequest" data-toggle="validator" >
+                    </tr>
+                    </thead>
+                    <c:forEach var="request" items="${listRequest}">
+                        <tr>
+                            <td>${request.id}</td>
+                            <td>${request.friend}</td>
+                            <td>${request.customerId}</td>
+                            <td>
+                                <f:form method="POST" modelAttribute="request" action="/seeRequest" data-toggle="validator">
 
                                     <input type="hidden" id="id" name="id" value="${request.id}">
                                     <input type="hidden" id="customerId" name="customerId" value="${request.customerId}">
@@ -65,28 +65,20 @@
                                         <button type="submit" class="btn btn-primary  btn-md">Регистрация</button>
                                     </div>
                                 </f:form>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </c:when>
+            <c:otherwise>
+                <br>
+                <div class="alert alert-info">
+                    Ни одного друга не найдено
+                </div>
+            </c:otherwise>
+        </c:choose>
 
-
-
-
-
-
-
-
-                        </td>
-                    </tr>
-                </c:forEach>
-            </table>
-        </c:when>
-        <c:otherwise>
-            <br>
-            <div class="alert alert-info">
-                Ни одного друга не найдено
-            </div>
-        </c:otherwise>
-    </c:choose>
-
-
+</div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
 </body>

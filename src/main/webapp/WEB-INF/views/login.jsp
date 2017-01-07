@@ -17,9 +17,9 @@
 <f:form name="submitForm" method="POST" cssClass="form-signin">
         <h2 class="form-signin-heading">Пожалуйста, авторизуйтесь</h2>
         <label for="login" class="sr-only">Логин</label>
-        <input type="text" name="login" id="login" class="form-control" placeholder="login" required autofocus>
-        <label for="passw" class="sr-only">Password</label>
-        <input type="password" name="passw" id="passw" class="form-control" placeholder="password" required>
+        <input type="text" pattern="[a-zA-Z0-9]+" minlength="3" maxlength="10" name="login" id="login" class="form-control" placeholder="login" required autofocus>
+        <label for="passw" pattern="[a-zA-Z0-9]+" minlength="6" maxlength="8" class="sr-only">Password</label>
+        <input type="password"  minlength="6" maxlength="8" name="passw" id="passw" class="form-control" placeholder="password" required>
         <br></br>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
 </f:form>

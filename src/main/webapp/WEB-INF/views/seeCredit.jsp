@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -56,6 +56,7 @@
                         <td>Начало кредита</td>
                         <td>Срок кредита</td>
                         <td>№ Клиент</td>
+                        <td></td>
                     </tr>
                     </thead>
                     <c:forEach var="credit" items="${listCredit}">
@@ -70,6 +71,14 @@
                             <td>${credit.creditStart}</td>
                             <td>${credit.creditTerm}</td>
                             <td>${credit.customerId}</td>
+                            <td>
+                                <c:if test="${not empty userId}">
+                                    <form action ="/makeNextPay/${credit.id}">
+                                        <br></br>
+                                        <button type="submit" class="btn btn-primary  btn-md">Сделать платеж</button>
+                                    </form>
+                                </c:if>
+                            </td>
                         </tr>
                     </c:forEach>
                 </table>
@@ -82,10 +91,65 @@
             </c:otherwise>
         </c:choose>
     </form>
-    <form action ="/addCredit/${id}">
-        <br></br>
-        <button type="submit" class="btn btn-primary  btn-md">Взять кредит</button>
-    </form>
+
+
+
+
+    <c:choose>
+        <c:when test="${empty userId}">
+
+            <form action ="/addCredit/${id}">
+                <br></br>
+                <button type="submit" class="btn btn-primary  btn-md">Выдать кредит</button>
+            </form>
+
+        </c:when>
+        <c:otherwise>
+
+        </c:otherwise>
+    </c:choose>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src=<c:url value="/resources/js/bootstrap.min.js"/>></script>
@@ -93,43 +157,3 @@
 
 </html>
 
-
-<%--
-
-
-<body>
-
-<a href="<c:url value="/addCredit/${id}"/>">Add new credit</a>
-<table>
-    <thead>
-    <tr>
-        <td>id</td>
-        <td>sumCredit</td>
-        <td>percentRate</td>
-        <td>dayOfPay</td>
-        <td>pay</td>
-        <td>overPay</td>
-        <td>creditStart</td>
-        <td>creditTerm</td>
-        <td>customerId</td>
-    </tr>
-    </thead>
-    <c:forEach items="${listCredit}" var="credit">
-        <tr>
-            <td>${credit.id}</td>
-            <td>${credit.sumCredit}</td>
-            <td>${credit.percentRate}</td>
-            <td>${credit.dayOfPay}</td>
-            <td>${credit.pay}</td>
-            <td>${credit.overPay}</td>
-            <td>${credit.creditStart}</td>
-            <td>${credit.creditTerm}</td>
-            <td>${credit.customerId}</td>
-        </tr>
-
-    </c:forEach>
-</table>
-
-</body>
-
---%>

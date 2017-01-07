@@ -9,10 +9,13 @@ import main.dal.entinties.*;
 import main.bll.modeldto.CreditDTO;
 
 public interface IServiceCustomer {
-    List<Invoice> seeInvoises(int customerId) throws SQLException;
     TransferError transferMoney(TransferDTO transferDTO)throws SQLException;
-    List<CreditDTO>  seeCredit(int customerId) throws SQLException;
     void inviteFriend(int customerId, String friend) throws SQLException;
     boolean checkLoginPassw(Customer checkedCustomer);
     int getIdByLogin(String login);
+
+    List<Invoice> seeInvoises(int customerId) throws SQLException;
+
+    void makeNextPay(Credit credit, Invoice invoice);
+    void closedCredit(Credit credit, Invoice invoice);
 }

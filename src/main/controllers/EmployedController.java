@@ -3,6 +3,7 @@ package main.controllers;
 
 import main.bll.api.IServiceEmployed;
 import main.bll.modeldto.CardDTO;
+import main.bll.modeldto.PayCredit;
 import main.bll.service.util.CardCurrency;
 import main.bll.service.util.MailUtil;
 import main.bll.service.util.PassUtil;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -75,8 +77,11 @@ public class EmployedController {
 
     //region Показать список счетов
     @RequestMapping(value = "/seeInvoices/{id}", method = RequestMethod.GET)
-    public ModelAndView getListInvoices(@PathVariable("id") int id, Model model) {
+    public ModelAndView getListInvoices(HttpSession session, @PathVariable("id") int id, Model model) {
         model.addAttribute("id", id);
+
+
+        model.addAttribute("userId",session.getAttribute("userId") );
         //получить все счета выбранного клиента - id
         List<Invoice> listInvoices;
         try {
@@ -161,7 +166,6 @@ public class EmployedController {
             listCredit = new ArrayList<>();
         }
 
-
         return new ModelAndView("seeCredit", "listCredit", listCredit );
     }
 
@@ -207,12 +211,7 @@ public class EmployedController {
         return new ModelAndView("seeRequest", "listRequest", listRequest );
     }
 
-//    @RequestMapping(value = "/addRequest/{id}", method = RequestMethod.GET)
-//    public ModelAndView addRequest(@PathVariable("id") int id) {
-//        Request request = new Request();
-//        request.setCustomerId(id);
-//        return new ModelAndView("addRequest", "request", request );
-//    }
+
 
     @RequestMapping(value = "/seeRequest", method = RequestMethod.POST)
     public String addRequest(@ModelAttribute("request") Request addRequest) {
@@ -223,13 +222,11 @@ public class EmployedController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
-
-
         return "redirect:/actionEmployed";
     }
 
     //endregion
+
+
 
 }

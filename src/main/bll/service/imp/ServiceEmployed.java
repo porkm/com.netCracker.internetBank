@@ -4,10 +4,12 @@ package main.bll.service.imp;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Currency;
 import java.util.List;
 
 import main.bll.modeldto.CardDTO;
+import main.bll.modeldto.CreditDTO;
 import main.bll.service.util.stock.BringFriend;
 import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
@@ -65,8 +67,6 @@ public class ServiceEmployed implements IServiceEmployed {
 
     @Override
     public List<Customer> getAll() throws SQLException {
-
-
         return unit.customers().getAll();
     }
 
@@ -81,6 +81,7 @@ public class ServiceEmployed implements IServiceEmployed {
 
     @Override
     public List<Credit> seeCredit(int customerId) throws SQLException {
+
         return unit.customers().get(customerId).getCredits();
     }
 

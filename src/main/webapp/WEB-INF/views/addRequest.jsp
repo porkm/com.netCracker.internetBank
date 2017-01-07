@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -43,7 +43,7 @@
     <h2>Зарегистрировать друга</h2>
     <div class="form-group col-xs-4">
         <label for="friend" class="control-label col-xs-4">Имя друга:</label>
-        <input type="text" name="friend" id="friend" class="form-control" required="true"/>
+        <input type="text" pattern="[a-zA-Z]+" minlength="3" maxlength="20" name="friend" id="friend" class="form-control" required="true"/>
 
 
 

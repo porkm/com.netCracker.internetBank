@@ -20,20 +20,6 @@ public class ServiceCustomer implements IServiceCustomer {
         this.unit = unit;
     }
 
-    @Override
-    public List<Invoice> seeInvoises(int customerId) {
-
-        //todo cath exeption and validate model
-        List<Invoice> list = null;
-        try {
-            list = unit.customers().get(customerId).getInvoices();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return list;
-    }
-
 
     @Override
     public boolean checkLoginPassw(Customer checkedCustomer) {
@@ -55,7 +41,6 @@ public class ServiceCustomer implements IServiceCustomer {
     @Override
     public int getIdByLogin(String login) {
         int id;
-
         try {
             id=unit.customers().getAll().stream()
                     .filter(x->x.getLogin().equals(login))
@@ -66,7 +51,6 @@ public class ServiceCustomer implements IServiceCustomer {
             e.printStackTrace();
             id=0;
         }
-
         return id;
     }
 
@@ -74,31 +58,48 @@ public class ServiceCustomer implements IServiceCustomer {
     public TransferError transferMoney(TransferDTO transferDTO) throws SQLException {
 
         InvoiceUtil invoiceUtil = new InvoiceUtil(transferDTO, unit);
-
         TransferError result =invoiceUtil.makeTransfer();
         return result;
     }
 
-    @Override
-    public List<CreditDTO> seeCredit(int customerId) throws SQLException {
-        List<Credit> credits = unit.customers().get(customerId).getCredits();
-        List<CreditDTO> creditDTO = new ArrayList<>();
-
-        for (Credit credit: credits) {
-            CreditDTO model = new CreditDTO();
-            //model.s
-
-        }
-
-        return null;
-
-    }
 
     @Override
     public void inviteFriend(int customerId, String friend) throws SQLException {
         unit.requests().create(new Request(0, friend, customerId));
+    }
+
+    @Override
+    public void makeNextPay(Credit credit, Invoice invoice) {
+        credit.setSumCredit(credit.getSumCredit()-credit.getPay());
+        invoice.setBalance(invoice.getBalance()-credit.getPay());
+        try {
+            unit.credits().update(credit);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            unit.invoices().update(invoice);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void closedCredit(Credit credit, Invoice invoice) {
 
     }
+
+    public List<Invoice> seeInvoises(int customerId) throws SQLException {
+        List<Invoice> list = null;
+        try {
+            list = unit.customers().get(customerId).getInvoices();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
 
 
 }

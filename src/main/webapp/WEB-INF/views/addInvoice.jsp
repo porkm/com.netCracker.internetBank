@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -44,7 +44,7 @@
         <div class="form-group col-xs-4">
 
             <label for="balance" class="control-label col-xs-4">Баланс</label>
-            <input type="text"  pattern="\-?\d+(\.\d{0,})?" name="balance" id="balance" class="form-control"  required="true"/>
+            <input type="text"  pattern="\d+(\.\d{0,})?" minlength="1" maxlength="10" name="balance" id="balance" class="form-control"  required="true"/>
 
 
             <br></br>

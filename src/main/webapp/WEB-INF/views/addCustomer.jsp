@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -45,10 +45,10 @@
             <input type="text" name="name" id="name" class="form-control" required="true"/>
 
             <label for="login" class="control-label col-xs-4">Логин:</label>
-            <input type="text" name="login" id="login" class="form-control" required="true"/>
+            <input type="text"  pattern="[a-zA-Z0-9]+" minlength="3" maxlength="10" name="login" id="login" class="form-control" required="true"/>
 
             <label for="passw" class="control-label col-xs-4">Пароль:</label>
-            <input type="password"  pattern="^[a-zA-Z0-9]+$" name="passw" id="passw" class="form-control" required="true"/>
+            <input type="password"  pattern="[a-zA-Z0-9]+" minlength="6" maxlength="10" name="passw" id="passw" class="form-control" required="true"/>
 
             <br></br>
             <button type="submit" class="btn btn-primary  btn-md">Добавить</button>

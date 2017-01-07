@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/">Internet Bank</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -51,7 +51,6 @@
             <td>#</td>
             <td>Имя</td>
             <td>Логин</td>
-
             <td>Добавить карту</td>
             <td>Добавить кредит</td>
         </tr>
@@ -75,8 +74,8 @@
         <br></br>
         <button type="submit" class="btn btn-primary  btn-md">Добавить клиента</button>
     </form>
+    <br> </br>
     <form action ="/seeRequest">
-        <br></br>
         <button type="submit" class="btn btn-primary  btn-md">Смотреть заявки</button>
     </form>
 
@@ -86,47 +85,3 @@
 </body>
 
 </html>
-
-<%--
-<body>
-<ul>
-    <li><a href="<c:url value="/"/>">Home</a></li>
-    <li><a href="<c:url value="/addCuomestr"/>">Add new customer</a></li>
-</ul>
-
-
-
-
-</body>
-<table>
-    <thead>
-    <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Login</td>
-        <td>Password</td>
-        <td>Add new card<</td>
-        <td>Add new credit</td>
-        <td>See all request</td>
-
-    </tr>
-    </thead>
-    <c:forEach items="${customerList}" var="actionCustomer">
-        <tr>
-            <td>${actionCustomer.id}</td>
-            <td>${actionCustomer.name}</td>
-            <td>${actionCustomer.login}</td>
-            <td>${actionCustomer.passw}</td>
-
-            <td><a href="<c:url value="/seeInvoices/${actionCustomer.id}"/>">See all Invoices</a></td>
-            <td><a href="<c:url value="/seeCredit/${actionCustomer.id}"/>">See all credit</a></td>
-            <td><a href="<c:url value="/seeRequest/${actionCustomer.id}"/>">See all request</a></td>
-
-        </tr>
-    </c:forEach>
-</table>
-
-
-
-
---%>
