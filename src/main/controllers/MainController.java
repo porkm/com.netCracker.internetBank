@@ -1,7 +1,6 @@
 package main.controllers;
 
 import main.bll.api.IServiceEmployed;
-import main.configuration.IoCConfiguration;
 import main.dal.entinties.Card;
 import main.dal.entinties.Customer;
 import main.dal.entinties.Invoice;
@@ -24,8 +23,6 @@ import java.util.List;
 @Controller
 public class MainController {
 
-    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-    IServiceEmployed service = context.getBean(IServiceEmployed.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {

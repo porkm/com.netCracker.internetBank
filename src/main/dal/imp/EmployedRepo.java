@@ -9,11 +9,11 @@ import main.dal.entinties.*;
 
 public class EmployedRepo implements IRepository<Employed> {
 
-    private IContext context;
+
     private Connection connection;
 
     public EmployedRepo(IContext context) {
-        this.context = context;
+
         connection = context.getConnection();
     }
 

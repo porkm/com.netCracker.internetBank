@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/tool"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd">
+
+
+   
+
+    <bean id="mySQLContext" class="main.dal.imp.contextdb.MySQLContext"/>
+
+
+    <bean id="unitOfWork" class="main.dal.imp.ContextUnitOfWork">
+        <constructor-arg ref="mySQLContext"/>
+    </bean>
+
+    <bean id="customerService" class="main.bll.service.imp.ServiceCustomer">
+        <constructor-arg ref="unitOfWork"/>
+    </bean>
+    <bean id="employedService" class="main.bll.service.imp.ServiceEmployed">
+        <constructor-arg ref="unitOfWork"/>
+    </bean>
+
+
 
 </beans>

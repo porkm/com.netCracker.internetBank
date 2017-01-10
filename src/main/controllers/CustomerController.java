@@ -4,10 +4,10 @@ import main.bll.api.IServiceCustomer;
 import main.bll.modeldto.PayCredit;
 import main.bll.modeldto.TransferDTO;
 import main.bll.service.util.TransferError;
-import main.configuration.IoCConfiguration;
 import main.dal.entinties.Credit;
 import main.dal.entinties.Invoice;
 import main.dal.entinties.Request;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -26,8 +26,15 @@ import java.util.List;
 @Controller
 public class CustomerController {
 
-    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-    IServiceCustomer service = context.getBean(IServiceCustomer.class);
+//    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
+
+//    IServiceCustomer service = context.getBean(IServiceCustomer.class);
+
+
+    @Autowired
+    private IServiceCustomer service;
+
+
 
     @RequestMapping("/actionCustomer")
     public String actionForCustomer(HttpSession session) {

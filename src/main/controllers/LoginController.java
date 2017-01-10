@@ -1,8 +1,8 @@
 package main.controllers;
 
 import main.bll.api.IServiceCustomer;
-import main.configuration.IoCConfiguration;
 import main.dal.entinties.Customer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -16,8 +16,11 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class LoginController {
 
-    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-    IServiceCustomer service = context.getBean(IServiceCustomer.class);
+//    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
+//    IServiceCustomer service = context.getBean(IServiceCustomer.class);
+
+    @Autowired
+    private  IServiceCustomer service;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String init(Model model) {

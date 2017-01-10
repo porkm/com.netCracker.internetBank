@@ -10,10 +10,14 @@ import main.dal.api.IUnitOfWork;
 import main.bll.api.IServiceCustomer;
 import main.bll.modeldto.CreditDTO;
 import main.bll.service.util.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
 public class ServiceCustomer implements IServiceCustomer {
 
+
+    @Autowired
     private IUnitOfWork unit;
 
     public ServiceCustomer(IUnitOfWork unit) {

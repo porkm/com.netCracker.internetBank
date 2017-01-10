@@ -9,11 +9,11 @@ import main.dal.entinties.*;
 
 public class InvoiceRepo implements IRepository<Invoice> {
 
-    private IContext context;
+
     private Connection connection;
 
     public InvoiceRepo(IContext context) {
-        this.context = context;
+
         connection = context.getConnection();
     }
     @Override

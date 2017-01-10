@@ -2,6 +2,7 @@ package main.dal.imp;
 
 import main.dal.entinties.*;
 import main.dal.api.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class ContextUnitOfWork implements IUnitOfWork {
@@ -12,6 +13,7 @@ public class ContextUnitOfWork implements IUnitOfWork {
     private IRepository<Employed> employed;
     private IRepository<Invoice> invoice;
     private IRepository<Request> request;
+
 
     private IContext context;
 

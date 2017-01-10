@@ -5,15 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 import main.dal.api.*;
 import main.dal.entinties.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class CardRepo implements IRepository<Card> {
 
-    private IContext context;
+
+
     private Connection connection;
 
     public CardRepo(IContext context) {
-        this.context = context;
+
         connection = context.getConnection();
     }
 

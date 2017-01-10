@@ -1,14 +1,15 @@
 package main.controllers;
 
 
+import main.bll.api.IServiceCustomer;
 import main.bll.api.IServiceEmployed;
 import main.bll.modeldto.CardDTO;
 import main.bll.modeldto.PayCredit;
 import main.bll.service.util.CardCurrency;
 import main.bll.service.util.MailUtil;
 import main.bll.service.util.PassUtil;
-import main.configuration.IoCConfiguration;
 import main.dal.entinties.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -27,8 +28,11 @@ import java.util.List;
 
 @Controller
 public class EmployedController {
-    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-    IServiceEmployed service = context.getBean(IServiceEmployed.class);
+//    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
+//    IServiceEmployed service = context.getBean(IServiceEmployed.class);
+
+@Autowired
+    private IServiceEmployed service;
 
     @InitBinder
     public void initBinder(WebDataBinder binder)

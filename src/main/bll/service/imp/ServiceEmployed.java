@@ -15,10 +15,12 @@ import main.dal.entinties.*;
 import main.dal.api.IUnitOfWork;
 import main.bll.api.IServiceEmployed;
 import main.bll.service.util.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class ServiceEmployed implements IServiceEmployed {
 
+   @Autowired
     private IUnitOfWork unit;
 
 

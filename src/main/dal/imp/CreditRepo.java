@@ -10,11 +10,11 @@ import main.dal.entinties.*;
 
 
 public class CreditRepo implements IRepository<Credit> {
-    private IContext context;
+
     private Connection connection;
 
     public CreditRepo(IContext context) {
-        this.context = context;
+
         connection = context.getConnection();
     }
 

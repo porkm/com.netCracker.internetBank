@@ -9,11 +9,11 @@ import main.dal.entinties.*;
 
 public class RequestRepo implements IRepository<Request> {
 
-    private IContext context;
+
     private Connection connection;
 
     public RequestRepo(IContext context) {
-        this.context = context;
+
         connection = context.getConnection();
     }
 

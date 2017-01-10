@@ -3,7 +3,7 @@ package main.console;
 
 import main.bll.api.*;
 import main.bll.service.imp.ServiceCustomer;
-import main.configuration.IoCConfiguration;
+
 import main.dal.entinties.*;
 import main.dal.imp.ContextUnitOfWork;
 import main.dal.imp.contextdb.MySQLContext;
@@ -39,17 +39,17 @@ public class TestApp {
 //
 //        String s= String.format("%064x", new java.math.BigInteger(1, byteData));
 //
-//        System.out.println(s);
-
-int longer=5;
-
-
-        GregorianCalendar calendar = new GregorianCalendar();
-        calendar.add(Calendar.YEAR, longer);
-
-        Date date = calendar.getTime();
-        System.out.println(date);
-
+////        System.out.println(s);
+//
+//int longer=5;
+//
+//
+//        GregorianCalendar calendar = new GregorianCalendar();
+//        calendar.add(Calendar.YEAR, longer);
+//
+//        Date date = calendar.getTime();
+//        System.out.println(date);
+//
 
     }
 }
