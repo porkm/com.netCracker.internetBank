@@ -12,6 +12,13 @@ public class EmployedRepo implements IRepository<Employed> {
 
     private Connection connection;
 
+    private final String GET_ALL ="Select * from employed";
+    private final String GET_ALL_BY_ID = "Select * from employed WHERE id=?";
+    private final String CREATE = "INSERT INTO employed (name, login, passw) VALUES(?,?,?)";
+    private final String UPDATE = " UPDATE employed SET name=?, login=?, passw=? WHERE id=?";
+    private final String DELETE = "DELETE FROM employed WHERE id = ?";
+
+
     public EmployedRepo(IContext context) {
 
         connection = context.getConnection();
@@ -29,7 +36,7 @@ public class EmployedRepo implements IRepository<Employed> {
 
         List<Employed> employeds = new ArrayList<Employed>();
         Statement statement = connection.createStatement();
-        ResultSet res = statement.executeQuery("Select * from employed");
+        ResultSet res = statement.executeQuery(GET_ALL);
         while (res.next()) {
             employeds.add(new Employed(res.getInt("id"), res.getString("name"),
                     res.getString("login"), res.getString("passw")));
@@ -42,7 +49,7 @@ public class EmployedRepo implements IRepository<Employed> {
 
         Employed employed;
 
-        PreparedStatement statement = connection.prepareStatement("Select * from employed WHERE id=?");
+        PreparedStatement statement = connection.prepareStatement(GET_ALL_BY_ID);
         statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         if (res.next()) {
@@ -56,8 +63,7 @@ public class EmployedRepo implements IRepository<Employed> {
 
     @Override
     public void create(Employed item) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("INSERT INTO" +
-                " employed (name, login, passw) VALUES(?,?,?)");
+        PreparedStatement statement = connection.prepareStatement(CREATE);
         statement.setString(1, item.getName());
         statement.setString(2, item.getLogin());
         statement.setString(3, item.getPassw());
@@ -67,8 +73,7 @@ public class EmployedRepo implements IRepository<Employed> {
     @Override
     public void update(Employed item) throws SQLException {
 
-        PreparedStatement statement = connection.prepareStatement(" UPDATE employed SET " +
-                "name=?, login=?, passw=? WHERE id=?");
+        PreparedStatement statement = connection.prepareStatement(UPDATE);
         statement.setString(1, item.getName());
         statement.setString(2, item.getLogin());
         statement.setString(3, item.getPassw());
@@ -79,7 +84,7 @@ public class EmployedRepo implements IRepository<Employed> {
 
     @Override
     public void delete(int id) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("DELETE FROM employed WHERE id = ?");
+        PreparedStatement statement = connection.prepareStatement(DELETE);
         statement.setInt(1, id);
         statement.execute();
 

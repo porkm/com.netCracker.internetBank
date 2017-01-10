@@ -12,6 +12,15 @@ public class CustomerRepo implements IRepository<Customer> {
     private IContext context;
     private Connection connection;
 
+
+    private final String GET_ALL ="Select * from customer";
+    private final String GET_ALL_BY_ID = "Select * from customer WHERE id=?";
+    private final String CREATE = "INSERT INTO customer (name, login, passw) VALUES(?,?,?)";
+    private final String UPDATE = " UPDATE customer SET name=?, login=?, passw=? WHERE id=?";
+    private final String DELETE = "DELETE FROM cusromer WHERE id = ?";
+
+
+
     public CustomerRepo(IContext context) {
         this.context = context;
         connection = context.getConnection();
@@ -20,7 +29,7 @@ public class CustomerRepo implements IRepository<Customer> {
     public List<Customer> getAll() throws SQLException {
         List<Customer> customers = new ArrayList<Customer>();
         Statement statement = connection.createStatement();
-        ResultSet res = statement.executeQuery("Select * from customer");
+        ResultSet res = statement.executeQuery(GET_ALL);
         while (res.next()) {
             Customer c = new Customer(res.getInt("id"), res.getString("name"),
                     res.getString("login"), res.getString("passw"));
@@ -42,7 +51,7 @@ public class CustomerRepo implements IRepository<Customer> {
     public Customer get(int id) throws SQLException {
         Customer customer;
 
-        PreparedStatement statement = connection.prepareStatement("Select * from customer WHERE id=?");
+        PreparedStatement statement = connection.prepareStatement(GET_ALL_BY_ID);
         statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         if (res.next()) {
@@ -59,8 +68,7 @@ public class CustomerRepo implements IRepository<Customer> {
 
     @Override
     public void create(Customer item) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("INSERT INTO" +
-                " customer (name, login, passw) VALUES(?,?,?)");
+        PreparedStatement statement = connection.prepareStatement(CREATE);
         statement.setString(1, item.getName());
         statement.setString(2, item.getLogin());
         statement.setString(3, item.getPassw());
@@ -70,8 +78,7 @@ public class CustomerRepo implements IRepository<Customer> {
 
     @Override
     public void update(Customer item) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement(" UPDATE customer SET " +
-                "name=?, login=?, passw=? WHERE id=?");
+        PreparedStatement statement = connection.prepareStatement(UPDATE);
         statement.setString(1, item.getName());
         statement.setString(2, item.getLogin());
         statement.setString(3, item.getPassw());
@@ -83,7 +90,7 @@ public class CustomerRepo implements IRepository<Customer> {
 
     @Override
     public void delete(int id) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("DELETE FROM cusromer WHERE id = ?");
+        PreparedStatement statement = connection.prepareStatement(DELETE);
         statement.setInt(1, id);
         statement.execute();
 

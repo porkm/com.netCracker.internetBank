@@ -3,23 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f6f04d9b-cccd-4b13-91ae-df9dc1b43718" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" afterPath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" afterPath="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bll/service/util/TransferError.java" afterPath="$PROJECT_DIR$/src/main/bll/service/util/TransferError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/configuration/IoCConfiguration.java" afterPath="$PROJECT_DIR$/src/main/configuration/IoCConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/console/TestApp.java" afterPath="$PROJECT_DIR$/src/main/console/TestApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/controllers/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/EmployedController.java" afterPath="$PROJECT_DIR$/src/main/controllers/EmployedController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/controllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/controllers/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/EmployedRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/EmployedRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/dal/imp/RequestRepo.java" afterPath="$PROJECT_DIR$/src/main/dal/imp/RequestRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/internetbank/WEB-INF/classes/main/webapp/WEB-INF/applicationContext.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,31 +46,159 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <file leaf-file-name="ServiceCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceEmployed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+              <folding>
+                <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
+                <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
+                <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
+                <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreditRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
+              <folding>
+                <element signature="method#getAll#0;class#CreditRepo#0" expanded="false" />
+                <element signature="method#getForById#0;class#CreditRepo#0" expanded="false" />
+                <element signature="method#get#0;class#CreditRepo#0" expanded="false" />
+                <marker date="1484074421721" expanded="true" signature="338:358" ph="Select * fro... credit" />
+                <marker date="1484074421721" expanded="true" signature="403:434" ph="Select * fro... credit" />
+                <marker date="1484074421721" expanded="true" signature="472:626" ph="INSERT INTO credit" />
+                <marker date="1484074421721" expanded="true" signature="665:804" ph="UPDATE credi... " />
+                <marker date="1484074421721" expanded="true" signature="842:873" ph="DELETE FROM " />
+                <marker date="1484074421721" expanded="true" signature="918:985" ph="select * fro... credit" />
+                <marker date="1484074421721" expanded="true" signature="918:1006" ph="select * fro... credit" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestRepo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/RequestRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="112" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+              <folding>
+                <marker date="1484074421697" expanded="true" signature="280:301" ph="Select * fro... request" />
+                <marker date="1484074421697" expanded="true" signature="346:378" ph="Select * fro... request" />
+                <marker date="1484074421697" expanded="true" signature="416:469" ph="INSERT INTO request... " />
+                <marker date="1484074421697" expanded="true" signature="508:561" ph="UPDATE reque... " />
+                <marker date="1484074421697" expanded="true" signature="599:632" ph="DELETE FROM " />
+                <marker date="1484074421697" expanded="true" signature="677:767" ph="select * fro... request" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="15" selection-end-column="0" />
+              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+              <folding>
+                <element signature="method#getAll#0;class#CustomerRepo#0" expanded="false" />
+                <element signature="method#get#0;class#CustomerRepo#0" expanded="false" />
+                <marker date="1484074421745" expanded="true" signature="311:333" ph="Select * fro... customer" />
+                <marker date="1484074421745" expanded="true" signature="378:411" ph="Select * fro... customer" />
+                <marker date="1484074421745" expanded="true" signature="449:504" ph="INSERT INTO customer... " />
+                <marker date="1484074421745" expanded="true" signature="543:598" ph="UPDATE custo... " />
+                <marker date="1484074421745" expanded="true" signature="636:669" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployedRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/EmployedRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <folding>
+                <marker date="1484074421659" expanded="true" signature="281:303" ph="Select * fro... employed" />
+                <marker date="1484074421659" expanded="true" signature="348:381" ph="Select * fro... employed" />
+                <marker date="1484074421659" expanded="true" signature="419:474" ph="INSERT INTO employed... " />
+                <marker date="1484074421659" expanded="true" signature="513:532" ph="UPDATE emplo... " />
+                <marker date="1484074421659" expanded="true" signature="513:568" ph="UPDATE emplo... " />
+                <marker date="1484074421659" expanded="true" signature="606:639" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvoiceRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="method#getAll#0;class#InvoiceRepo#0" expanded="false" />
+                <element signature="method#getForById#0;class#InvoiceRepo#0" expanded="false" />
+                <marker date="1484074421763" expanded="true" signature="280:301" ph="Select * fro... invoice" />
+                <marker date="1484074421763" expanded="true" signature="346:378" ph="select * fro... invoice" />
+                <marker date="1484074421763" expanded="true" signature="416:470" ph="INSERT INTO invoice... " />
+                <marker date="1484074421763" expanded="true" signature="509:549" ph="UPDATE invoi... " />
+                <marker date="1484074421763" expanded="true" signature="587:619" ph="DELETE FROM " />
+                <marker date="1484074421763" expanded="true" signature="664:754" ph="select * fro... invoice" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CardRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="130" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="130" />
+              <folding>
+                <marker date="1484073032555" expanded="true" signature="299:317" ph="Select * fro... card" />
+                <marker date="1484073032555" expanded="true" signature="366:399" ph="Select * fro... card" />
+                <marker date="1484073032555" expanded="true" signature="437:522" ph="Select * fro... card" />
+                <marker date="1484073032555" expanded="true" signature="560:574" ph="UPDATE card " />
+                <marker date="1484073032555" expanded="true" signature="560:575" ph="UPDATE card " />
+                <marker date="1484073032555" expanded="true" signature="560:649" ph="Select * fro... card" />
+                <marker date="1484073032555" expanded="true" signature="687:721" ph="Select * fro... card" />
+                <marker date="1484073032555" expanded="true" signature="766:852" ph="select * fro... card" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dal/api/IRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <file leaf-file-name="IServiceEmployed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -153,14 +273,14 @@
         <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java" />
         <option value="$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java" />
-        <option value="$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/bll/service/util/TransferError.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/dal/imp/CardRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java" />
         <option value="$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java" />
         <option value="$PROJECT_DIR$/src/main/dal/imp/EmployedRepo.java" />
         <option value="$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java" />
         <option value="$PROJECT_DIR$/src/main/dal/imp/RequestRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/bll/service/util/TransferError.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -457,6 +577,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="imp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internetbank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.netCracker.internetBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contextdb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1333,12 +1483,12 @@
       <workItem from="1483690949364" duration="5597000" />
       <workItem from="1483710019343" duration="8884000" />
       <workItem from="1483721081582" duration="64571000" />
-      <workItem from="1484066312231" duration="3829000" />
+      <workItem from="1484066312231" duration="6365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251629000" />
+    <option name="totallyTimeSpent" value="254165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -1430,7 +1580,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java</url>
-          <line>99</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="263" />
         </line-breakpoint>
@@ -1466,13 +1616,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java</url>
-          <line>47</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="323" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java</url>
-          <line>55</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="324" />
         </line-breakpoint>
@@ -1513,12 +1663,6 @@
           <option name="timeStamp" value="335" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="340" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/controllers/CustomerController.java</url>
           <line>123</line>
           <properties />
@@ -1541,14 +1685,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/actionEmployed.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1737,147 +1873,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IUnitOfWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/contextdb/MySQLContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="50" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/dal/api/IContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <marker date="1484071540013" expanded="true" signature="632:652" ph="Select * fro... credit" />
-            <marker date="1484071540013" expanded="true" signature="1263:1414" ph="select * fro... credit" />
-            <marker date="1484071540013" expanded="true" signature="2042:2073" ph="Select * fro... credit" />
-            <marker date="1484071540013" expanded="true" signature="2719:2897" ph="INSERT INTO credit... " />
-            <marker date="1484071540013" expanded="true" signature="3552:3732" ph="UPDATE credi... " />
-            <marker date="1484071540013" expanded="true" signature="4423:4475" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CardRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <marker date="1484071540045" expanded="true" signature="621:639" ph="Select * fro... card" />
-            <marker date="1484071540045" expanded="true" signature="1042:1075" ph="Select * fro... card" />
-            <marker date="1484071540045" expanded="true" signature="1583:1688" ph="INSERT INTO card... " />
-            <marker date="1484071540045" expanded="true" signature="2145:2255" ph="UPDATE card " />
-            <marker date="1484071540045" expanded="true" signature="2755:2809" ph="DELETE FROM " />
-            <marker date="1484071540045" expanded="true" signature="3081:3167" ph="select * fro... card" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <marker date="1483307800764" expanded="true" signature="644:666" ph="Select * fro... customer" />
-            <marker date="1483307800764" expanded="true" signature="1416:1449" ph="Select * fro... customer" />
-            <marker date="1483307800764" expanded="true" signature="2160:2236" ph="INSERT INTO customer... " />
-            <marker date="1483307800764" expanded="true" signature="2565:2641" ph="UPDATE custo... " />
-            <marker date="1483307800764" expanded="true" signature="3006:3039" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/EmployedRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1484071539834" expanded="true" signature="710:732" ph="Select * fro... employed" />
-            <marker date="1484071539834" expanded="true" signature="1122:1155" ph="Select * fro... employed" />
-            <marker date="1484071539834" expanded="true" signature="1643:1719" ph="INSERT INTO employed... " />
-            <marker date="1484071539834" expanded="true" signature="2048:2124" ph="UPDATE emplo... " />
-            <marker date="1484071539834" expanded="true" signature="2488:2521" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <marker date="1484071540098" expanded="true" signature="577:598" ph="Select * fro... invoice" />
-            <marker date="1484071540098" expanded="true" signature="1011:1163" ph="select * fro... invoice" />
-            <marker date="1484071540098" expanded="true" signature="1591:1623" ph="Select * fro... invoice" />
-            <marker date="1484071540098" expanded="true" signature="2068:2143" ph="INSERT INTO invoice... " />
-            <marker date="1484071540098" expanded="true" signature="2428:2489" ph="UPDATE invoi... " />
-            <marker date="1484071540098" expanded="true" signature="2758:2811" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/RequestRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <marker date="1484071539894" expanded="true" signature="578:599" ph="Select * fro... request" />
-            <marker date="1484071539894" expanded="true" signature="973:1125" ph="select * fro... request" />
-            <marker date="1484071539894" expanded="true" signature="1550:1582" ph="Select * fro... request" />
-            <marker date="1484071539894" expanded="true" signature="2028:2101" ph="INSERT INTO request... " />
-            <marker date="1484071539894" expanded="true" signature="2383:2457" ph="UPDATE reque... " />
-            <marker date="1484071539894" expanded="true" signature="2775:2828" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
-            <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
-            <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
-            <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1939,29 +1939,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2006,9 +1988,192 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IUnitOfWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/contextdb/MySQLContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="50" selection-start-line="10" selection-start-column="2" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/ContextUnitOfWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/api/IServiceEmployed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/main.dal.api.IRepository">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>main.dal.api.IRepository</OriginalElement>
+          <nodes>
+            <node x="" y="">main.dal.api.IRepository</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="45.5" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/api/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bll/service/imp/ServiceEmployed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="method#seeCards#0;class#ServiceEmployed#0" expanded="false" />
+            <element signature="method#addInvoice#0;class#ServiceEmployed#0" expanded="false" />
+            <element signature="method#addCard#0;class#ServiceEmployed#0" expanded="false" />
+            <element signature="method#getBonus#0;class#ServiceEmployed#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CardRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="130" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="130" />
+          <folding>
+            <marker date="1484073032555" expanded="true" signature="299:317" ph="Select * fro... card" />
+            <marker date="1484073032555" expanded="true" signature="366:399" ph="Select * fro... card" />
+            <marker date="1484073032555" expanded="true" signature="437:522" ph="Select * fro... card" />
+            <marker date="1484073032555" expanded="true" signature="560:574" ph="UPDATE card " />
+            <marker date="1484073032555" expanded="true" signature="560:575" ph="UPDATE card " />
+            <marker date="1484073032555" expanded="true" signature="560:649" ph="Select * fro... card" />
+            <marker date="1484073032555" expanded="true" signature="687:721" ph="Select * fro... card" />
+            <marker date="1484073032555" expanded="true" signature="766:852" ph="select * fro... card" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CreditRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
+          <folding>
+            <element signature="method#getAll#0;class#CreditRepo#0" expanded="false" />
+            <element signature="method#getForById#0;class#CreditRepo#0" expanded="false" />
+            <element signature="method#get#0;class#CreditRepo#0" expanded="false" />
+            <marker date="1484074421721" expanded="true" signature="338:358" ph="Select * fro... credit" />
+            <marker date="1484074421721" expanded="true" signature="403:434" ph="Select * fro... credit" />
+            <marker date="1484074421721" expanded="true" signature="472:626" ph="INSERT INTO credit" />
+            <marker date="1484074421721" expanded="true" signature="665:804" ph="UPDATE credi... " />
+            <marker date="1484074421721" expanded="true" signature="842:873" ph="DELETE FROM " />
+            <marker date="1484074421721" expanded="true" signature="918:985" ph="select * fro... credit" />
+            <marker date="1484074421721" expanded="true" signature="918:1006" ph="select * fro... credit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/CustomerRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <element signature="method#getAll#0;class#CustomerRepo#0" expanded="false" />
+            <element signature="method#get#0;class#CustomerRepo#0" expanded="false" />
+            <marker date="1484074421745" expanded="true" signature="311:333" ph="Select * fro... customer" />
+            <marker date="1484074421745" expanded="true" signature="378:411" ph="Select * fro... customer" />
+            <marker date="1484074421745" expanded="true" signature="449:504" ph="INSERT INTO customer... " />
+            <marker date="1484074421745" expanded="true" signature="543:598" ph="UPDATE custo... " />
+            <marker date="1484074421745" expanded="true" signature="636:669" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/EmployedRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <marker date="1484074421659" expanded="true" signature="281:303" ph="Select * fro... employed" />
+            <marker date="1484074421659" expanded="true" signature="348:381" ph="Select * fro... employed" />
+            <marker date="1484074421659" expanded="true" signature="419:474" ph="INSERT INTO employed... " />
+            <marker date="1484074421659" expanded="true" signature="513:532" ph="UPDATE emplo... " />
+            <marker date="1484074421659" expanded="true" signature="513:568" ph="UPDATE emplo... " />
+            <marker date="1484074421659" expanded="true" signature="606:639" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/InvoiceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="method#getAll#0;class#InvoiceRepo#0" expanded="false" />
+            <element signature="method#getForById#0;class#InvoiceRepo#0" expanded="false" />
+            <marker date="1484074421763" expanded="true" signature="280:301" ph="Select * fro... invoice" />
+            <marker date="1484074421763" expanded="true" signature="346:378" ph="select * fro... invoice" />
+            <marker date="1484074421763" expanded="true" signature="416:470" ph="INSERT INTO invoice... " />
+            <marker date="1484074421763" expanded="true" signature="509:549" ph="UPDATE invoi... " />
+            <marker date="1484074421763" expanded="true" signature="587:619" ph="DELETE FROM " />
+            <marker date="1484074421763" expanded="true" signature="664:754" ph="select * fro... invoice" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dal/imp/RequestRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="112" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+          <folding>
+            <marker date="1484074421697" expanded="true" signature="280:301" ph="Select * fro... request" />
+            <marker date="1484074421697" expanded="true" signature="346:378" ph="Select * fro... request" />
+            <marker date="1484074421697" expanded="true" signature="416:469" ph="INSERT INTO request... " />
+            <marker date="1484074421697" expanded="true" signature="508:561" ph="UPDATE reque... " />
+            <marker date="1484074421697" expanded="true" signature="599:632" ph="DELETE FROM " />
+            <marker date="1484074421697" expanded="true" signature="677:767" ph="select * fro... request" />
+          </folding>
         </state>
       </provider>
     </entry>

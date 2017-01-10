@@ -10,6 +10,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class CardRepo implements IRepository<Card> {
 
+    private final String GET_ALL ="Select * from card";
+    private final String GET_ALL_BY_NUMBER = "Select * from card WHERE number=?";
+    private final String CREATE = "INSERT INTO  card (number, valid_of, id_invoice, balance, currency) VALUES(?,?,?,?,?)";
+    private final String UPDATE = "UPDATE card SET  number=?, valid_of=?, id_invioce=?, balance=?, currency=? WHERE number=?";
+    private final String DELETE = "DELETE FROM card  WHERE number = ?";
+    private final String GET_FOR_BY_ID = "select * from card inner join invoice on card.id_invoice=invoice.id where id_invoice=?";
+
+
+
+
 
 
     private Connection connection;
@@ -23,7 +33,7 @@ public class CardRepo implements IRepository<Card> {
     public List<Card> getAll() throws SQLException {
         List<Card> cards = new ArrayList<Card>();
         Statement statement = connection.createStatement();
-        ResultSet res = statement.executeQuery("Select * from card");
+        ResultSet res = statement.executeQuery(GET_ALL);
         while (res.next()) {
             cards.add(new Card(res.getInt("number"), res.getDate("valid_of"), res.getInt("id_invoice"),
                     res.getString("currency"), res.getDouble("balance")));
@@ -35,7 +45,7 @@ public class CardRepo implements IRepository<Card> {
     public Card get(int id) throws SQLException {
         Card cards;
 
-        PreparedStatement statement = connection.prepareStatement("Select * from card WHERE number=?");
+        PreparedStatement statement = connection.prepareStatement(GET_ALL_BY_NUMBER);
         statement.setInt(1, id);
         ResultSet res = statement.executeQuery();
         if (res.next()) {
@@ -49,8 +59,7 @@ public class CardRepo implements IRepository<Card> {
 
     @Override
     public void create(Card item) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("INSERT INTO" +
-                " card (number, valid_of, id_invoice, balance, currency) VALUES(?,?,?,?,?)");
+        PreparedStatement statement = connection.prepareStatement(CREATE);
         statement.setInt(1, item.getNumber());
         statement.setDate(2, new java.sql.Date(item.getValidOf().getTime()));
         statement.setInt(3, item.getInvoceId());
@@ -63,8 +72,7 @@ public class CardRepo implements IRepository<Card> {
 
     @Override
     public void update(Card item) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement(" UPDATE card SET " +
-                " number=?, valid_of=?, id_invioce=?, balance=?, currency=? WHERE number=?");
+        PreparedStatement statement = connection.prepareStatement(UPDATE);
         statement.setInt(1, item.getNumber());
         statement.setDate(2, new java.sql.Date(item.getValidOf().getTime()));
         statement.setInt(3, item.getInvoceId());
@@ -78,8 +86,7 @@ public class CardRepo implements IRepository<Card> {
 
     @Override
     public void delete(int id) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("DELETE FROM card" +
-                " WHERE number = ?");
+        PreparedStatement statement = connection.prepareStatement(DELETE);
         statement.setInt(1, id);
         statement.execute();
 
@@ -88,7 +95,7 @@ public class CardRepo implements IRepository<Card> {
     @Override
     public List<Card> getForById(int invoicesId) throws SQLException {
         List<Card> cards = new ArrayList<>();
-        PreparedStatement statement = connection.prepareStatement("select * from card inner join invoice on card.id_invoice=invoice.id where id_invoice=?");
+        PreparedStatement statement = connection.prepareStatement(GET_FOR_BY_ID);
         statement.setInt(1, invoicesId);
         ResultSet res = statement.executeQuery();
         while (res.next()) {
