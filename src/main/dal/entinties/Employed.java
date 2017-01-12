@@ -1,9 +1,16 @@
 package main.dal.entinties;
 
+import javax.validation.constraints.Size;
+
 public class Employed {
+
     private int id;
+
     private String name;
+
+
     private String login;
+
     private String passw;
 
     public Employed(int id, String name, String login, String passw ){

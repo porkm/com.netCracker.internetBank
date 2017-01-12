@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -71,7 +72,7 @@ public class EmployedController {
     }
 
     @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
-    public String addCustomer(@ModelAttribute("addCustomer") Customer addCustomer) {
+    public String addCustomer(@Valid @ModelAttribute("addCustomer") Customer addCustomer) {
         service.registerCustomer(addCustomer);
         return "redirect:/actionEmployed";
     }

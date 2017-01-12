@@ -33,6 +33,7 @@
 
 <f:form method="POST" commandName="addCustomer" action="addCustomer" data-toggle="validator" >
 
+
     <c:if test="${not empty message}">
         <div class="alert alert-success">
                 ${message}

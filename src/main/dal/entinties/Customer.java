@@ -1,11 +1,15 @@
 package main.dal.entinties;
 
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
     private int id;
     private String name;
+
+
+    @Size(min = 3, max = 5)
     private String login;
     private String passw;
     private List<Invoice> invoices;
