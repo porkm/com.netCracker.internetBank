@@ -43,6 +43,7 @@
         <div class="form-group col-xs-4">
             <label for="validOf" class="control-label col-xs-4">Срок (лет)</label>
             <input type="text" pattern="\d+" maxlength="2"  name="validOf" id="validOf" class="form-control" required="true"/>
+            <f:errors path="validOf" />
 
             <label for="currency" class="control-label col-xs-4">Валюта</label>
             <select name="currency" id="currency" class="form-control" required="true">

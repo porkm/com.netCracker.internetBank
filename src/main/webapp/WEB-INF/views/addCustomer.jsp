@@ -44,14 +44,18 @@
         <div class="form-group col-xs-4">
             <label for="name" class="control-label col-xs-4">Имя:</label>
             <input type="text" name="name" id="name" class="form-control" required="true"/>
+            <f:errors path="name" />
 
             <label for="login" class="control-label col-xs-4">Логин:</label>
             <input type="text"  pattern="[a-zA-Z0-9]+" minlength="3" maxlength="10" name="login" id="login" class="form-control" required="true"/>
+            <f:errors path="login" />
+
 
             <label for="passw" class="control-label col-xs-4">Пароль:</label>
             <input type="password"  pattern="[a-zA-Z0-9]+" minlength="6" maxlength="10" name="passw" id="passw" class="form-control" required="true"/>
+            <f:errors path="passw" />
 
-            <br></br>
+            <br/>
             <button type="submit" class="btn btn-primary  btn-md">Добавить</button>
         </div>
 </f:form>

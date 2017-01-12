@@ -1,16 +1,22 @@
 package main.dal.entinties;
 
+import javax.validation.constraints.Future;
+import javax.validation.constraints.Max;
 import java.util.Date;
 
 
 public class Credit {
     private int id;
+    @Max(value = 1000000, message = "Максимальная сумма кредита 1 000 000 рублей")
     private double sumCredit;
     private double percentRate;
+    @Future(message = "Дата должна быть больше сегодняшней")
     private Date dayOfPay;
     private double pay;
     private double overPay;
+    @Future(message = "Дата должна быть больше сегодняшней")
     private Date creditStart;
+    @Max(value = 5, message = "Максимальный срок кредита 5 лет")
     private int creditTerm;
     private int customerId;
 

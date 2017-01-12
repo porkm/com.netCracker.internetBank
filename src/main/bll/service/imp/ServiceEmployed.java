@@ -30,8 +30,6 @@ public class ServiceEmployed implements IServiceEmployed {
 
     @Override
     public void registerCustomer(Customer newCustomer) {
-        //
-
         String password = newCustomer.getPassw();
 
         newCustomer.setPassw(PassUtil.getPassSHA(password));

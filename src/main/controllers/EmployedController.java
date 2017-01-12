@@ -1,26 +1,26 @@
 package main.controllers;
 
 
-import main.bll.api.IServiceCustomer;
+
 import main.bll.api.IServiceEmployed;
 import main.bll.modeldto.CardDTO;
-import main.bll.modeldto.PayCredit;
+
 import main.bll.service.util.CardCurrency;
-import main.bll.service.util.MailUtil;
-import main.bll.service.util.PassUtil;
+
 import main.dal.entinties.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -72,7 +72,11 @@ public class EmployedController {
     }
 
     @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
-    public String addCustomer(@Valid @ModelAttribute("addCustomer") Customer addCustomer) {
+    public String addCustomer(@Valid @ModelAttribute("addCustomer") Customer addCustomer, BindingResult result) {
+        if (result.hasErrors()){
+            //model.addAttribute("message", "error");
+            return null;
+        }
         service.registerCustomer(addCustomer);
         return "redirect:/actionEmployed";
     }
@@ -107,13 +111,17 @@ public class EmployedController {
     //region Добавить счет
     @RequestMapping(value = "/addInvoice/{id}", method = RequestMethod.GET)
     public ModelAndView addInvoice(@PathVariable("id") int id) {
-        Invoice invoice = new Invoice(0,0,id);
+        Invoice invoice = new Invoice();
+        invoice.setCustomerId(id);
         return new ModelAndView("addInvoice", "invoice", invoice );
     }
 
     @RequestMapping(value = "/addInvoice", method = RequestMethod.POST)
-    public String addInvoice(@ModelAttribute("invoice") Invoice addInvoice) {
-
+    public String addInvoice(@ModelAttribute("invoice")  Invoice addInvoice) {
+//        if (result.hasErrors()){
+//           // model.addAttribute("message", "error");
+//            return null;
+//        }
         service.addInvoice(addInvoice);
 
         return "redirect:/seeInvoices/"+addInvoice.getCustomerId();
@@ -147,7 +155,11 @@ public class EmployedController {
     }
 
     @RequestMapping(value = "/addCard", method = RequestMethod.POST)
-    public String addCard(@ModelAttribute("card") CardDTO addCard) {
+    public String addCard(@Valid @ModelAttribute("card") CardDTO addCard, BindingResult result, Model model) {
+        if(result.hasErrors()){
+            model.addAttribute("curr", CardCurrency.values());
+            return null;
+        }
 
         try {
             service.addCard(addCard);
@@ -186,8 +198,10 @@ public class EmployedController {
     }
 
     @RequestMapping(value = "/addCredit", method = RequestMethod.POST)
-    public String addCredit(@ModelAttribute("credit") Credit addCredit) {
-
+    public String addCredit(@Valid @ModelAttribute("credit") Credit addCredit, BindingResult result) {
+        if (result.hasErrors()){
+            return null;
+        }
         service.addCredit(addCredit);
 
         return "redirect:/seeCredit/"+addCredit.getCustomerId();

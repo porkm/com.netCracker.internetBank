@@ -46,16 +46,20 @@
         <div class="form-group col-xs-4">
             <label for="sumCredit" class="control-label col-xs-4">Сумма кредита:</label>
             <input type="text" pattern="\d+(\.\d{0,})?" maxlength="10" name="sumCredit" id="sumCredit" class="form-control"  required="true"/>
+            <f:errors path="sumCredit" />
 
 
             <label for="creditStart" class="control-label col-xs-4">Начало кредита</label>
             <input type="date"   name="creditStart"  id="creditStart" class="form-control"  placeholder="yyyy-MM-dd" required="true"/>
+            <f:errors path="creditStart" />
 
             <label for="dayOfPay" class="control-label col-xs-4">Дата платежа</label>
             <input type="date"   name="dayOfPay"  id="dayOfPay" class="form-control"  placeholder="yyyy-MM-dd" required="true"/>
+            <f:errors path="dayOfPay" />
 
             <label for="creditTerm" class="control-label col-xs-4">Срок кредита:</label>
             <input type="text" pattern="\d+" maxlength="2" name="creditTerm" id="creditTerm" class="form-control"  required="true"/>
+            <f:errors path="creditTerm" />
 
 
             <br></br>

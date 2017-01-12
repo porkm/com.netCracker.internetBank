@@ -44,10 +44,11 @@
         <div class="form-group col-xs-4">
 
             <label for="balance" class="control-label col-xs-4">Баланс</label>
-            <input type="text"  pattern="\d+(\.\d{0,})?" minlength="1" maxlength="10" name="balance" id="balance" class="form-control"  required="true"/>
+            <input type="text"  pattern="\d+(\.\d{1,10})?" minlength="1" maxlength="10" name="balance" id="balance" class="form-control"  required="true"/>
+            <f:errors path="balance" />
 
 
-            <br></br>
+            <br/>
             <button type="submit" class="btn btn-primary  btn-md">Создать</button>
         </div>
 </f:form>

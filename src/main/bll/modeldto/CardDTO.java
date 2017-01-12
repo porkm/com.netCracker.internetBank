@@ -1,6 +1,10 @@
 package main.bll.modeldto;
 
 import main.bll.service.util.CardCurrency;
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
 
 /**
@@ -10,8 +14,12 @@ import main.bll.service.util.CardCurrency;
 public class CardDTO {
 
     private int number;
+
+    @Max(value = 10, message = "Максимальный срок действия карты 10 лет")
     private int validOf;
+
     private int invoceId;
+
     private CardCurrency currency;
 
       public CardDTO() {

@@ -7,9 +7,10 @@
           <element id="module-output" name="com.netCracker.internetBank" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.3.1.Final" />
-          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
-          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.0.CR2" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.0.1.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.1.GA" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:0.8.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.4.RELEASE" />
