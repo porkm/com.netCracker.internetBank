@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import main.dal.api.*;
 import main.dal.entinties.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class CardRepo implements IRepository<Card> {
@@ -16,11 +15,6 @@ public class CardRepo implements IRepository<Card> {
     private final String UPDATE = "UPDATE card SET  number=?, valid_of=?, id_invioce=?, balance=?, currency=? WHERE number=?";
     private final String DELETE = "DELETE FROM card  WHERE number = ?";
     private final String GET_FOR_BY_ID = "select * from card inner join invoice on card.id_invoice=invoice.id where id_invoice=?";
-
-
-
-
-
 
     private Connection connection;
 

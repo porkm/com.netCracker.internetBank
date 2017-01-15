@@ -1,7 +1,5 @@
 package main.dal.entinties;
 
-import javax.validation.constraints.Size;
-
 public class Employed {
 
     private int id;

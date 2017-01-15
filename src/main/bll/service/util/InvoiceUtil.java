@@ -24,40 +24,30 @@ public class InvoiceUtil {
 
         fromInvoice = unit.invoices().get(transferDTO.getFromInvoiceId());
         toInvoice = unit.invoices().get(transferDTO.getToInvoiceId());
+
         if (toInvoice==null){
             return TransferError.NOINVOICES;
         }
-
-
         if (fromInvoice.getBalance()<transferDTO.getMoney()){
             return TransferError.NOMONEY;
-            //todo MyExeption
         }
             else
             {
-                toInvoice.setBalance(toInvoice.getBalance() + transferDTO.getMoney());
-                fromInvoice.setBalance(fromInvoice.getBalance() - transferDTO.getMoney());
+                synchronized (this){
+                    toInvoice.setBalance(toInvoice.getBalance() + transferDTO.getMoney());
+                    fromInvoice.setBalance(fromInvoice.getBalance() - transferDTO.getMoney());
 
-                updateInvoice(toInvoice);
-                updateInvoice(fromInvoice);
+                    updateInvoice(toInvoice);
+                    updateInvoice(fromInvoice);
+                }
             }
-
         return TransferError.OK;
 
-
     }
 
 
-    private void updateInvoice(Invoice invoice) {
-
-        try {
-            unit.invoices().update(invoice);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
+    private void updateInvoice(Invoice invoice) throws SQLException {
+        unit.invoices().update(invoice);
     }
-
-
 }
 

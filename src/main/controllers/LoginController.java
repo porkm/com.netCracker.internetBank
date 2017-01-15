@@ -1,6 +1,7 @@
 package main.controllers;
 
 import main.bll.api.IServiceCustomer;
+import main.bll.service.myexeption.InterneteBankExeption;
 import main.dal.entinties.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -35,19 +36,24 @@ public class LoginController {
 
             if (service.checkLoginPassw(loginBean)) {
                 //get id user
-                int id =service.getIdByLogin(loginBean.getLogin());
+                int id;
+                try {
+                    id = service.getIdByLogin(loginBean.getLogin());
+                } catch (InterneteBankExeption interneteBankExeption) {
+                    model.addAttribute("message", interneteBankExeption.getMessage());
+                    return "login";
+                }
                 model.addAttribute("userId", id);
-
                 session.setMaxInactiveInterval(60);
                 session.setAttribute("userId", id);
 
                 return "actionCustomer";
             } else {
-                model.addAttribute("error", "Invalid Details");
+                model.addAttribute("message", "Неверные данные");
                 return "login";
             }
         } else {
-            model.addAttribute("error", "Please enter Details");
+            model.addAttribute("error", "Введите данные");
             return "login";
         }
     }

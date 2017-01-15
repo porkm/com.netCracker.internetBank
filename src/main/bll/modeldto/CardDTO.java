@@ -1,15 +1,10 @@
 package main.bll.modeldto;
 
-import main.bll.service.util.CardCurrency;
-import org.hibernate.validator.constraints.NotEmpty;
+import main.bll.service.util.CardInfo;
 
 import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 
 
-/**
- * Created by porkm on 04.01.2017.
- */
 
 public class CardDTO {
 
@@ -20,16 +15,16 @@ public class CardDTO {
 
     private int invoceId;
 
-    private CardCurrency currency;
+    private CardInfo.CardCurrency currency;
 
       public CardDTO() {
     }
 
-    public CardCurrency getCurrency() {
+    public CardInfo.CardCurrency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(CardCurrency currency) {
+    public void setCurrency(CardInfo.CardCurrency currency) {
         this.currency = currency;
     }
 

@@ -3,7 +3,6 @@ package main.dal.entinties;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
-import org.hibernate.validator.constraints.Range;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +13,6 @@ public class Customer {
     private String name;//
 
     @NotEmpty(message = "Поле не должно быть пустым")
-    //@Range(min = 3, max = 5, message = "Логин должен быть от 3 до 5 символов")
     @Length(min = 3, max = 5, message = "Логин должен быть от 3 до 5 символов")
     private String login;
 

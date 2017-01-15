@@ -1,17 +1,21 @@
 package main.bll.service.imp;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-import main.bll.modeldto.TransferDTO;
-import main.dal.entinties.*;
-import main.dal.api.IUnitOfWork;
 import main.bll.api.IServiceCustomer;
-import main.bll.modeldto.CreditDTO;
-import main.bll.service.util.*;
+import main.bll.modeldto.TransferDTO;
+import main.bll.service.myexeption.InterneteBankExeption;
+import main.bll.service.util.CreditCalculate;
+import main.bll.service.util.InvoiceUtil;
+import main.bll.service.util.PassUtil;
+import main.bll.service.util.TransferError;
+import main.dal.api.IUnitOfWork;
+import main.dal.entinties.Credit;
+import main.dal.entinties.Customer;
+import main.dal.entinties.Invoice;
+import main.dal.entinties.Request;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
+import java.sql.SQLException;
+import java.util.List;
 
 
 public class ServiceCustomer implements IServiceCustomer {
@@ -30,81 +34,93 @@ public class ServiceCustomer implements IServiceCustomer {
         boolean check = false;
         try {
             check = unit.customers().getAll().stream().anyMatch(
-                    x->
+                    x ->
                             x.getLogin().equals(checkedCustomer.getLogin())
-                            &&
-                            x.getPassw().equals(PassUtil.getPassSHA(checkedCustomer.getPassw()))
+                                    &&
+                                    x.getPassw().equals(PassUtil.getPassSHA(checkedCustomer.getPassw()))
             );
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            return check;
         }
         return check;
     }
 
     @Override
-    public int getIdByLogin(String login) {
+    public int getIdByLogin(String login) throws InterneteBankExeption {
         int id;
         try {
-            id=unit.customers().getAll().stream()
-                    .filter(x->x.getLogin().equals(login))
+            id = unit.customers().getAll().stream()
+                    .filter(x -> x.getLogin().equals(login))
                     .findFirst()
                     .get()
                     .getId();
         } catch (SQLException e) {
-            e.printStackTrace();
-            id=0;
+            throw new InterneteBankExeption("Пользователь не существует");
         }
         return id;
     }
 
     @Override
-    public TransferError transferMoney(TransferDTO transferDTO) throws SQLException {
+    public synchronized TransferError transferMoney(TransferDTO transferDTO) throws InterneteBankExeption {
 
         InvoiceUtil invoiceUtil = new InvoiceUtil(transferDTO, unit);
-        TransferError result =invoiceUtil.makeTransfer();
+        TransferError result;
+        try {
+            result = invoiceUtil.makeTransfer();
+        } catch (SQLException e) {
+            throw new InterneteBankExeption("Невозможно сделать перевод. Ошибка БД");
+        }
         return result;
     }
 
 
     @Override
-    public void inviteFriend(int customerId, String friend) throws SQLException {
-        unit.requests().create(new Request(0, friend, customerId));
+    public synchronized void inviteFriend(int customerId, String friend) throws InterneteBankExeption {
+        try {
+            unit.requests().create(new Request(0, friend, customerId));
+        } catch (SQLException e) {
+            throw new InterneteBankExeption("Невозможно пригласить друга. Ошибка БД");
+        }
     }
 
     @Override
-    public void makeNextPay(int creditId, int invoiceId) {
+    public void makeNextPay(int creditId, int invoiceId) throws InterneteBankExeption {
         Credit credit;
         Invoice invoice;
+
         try {
             credit = unit.credits().get(creditId);
+            invoice = unit.invoices().get(invoiceId);
         } catch (SQLException e) {
-            e.printStackTrace();
-            credit=null;
-        }
-        try {
-            invoice=unit.invoices().get(invoiceId);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            invoice=null;
+            throw new InterneteBankExeption("Ошибка получения данных в БД");
         }
 
 
-            credit.setSumCredit(credit.getSumCredit()-credit.getPay());
-            invoice.setBalance(invoice.getBalance()-credit.getPay());
+        if (invoice.getBalance() < credit.getPay()) {
+            throw new InterneteBankExeption("На счете нет денег для платежа");
+        }
 
-            CreditCalculate creditCalc = new CreditCalculate(credit);
+        credit.setSumCredit(credit.getSumCredit() - credit.getPay());
+        invoice.setBalance(invoice.getBalance() - credit.getPay());
+
+        CreditCalculate creditCalc = new CreditCalculate(credit);
+        synchronized (credit){
             credit.setDayOfPay(creditCalc.setNextPay());
+        }
+        synchronized (credit) {
             try {
                 unit.credits().update(credit);
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new InterneteBankExeption("Ошибка проведения платежа");
             }
+        }
+        synchronized (invoice) {
             try {
                 unit.invoices().update(invoice);
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new InterneteBankExeption("Ошибка проведения платежа");
             }
+        }
     }
 
     @Override
@@ -112,17 +128,15 @@ public class ServiceCustomer implements IServiceCustomer {
 
     }
 
-    public List<Invoice> seeInvoises(int customerId) throws SQLException {
-        List<Invoice> list = null;
+    public List<Invoice> seeInvoises(int customerId) throws InterneteBankExeption {
+        List<Invoice> list;
         try {
             list = unit.customers().get(customerId).getInvoices();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new InterneteBankExeption("Ошибка получения данных в БД");
         }
-
         return list;
     }
-
 
 
 }

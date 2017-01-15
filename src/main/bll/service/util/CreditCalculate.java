@@ -14,8 +14,6 @@ public class CreditCalculate {
         this.credit = credit;
     }
 
-
-
     public double getPay(){
         double sumCredit = credit.getSumCredit();
         double termCredit = credit.getCreditTerm();
@@ -27,21 +25,25 @@ public class CreditCalculate {
     }
 
     public Date setNextPay(){
-        GregorianCalendar calendar = new GregorianCalendar(
-                credit.getDayOfPay().getYear(),
-                credit.getDayOfPay().getMonth(),
-                credit.getDayOfPay().getDay()
-        );
-        calendar.add(Calendar.MONTH, 1);
+        GregorianCalendar calendar = new GregorianCalendar();
+//                credit.getDayOfPay().getYear(),
+//                credit.getDayOfPay().getMonth(),
+//                credit.getDayOfPay().getDay()
+        //);
+        calendar.setTime(credit.getDayOfPay());
+        //todo check generate date
 
+        calendar.add(Calendar.MONTH, 1);
         Date date = calendar.getTime();
         return date;
     }
 
-
     public double getOverPay() {
         return  getPay()*credit.getCreditTerm()*12-credit.getSumCredit();
     }
+
+
+
 
 }
 

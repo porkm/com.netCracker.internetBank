@@ -1,16 +1,13 @@
 package main.controllers;
 
 
-
 import main.bll.api.IServiceEmployed;
 import main.bll.modeldto.CardDTO;
-
-import main.bll.service.util.CardCurrency;
-
+import main.bll.service.myexeption.InterneteBankExeption;
+import main.bll.service.util.CardInfo;
 import main.dal.entinties.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,8 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,15 +24,13 @@ import java.util.List;
 
 @Controller
 public class EmployedController {
-//    ApplicationContext context = new AnnotationConfigApplicationContext(IoCConfiguration.class);
-//    IServiceEmployed service = context.getBean(IServiceEmployed.class);
 
-@Autowired
+
+    @Autowired
     private IServiceEmployed service;
 
     @InitBinder
-    public void initBinder(WebDataBinder binder)
-    {
+    public void initBinder(WebDataBinder binder) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         dateFormat.setLenient(false);
         binder.registerCustomEditor(Date.class, new CustomDateEditor(
@@ -46,18 +39,16 @@ public class EmployedController {
 
 
     @RequestMapping("/actionEmployed")
-    public ModelAndView actionForEmployed() {
-        List<Customer> customerList;
-
+    public ModelAndView actionForEmployed(Model model) {
+        List<Customer> customerList = new ArrayList<>();
         try {
             customerList = service.getAll();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            customerList = new ArrayList<>();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return new ModelAndView("actionEmployed", "customerList", customerList);
         }
-        return new ModelAndView("actionEmployed", "customerList", customerList);
     }
-
 
 
     //region Добавить клиента
@@ -72,13 +63,18 @@ public class EmployedController {
     }
 
     @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
-    public String addCustomer(@Valid @ModelAttribute("addCustomer") Customer addCustomer, BindingResult result) {
-        if (result.hasErrors()){
-            //model.addAttribute("message", "error");
+    public String addCustomer(@Valid @ModelAttribute("addCustomer") Customer addCustomer, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            model.addAttribute("message", "error");
             return null;
         }
-        service.registerCustomer(addCustomer);
-        return "redirect:/actionEmployed";
+        try {
+            service.registerCustomer(addCustomer);
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return "redirect:/actionEmployed";
+        }
     }
 
 
@@ -88,23 +84,17 @@ public class EmployedController {
     @RequestMapping(value = "/seeInvoices/{id}", method = RequestMethod.GET)
     public ModelAndView getListInvoices(HttpSession session, @PathVariable("id") int id, Model model) {
         model.addAttribute("id", id);
-
-
-        model.addAttribute("userId",session.getAttribute("userId") );
+        model.addAttribute("userId", session.getAttribute("userId"));
         //получить все счета выбранного клиента - id
-        List<Invoice> listInvoices;
+        List<Invoice> listInvoices = new ArrayList<>();
+
         try {
             listInvoices = service.seeInvoises(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            listInvoices = new ArrayList<>();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return new ModelAndView("seeInvoices", "listInvoices", listInvoices);
         }
-        //todo check for add bonus
-
-        //
-
-
-        return new ModelAndView("seeInvoices", "listInvoices", listInvoices );
     }
     //endregion
 
@@ -113,18 +103,19 @@ public class EmployedController {
     public ModelAndView addInvoice(@PathVariable("id") int id) {
         Invoice invoice = new Invoice();
         invoice.setCustomerId(id);
-        return new ModelAndView("addInvoice", "invoice", invoice );
+        return new ModelAndView("addInvoice", "invoice", invoice);
     }
 
     @RequestMapping(value = "/addInvoice", method = RequestMethod.POST)
-    public String addInvoice(@ModelAttribute("invoice")  Invoice addInvoice) {
-//        if (result.hasErrors()){
-//           // model.addAttribute("message", "error");
-//            return null;
-//        }
-        service.addInvoice(addInvoice);
+    public String addInvoice(@ModelAttribute("invoice") Invoice addInvoice, Model model) {
+        try {
+            service.addInvoice(addInvoice);
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return "redirect:/seeInvoices/" + addInvoice.getCustomerId();
+        }
 
-        return "redirect:/seeInvoices/"+addInvoice.getCustomerId();
     }
     //endregion
 
@@ -133,15 +124,15 @@ public class EmployedController {
     public ModelAndView getListCard(@PathVariable("id") int id, Model model) {
         model.addAttribute("id", id);
         //получить все карты выбранного клиента - id
-        List<Card> listCards;
-
+        List<Card> listCards = new ArrayList<>();
         try {
             listCards = service.seeCards(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            listCards = new ArrayList<>();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return new ModelAndView("seeCard", "listCards", listCards);
         }
-        return new ModelAndView("seeCard", "listCards", listCards );
+
     }
     //endregion
 
@@ -150,23 +141,26 @@ public class EmployedController {
     public ModelAndView addCard(@PathVariable("id") int id, Model model) {
         CardDTO card = new CardDTO();
         card.setInvoceId(id);
-        model.addAttribute("curr", CardCurrency.values());
-        return new ModelAndView("addCard", "card", card );
+        model.addAttribute("curr", CardInfo.CardCurrency.values());
+        return new ModelAndView("addCard", "card", card);
     }
 
     @RequestMapping(value = "/addCard", method = RequestMethod.POST)
     public String addCard(@Valid @ModelAttribute("card") CardDTO addCard, BindingResult result, Model model) {
-        if(result.hasErrors()){
-            model.addAttribute("curr", CardCurrency.values());
+        if (result.hasErrors()) {
+            model.addAttribute("curr", CardInfo.CardCurrency.values());
             return null;
         }
 
+
         try {
             service.addCard(addCard);
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return "redirect:/seeCard/" + addCard.getInvoceId();
         }
-        return "redirect:/seeCard/"+addCard.getInvoceId();
+
     }
     //endregion
 
@@ -175,15 +169,14 @@ public class EmployedController {
     public ModelAndView getListCredit(@PathVariable("id") int id, Model model) {
         model.addAttribute("id", id);
         //получить все кредиты выбранного клиента - id
-        List<Credit> listCredit;
+        List<Credit> listCredit = new ArrayList<>();
         try {
             listCredit = service.seeCredit(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            listCredit = new ArrayList<>();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return new ModelAndView("seeCredit", "listCredit", listCredit);
         }
-
-        return new ModelAndView("seeCredit", "listCredit", listCredit );
     }
 
 
@@ -194,58 +187,66 @@ public class EmployedController {
     public ModelAndView addCredit(@PathVariable("id") int id) {
         Credit credit = new Credit();
         credit.setCustomerId(id);
-        return new ModelAndView("addCredit", "credit", credit );
+        return new ModelAndView("addCredit", "credit", credit);
     }
 
     @RequestMapping(value = "/addCredit", method = RequestMethod.POST)
-    public String addCredit(@Valid @ModelAttribute("credit") Credit addCredit, BindingResult result) {
-        if (result.hasErrors()){
+    public String addCredit(@Valid @ModelAttribute("credit") Credit addCredit, BindingResult result, Model model) {
+        if (result.hasErrors()) {
             return null;
         }
-        service.addCredit(addCredit);
-
-        return "redirect:/seeCredit/"+addCredit.getCustomerId();
+        try {
+            service.addCredit(addCredit);
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return "redirect:/seeCredit/" + addCredit.getCustomerId();
+        }
     }
     //endregion
 
 
-
     //region Изменить пароль
-
 
 
     //endregion
 
     //region Добавить друга
     @RequestMapping(value = "/seeRequest", method = RequestMethod.GET)
-    public ModelAndView getListRequest() {
-       // model.addAttribute("id", id);
-        List<Request> listRequest;
+    public ModelAndView getListRequest(Model model) {
+        // model.addAttribute("id", id);
+        List<Request> listRequest = new ArrayList<>();
+
         try {
             listRequest = service.checkRequest();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            listRequest = new ArrayList<>();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return new ModelAndView("seeRequest", "listRequest", listRequest);
         }
-        return new ModelAndView("seeRequest", "listRequest", listRequest );
-    }
 
+    }
 
 
     @RequestMapping(value = "/seeRequest", method = RequestMethod.POST)
-    public String addRequest(@ModelAttribute("request") Request addRequest) {
+    public String addRequest(@ModelAttribute("request") Request addRequest, Model model) {
 
-        service.registerFriend(addRequest);
+        try {
+            service.registerFriend(addRequest);
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        }
         try {
             service.getBonus(addRequest.getCustomerId());
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (InterneteBankExeption interneteBankExeption) {
+            model.addAttribute("message", interneteBankExeption.getMessage());
+        } finally {
+            return "redirect:/actionEmployed";
         }
-        return "redirect:/actionEmployed";
+
     }
 
     //endregion
-
 
 
 }

@@ -15,9 +15,7 @@ public class PassUtil {
             e.printStackTrace();
         }
         md.update(password.getBytes());
-
         byte byteData[] = md.digest();
-
         return  String.format("%064x", new java.math.BigInteger(1, byteData));
     }
 
@@ -26,9 +24,7 @@ public class PassUtil {
         int min = 100000000;
         int max = 900000000;
         int result=min+rnd.nextInt(max-min+1);
-
         String password=Integer.toString(result);
-
         return password;
     }
 }

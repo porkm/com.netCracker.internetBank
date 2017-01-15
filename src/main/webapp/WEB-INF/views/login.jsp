@@ -15,7 +15,13 @@
 <div class="container">
 
 <f:form name="submitForm" method="POST" cssClass="form-signin">
+
         <h2 class="form-signin-heading">Пожалуйста, авторизуйтесь</h2>
+    <c:if test="${not empty message}">
+        <div class="alert alert-success">
+                ${message}
+        </div>
+    </c:if>
         <label for="login" class="sr-only">Логин</label>
         <input type="text" pattern="[a-zA-Z0-9]+" minlength="3" maxlength="10" name="login" id="login" class="form-control" placeholder="login" required autofocus>
         <label for="passw" pattern="[a-zA-Z0-9]+" minlength="6" maxlength="8" class="sr-only">Password</label>
